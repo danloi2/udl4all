@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 // https://vite.dev/config/
 export default defineConfig({
   base: '/udl/',
   plugins: [tailwindcss(), svelte()],
-})
+});

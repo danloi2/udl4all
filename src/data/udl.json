@@ -14,516 +14,815 @@
       "eu": "Ikaslea ahalduntzea, nahita eta hausnartzaile, baliabidetsu eta benetako, estrategiko eta ekintzara bideratua izan dadin.",
       "la": "Discipulum potestate praebe ut sit propositus et reflexivus, sollers et authenticus, strategicus et ad actionem directus."
     },
-    "principles": [
+    "whatIsUDL": {
+      "es": "¿Qué es el Diseño Universal para el Aprendizaje?",
+      "en": "What is Universal Design for Learning?",
+      "eu": "Zer da Ikaskuntzarako Diseinu Unibertsala?",
+      "la": "Quid est Designatio Universalis pro Discendo?"
+    },
+    "udlDescription": {
+      "es": "El Diseño Universal para el Aprendizaje (UDL) es un marco educativo basado en la investigación que guía el desarrollo de entornos de aprendizaje flexibles que pueden acomodar las diferencias individuales de los estudiantes.",
+      "en": "Universal Design for Learning (UDL) is a research-based educational framework that guides the development of flexible learning environments that can accommodate individual learner differences.",
+      "eu": "Ikaskuntzarako Diseinu Unibertsala (UDL) ikerketan oinarritutako hezkuntza esparrua da, ikasleen banakako ezberdintasunak onartu ditzaketen ikaskuntza ingurune malguak garatzen laguntzen duena.",
+      "la": "Designatio Universalis pro Discendo (UDL) est structura educativa in investigatione fundata quae dirigit evolutionem ambientium discendi flexibilium quae differentias individuales discentium accommodare possunt."
+    },
+    "udlPrinciples": {
+      "es": "El marco UDL se organiza en torno a tres principios fundamentales:",
+      "en": "The UDL framework is organized around three fundamental principles:",
+      "eu": "UDL esparrua hiru oinarrizko printzipioen inguruan antolatzen da:",
+      "la": "Structura UDL circa tria principia fundamentalia ordinatur:"
+    },
+    "terminology": {
+      "network": {
+        "es": "Red",
+        "en": "Network",
+        "eu": "Sarea",
+        "la": "Retia"
+      },
+      "networks": {
+        "es": "Redes",
+        "en": "Networks",
+        "eu": "Sareak",
+        "la": "Retiae"
+      },
+      "guideline": {
+        "es": "Pauta",
+        "en": "Guideline",
+        "eu": "Gidalerro",
+        "la": "Directio"
+      },
+      "guidelines": {
+        "es": "Pautas",
+        "en": "Guidelines",
+        "eu": "Gidalerroak",
+        "la": "Directiones"
+      },
+      "consideration": {
+        "es": "Consideración",
+        "en": "Consideration",
+        "eu": "Kontuan hartzea",
+        "la": "Consideratio"
+      },
+      "considerations": {
+        "es": "Consideraciones",
+        "en": "Considerations",
+        "eu": "Kontuan hartzeak",
+        "la": "Considerationes"
+      },
+      "principle": {
+        "es": "Principio",
+        "en": "Principle",
+        "eu": "Printzipio",
+        "la": "Principium"
+      },
+      "principles": {
+        "es": "Principios",
+        "en": "Principles",
+        "eu": "Printzipioak",
+        "la": "Principia"
+      }
+    },
+    "networks": [
       {
-        "id": "engagement",
+        "id": "affective",
+        "color": "#078743",
         "name": {
-          "es": "Diseño de múltiples medios de compromiso",
-          "en": "Design Multiple Means of Engagement",
-          "eu": "Inplikazioa lortzeko bitarteko anitzen diseinua",
-          "la": "Designare Multiplices Modi Implicationis"
+          "es": "Redes Afectivas",
+          "en": "Affective Networks",
+          "eu": "Sare Afektiboak",
+          "la": "Retia Affectiva"
         },
-        "guidelines": [
-          {
-            "id": "guideline-7",
-            "code": "7",
-            "row": "Access",
-            "name": {
-              "es": "Aceptación de intereses e identidades",
-              "en": "Welcoming Interests & Identities",
-              "eu": "Interesak eta identitateak aitortzea",
-              "la": "Susceptio Interestium et Identitatum"
-            },
-            "considerations": [
-              {
-                "id": "7-1",
-                "code": "7.1",
-                "description": {
-                  "es": "Optimizar la elección y la autonomía.",
-                  "en": "Optimize choice and autonomy.",
-                  "eu": "Aukera eta autonomia optimizatzea.",
-                  "la": "Optimare electionem et autonomiam."
-                }
-              },
-              {
-                "id": "7-2",
-                "code": "7.2",
-                "description": {
-                  "es": "Optimizar la relevancia, el valor y la autenticidad.",
-                  "en": "Optimize relevance, value, and authenticity.",
-                  "eu": "Garrantzia, balioa eta benetakotasuna optimizatzea.",
-                  "la": "Optimare pertinentiam, valorem et authenticitatem."
-                }
-              },
-              {
-                "id": "7-3",
-                "code": "7.3",
-                "description": {
-                  "es": "Promover la alegría y el juego.",
-                  "en": "Nurture joy and play.",
-                  "eu": "Poza eta jolasa sustatzea.",
-                  "la": "Allicitare laetitiam et ludum."
-                }
-              },
-              {
-                "id": "7-4",
-                "code": "7.4",
-                "description": {
-                  "es": "Abordar sesgos, amenazas y distracciones.",
-                  "en": "Address biases, threats, and distractions.",
-                  "eu": "Aurreiritziak, mehatxuak eta distrazioak lantzea.",
-                  "la": "Trahere praeiudicia, minas et distractiones."
-                }
-              }
-            ]
+        "why": {
+          "es": "El \"por qué\" del aprendizaje",
+          "en": "The \"why\" of learning",
+          "eu": "Ikaskuntzaren \"zergatia\"",
+          "la": "\"Cur\" discendi"
+        },
+        "description": {
+          "es": "Gestionan la motivación, el compromiso, los intereses y la regulación emocional. Se corresponden con el principio de proporcionar múltiples medios de compromiso.",
+          "en": "Manage motivation, engagement, interests, and emotional regulation. They correspond to the principle of providing multiple means of engagement.",
+          "eu": "Motibazioa, inplikazioa, interesak eta arautzea emozionala kudeatzen dituzte. Inplikazioa lortzeko bitarteko anitzak eskaintzeko printzipioarekin bat datoz.",
+          "la": "Gerunt motivationem, implicationem, interestia et regulationem emotivam. Concordant cum principio praebendi multiplices modi implicationis."
+        },
+        "principle": {
+          "id": "engagement",
+          "color": "#078743",
+          "preDescription": {
+            "es": "Diseño de múltiples medios de ",
+            "en": "Design Multiple Means of ",
+            "eu": "lortzeko bitarteko anitzen diseinua",
+            "la": "Designatio Multiplicum Modorum "
           },
-          {
-            "id": "guideline-8",
-            "code": "8",
-            "row": "Support",
-            "name": {
-              "es": "Mantener el esfuerzo y la constancia",
-              "en": "Sustaining Effort & Persistence",
-              "eu": "Ahalegina eta iraunkortasuna mantentzea",
-              "la": "Effortum et Constantiam Sustinere"
-            },
-            "considerations": [
-              {
-                "id": "8-1",
-                "code": "8.1",
-                "description": {
-                  "es": "Aclarar el significado y el propósito de los objetivos.",
-                  "en": "Clarify the meaning and purpose of goals.",
-                  "eu": "Helburuen esanahia eta xedea argitzea.",
-                  "la": "Clarificare significationem et propositum propositi."
-                }
-              },
-              {
-                "id": "8-2",
-                "code": "8.2",
-                "description": {
-                  "es": "Optimizar los desafíos y el apoyo.",
-                  "en": "Optimize challenge and support.",
-                  "eu": "Erronkak eta laguntza optimizatzea.",
-                  "la": "Optimare provocationes et auxilium."
-                }
-              },
-              {
-                "id": "8-3",
-                "code": "8.3",
-                "description": {
-                  "es": "Fomentar la colaboración, la interdependencia y el aprendizaje colectivo.",
-                  "en": "Foster collaboration, interdependence, and collective learning.",
-                  "eu": "Elkarlana, elkarren mendekotasuna eta ikaskuntza kolektiboa sustatzea.",
-                  "la": "Fovere collaborationem, interdependentiam et discendi collectivum."
-                }
-              },
-              {
-                "id": "8-4",
-                "code": "8.4",
-                "description": {
-                  "es": "Fomentar la pertenencia y la comunidad.",
-                  "en": "Foster belonging and community.",
-                  "eu": "Kidetasuna eta komunitatea sustatzea.",
-                  "la": "Fovere sensum appartinendi et communitatem."
-                }
-              },
-              {
-                "id": "8-5",
-                "code": "8.5",
-                "description": {
-                  "es": "Ofrecer retroalimentación orientada a la acción.",
-                  "en": "Offer action-oriented feedback.",
-                  "eu": "Ekintzara bideratutako feedback-a ematea.",
-                  "la": "Praebere responsionem actioni directam."
-                }
-              }
-            ]
+          "name": {
+            "es": "Compromiso",
+            "en": "Engagement",
+            "eu": "Inplikazioa",
+            "la": "Implicatio"
           },
-          {
-            "id": "guideline-9",
-            "code": "9",
-            "row": "Executive Function",
-            "name": {
-              "es": "Capacidad emocional",
-              "en": "Emotional Capacity",
-              "eu": "Gaitasun emozionala",
-              "la": "Capacitas Emotiva"
+          "guidelines": [
+            {
+              "id": "guideline-7",
+              "code": "7",
+              "color": "#ADDABE",
+              "preDescription": {
+                "es": "Opciones de diseño para la ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
+              },
+              "row": {
+                "es": "Acceso",
+                "en": "Access",
+                "eu": "Sarbidea",
+                "la": "Accessus"
+              },
+              "name": {
+                "es": "Aceptación de intereses e identidades",
+                "en": "Welcoming Interests & Identities",
+                "eu": "Interesak eta identitateak aitortzea",
+                "la": "Susceptio Interestium et Identitatum"
+              },
+              "considerations": [
+                {
+                  "id": "7-1",
+                  "code": "7.1",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Optimizar la elección y la autonomía.",
+                    "en": "Optimize choice and autonomy.",
+                    "eu": "Aukera eta autonomia optimizatzea.",
+                    "la": "Optimare electionem et autonomiam."
+                  }
+                },
+                {
+                  "id": "7-2",
+                  "code": "7.2",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Optimizar la relevancia, el valor y la autenticidad.",
+                    "en": "Optimize relevance, value, and authenticity.",
+                    "eu": "Garrantzia, balioa eta benetakotasuna optimizatzea.",
+                    "la": "Optimare pertinentiam, valorem et authenticitatem."
+                  }
+                },
+                {
+                  "id": "7-3",
+                  "code": "7.3",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Promover la alegría y el juego.",
+                    "en": "Nurture joy and play.",
+                    "eu": "Poza eta jolasa sustatzea.",
+                    "la": "Allicitare laetitiam et ludum."
+                  }
+                },
+                {
+                  "id": "7-4",
+                  "code": "7.4",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Abordar sesgos, amenazas y distracciones.",
+                    "en": "Address biases, threats, and distractions.",
+                    "eu": "Aurreiritziak, mehatxuak eta distrazioak lantzea.",
+                    "la": "Trahere praeiudicia, minas et distractiones."
+                  }
+                }
+              ]
             },
-            "considerations": [
-              {
-                "id": "9-1",
-                "code": "9.1",
-                "description": {
-                  "es": "Reconocer expectativas, creencias y motivaciones.",
-                  "en": "Recognize expectations, beliefs, and motivations.",
-                  "eu": "Itxaropenak, sinesmenak eta motibazioak aitortzea.",
-                  "la": "Agnotare expectationes, credentias et motivationes."
-                }
+            {
+              "id": "guideline-8",
+              "code": "8",
+              "color": "#ADDABE",
+              "preDescription": {
+                "es": "Opciones de diseño para ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
               },
-              {
-                "id": "9-2",
-                "code": "9.2",
-                "description": {
-                  "es": "Desarrollar la conciencia de uno mismo y de los demás.",
-                  "en": "Develop awareness of self and others.",
-                  "eu": "Norbere eta besteen kontzientzia garatzea.",
-                  "la": "Evolvere conscientiam sui et aliorum."
-                }
+              "row": {
+                "es": "Apoyo",
+                "en": "Support",
+                "eu": "Laguntza",
+                "la": "Subsidium"
               },
-              {
-                "id": "9-3",
-                "code": "9.3",
-                "description": {
-                  "es": "Promover la reflexión individual y colectiva.",
-                  "en": "Promote individual and collective reflection.",
-                  "eu": "Hausnarketa indibiduala eta kolektiboa sustatzea.",
-                  "la": "Promovere reflexionem singularem et collectivam."
-                }
+              "name": {
+                "es": "Mantener el esfuerzo y la constancia",
+                "en": "Sustaining Effort & Persistence",
+                "eu": "Ahalegina eta iraunkortasuna mantentzea",
+                "la": "Effortum et Constantiam Sustinere"
               },
-              {
-                "id": "9-4",
-                "code": "9.4",
-                "description": {
-                  "es": "Fomentar la empatía y las prácticas restaurativas.",
-                  "en": "Cultivate empathy and restorative practices.",
-                  "eu": "Enpatia eta praktika sendatzaileak sustatzea.",
-                  "la": "Colere empathem et praxim restaurativam."
+              "considerations": [
+                {
+                  "id": "8-1",
+                  "code": "8.1",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Aclarar el significado y el propósito de los objetivos.",
+                    "en": "Clarify the meaning and purpose of goals.",
+                    "eu": "Helburuen esanahia eta xedea argitzea.",
+                    "la": "Clarificare significationem et propositum propositi."
+                  }
+                },
+                {
+                  "id": "8-2",
+                  "code": "8.2",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Optimizar los desafíos y el apoyo.",
+                    "en": "Optimize challenge and support.",
+                    "eu": "Erronkak eta laguntza optimizatzea.",
+                    "la": "Optimare provocationes et auxilium."
+                  }
+                },
+                {
+                  "id": "8-3",
+                  "code": "8.3",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Fomentar la colaboración, la interdependencia y el aprendizaje colectivo.",
+                    "en": "Foster collaboration, interdependence, and collective learning.",
+                    "eu": "Elkarlana, elkarren mendekotasuna eta ikaskuntza kolektiboa sustatzea.",
+                    "la": "Fovere collaborationem, interdependentiam et discendi collectivum."
+                  }
+                },
+                {
+                  "id": "8-4",
+                  "code": "8.4",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Fomentar la pertenencia y la comunidad.",
+                    "en": "Foster belonging and community.",
+                    "eu": "Kidetasuna eta komunitatea sustatzea.",
+                    "la": "Fovere sensum appartinendi et communitatem."
+                  }
+                },
+                {
+                  "id": "8-5",
+                  "code": "8.5",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Ofrecer retroalimentación orientada a la acción.",
+                    "en": "Offer action-oriented feedback.",
+                    "eu": "Ekintzara bideratutako feedback-a ematea.",
+                    "la": "Praebere responsionem actioni directam."
+                  }
                 }
-              }
-            ]
-          }
-        ]
+              ]
+            },
+            {
+              "id": "guideline-9",
+              "code": "9",
+              "color": "#ADDABE",
+              "preDescription": {
+                "es": "Opciones de diseño para la ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
+              },
+              "row": {
+                "es": "Función Ejecutiva",
+                "en": "Executive Function",
+                "eu": "Funtzio Exekutiboa",
+                "la": "Functio Executiva"
+              },
+              "name": {
+                "es": "Capacidad emocional",
+                "en": "Emotional Capacity",
+                "eu": "Gaitasun emozionala",
+                "la": "Capacitas Emotiva"
+              },
+              "considerations": [
+                {
+                  "id": "9-1",
+                  "code": "9.1",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Reconocer expectativas, creencias y motivaciones.",
+                    "en": "Recognize expectations, beliefs, and motivations.",
+                    "eu": "Itxaropenak, sinesmenak eta motibazioak aitortzea.",
+                    "la": "Agnotare expectationes, credentias et motivationes."
+                  }
+                },
+                {
+                  "id": "9-2",
+                  "code": "9.2",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Desarrollar la conciencia de uno mismo y de los demás.",
+                    "en": "Develop awareness of self and others.",
+                    "eu": "Norbere eta besteen kontzientzia garatzea.",
+                    "la": "Evolvere conscientiam sui et aliorum."
+                  }
+                },
+                {
+                  "id": "9-3",
+                  "code": "9.3",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Promover la reflexión individual y colectiva.",
+                    "en": "Promote individual and collective reflection.",
+                    "eu": "Hausnarketa indibiduala eta kolektiboa sustatzea.",
+                    "la": "Promovere reflexionem singularem et collectivam."
+                  }
+                },
+                {
+                  "id": "9-4",
+                  "code": "9.4",
+                  "color": "#ADDABE",
+                  "description": {
+                    "es": "Fomentar la empatía y las prácticas restaurativas.",
+                    "en": "Cultivate empathy and restorative practices.",
+                    "eu": "Enpatia eta praktika sendatzaileak sustatzea.",
+                    "la": "Colere empathem et praxim restaurativam."
+                  }
+                }
+              ]
+            }
+          ]
+        }
       },
       {
-        "id": "representation",
+        "id": "recognition",
+        "color": "#6F5094",
         "name": {
-          "es": "Diseño de múltiples medios de representación",
-          "en": "Design Multiple Means of Representation",
-          "eu": "Irudikapena lortzeko bitarteko anitzen diseinua",
-          "la": "Designare Multiplices Modi Repraesentationis"
+          "es": "Redes de Reconocimiento",
+          "en": "Recognition Networks",
+          "eu": "Ezagutza Sareak",
+          "la": "Retia Recognitionis"
         },
-        "guidelines": [
-          {
-            "id": "guideline-1",
-            "code": "1",
-            "row": "Access",
-            "name": {
-              "es": "Percepción",
-              "en": "Perception",
-              "eu": "Pertzepzioa",
-              "la": "Perceptio"
-            },
-            "considerations": [
-              {
-                "id": "1-1",
-                "code": "1.1",
-                "description": {
-                  "es": "Apoyar las oportunidades para personalizar la presentación de la información.",
-                  "en": "Support opportunities to customize the display of information.",
-                  "eu": "Informazioaren aurkezpena pertsonalizatzeko aukerak ematea.",
-                  "la": "Sustinere occasiones ad ostentationem informationis personalizandam."
-                }
-              },
-              {
-                "id": "1-2",
-                "code": "1.2",
-                "description": {
-                  "es": "Ofrecer múltiples formas de percibir la información.",
-                  "en": "Support multiple ways to perceive information.",
-                  "eu": "Informazioa hautemateko modu anitzak sustatzea.",
-                  "la": "Sustinere varias vias ad informationem percipiendam."
-                }
-              },
-              {
-                "id": "1-3",
-                "code": "1.3",
-                "description": {
-                  "es": "Representar una diversidad de perspectivas e identidades de forma auténtica.",
-                  "en": "Represent a diversity of perspectives and identities in authentic ways.",
-                  "eu": "Ikuspegi eta identitate anitzak modu benetakoan irudikatzea.",
-                  "la": "Repraesentare diversitatem prospectuum et identitatum authenticis modis."
-                }
-              }
-            ]
+        "what": {
+          "es": "El \"qué\" del aprendizaje",
+          "en": "The \"what\" of learning",
+          "eu": "Ikaskuntzaren \"zer\"",
+          "la": "\"Quid\" discendi"
+        },
+        "description": {
+          "es": "Recopilan información, perciben y clasifican información en categorías con significado. Se relacionan con el principio de proporcionar múltiples medios de representación.",
+          "en": "Gather information, perceive and classify information into meaningful categories. They relate to the principle of providing multiple means of representation.",
+          "eu": "Informazioa biltzen dute, informazioa hautematen eta kategoria esanguratsutan sailkatzen dute. Irudikapena lortzeko bitarteko anitzak eskaintzeko printzipioarekin lotzen dira.",
+          "la": "Colligunt informationem, percipiunt et classificant informationem in categorias cum significatione. Referuntur ad principium praebendi multiplices modi repraesentationis."
+        },
+        "principle": {
+          "id": "representation",
+          "color": "#6F5094",
+          "preDescription": {
+            "es": "Diseño de múltiples medios de ",
+            "en": "Design Multiple Means of ",
+            "eu": "lortzeko bitarteko anitzen diseinua",
+            "la": "Designatio Multiplicum Modorum "
           },
-          {
-            "id": "guideline-2",
-            "code": "2",
-            "row": "Support",
-            "name": {
-              "es": "Lenguaje y símbolos",
-              "en": "Language & Symbols",
-              "eu": "Hizkuntza eta sinboloak",
-              "la": "Lingua et Symbola"
-            },
-            "considerations": [
-              {
-                "id": "2-1",
-                "code": "2.1",
-                "description": {
-                  "es": "Aclarar el vocabulario, los símbolos y las estructuras lingüísticas.",
-                  "en": "Clarify vocabulary, symbols, and language structures.",
-                  "eu": "Hiztegia, sinboloak eta hizkuntza-egiturak argitzea.",
-                  "la": "Clarificare vocabularium, symbola et structuras linguae."
-                }
-              },
-              {
-                "id": "2-2",
-                "code": "2.2",
-                "description": {
-                  "es": "Apoyar la decodificación de textos, notaciones matemáticas y símbolos.",
-                  "en": "Support decoding of text, mathematical notation, and symbols.",
-                  "eu": "Testuen, notazio matematikoen eta sinboloen ulermena babestea.",
-                  "la": "Sustinere interpretationem textuum, notationum mathematicarum et symbolorum."
-                }
-              },
-              {
-                "id": "2-3",
-                "code": "2.3",
-                "description": {
-                  "es": "Promover la comprensión y el respeto entre todos los idiomas y dialectos.",
-                  "en": "Cultivate understanding and respect across languages and dialects.",
-                  "eu": "Hizkuntza eta dialekto guztiekiko ulermena eta errespetua sustatzea.",
-                  "la": "Colere intellectum et reverentiam inter linguas et dialectos."
-                }
-              },
-              {
-                "id": "2-4",
-                "code": "2.4",
-                "description": {
-                  "es": "Abordar los sesgos en el uso del lenguaje y los símbolos.",
-                  "en": "Address biases in the use of language and symbols.",
-                  "eu": "Hizkuntzaren eta sinboloen erabilerako aurreiritziak lantzea.",
-                  "la": "Trahere praeiudicia in usu linguae et symbolorum."
-                }
-              },
-              {
-                "id": "2-5",
-                "code": "2.5",
-                "description": {
-                  "es": "Ilustrar a través de múltiples medios.",
-                  "en": "Illustrate through multiple media.",
-                  "eu": "Hainbat bitartekoren bidez ilustratzea.",
-                  "la": "Illustrate per multos medios."
-                }
-              }
-            ]
+          "name": {
+            "es": "Representación",
+            "en": "Representation",
+            "eu": "Irudikapena",
+            "la": "Repraesentatio"
           },
-          {
-            "id": "guideline-3",
-            "code": "3",
-            "row": "Executive Function",
-            "name": {
-              "es": "Desarrollo de conocimientos",
-              "en": "Building Knowledge",
-              "eu": "Ezagutza garatzea",
-              "la": "Aedificatio Scientiae"
+          "guidelines": [
+            {
+              "id": "guideline-1",
+              "code": "1",
+              "color": "#CABFD9",
+              "preDescription": {
+                "es": "Opciones de diseño para la ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
+              },
+              "row": {
+                "es": "Acceso",
+                "en": "Access",
+                "eu": "Sarbidea",
+                "la": "Accessus"
+              },
+              "name": {
+                "es": "Percepción",
+                "en": "Perception",
+                "eu": "Pertzepzioa",
+                "la": "Perceptio"
+              },
+              "considerations": [
+                {
+                  "id": "1-1",
+                  "code": "1.1",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Apoyar las oportunidades para personalizar la presentación de la información.",
+                    "en": "Support opportunities to customize the display of information.",
+                    "eu": "Informazioaren aurkezpena pertsonalizatzeko aukerak ematea.",
+                    "la": "Sustinere occasiones ad ostentationem informationis personalizandam."
+                  }
+                },
+                {
+                  "id": "1-2",
+                  "code": "1.2",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Ofrecer múltiples formas de percibir la información.",
+                    "en": "Support multiple ways to perceive information.",
+                    "eu": "Informazioa hautemateko modu anitzak sustatzea.",
+                    "la": "Sustinere varias vias ad informationem percipiendam."
+                  }
+                },
+                {
+                  "id": "1-3",
+                  "code": "1.3",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Representar una diversidad de perspectivas e identidades de forma auténtica.",
+                    "en": "Represent a diversity of perspectives and identities in authentic ways.",
+                    "eu": "Ikuspegi eta identitate anitzak modu benetakoan irudikatzea.",
+                    "la": "Repraesentare diversitatem prospectuum et identitatum authenticis modis."
+                  }
+                }
+              ]
             },
-            "considerations": [
-              {
-                "id": "3-1",
-                "code": "3.1",
-                "description": {
-                  "es": "Conectar los conocimientos previos con el nuevo aprendizaje.",
-                  "en": "Connect prior knowledge to new learning.",
-                  "eu": "Aurreko ezagutzak aktibatu edo hornitzea.",
-                  "la": "Coniungere cognitiones praevias cum nova disciplina."
-                }
+            {
+              "id": "guideline-2",
+              "code": "2",
+              "color": "#CABFD9",
+              "preDescription": {
+                "es": "Opciones de diseño para el ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
               },
-              {
-                "id": "3-2",
-                "code": "3.2",
-                "description": {
-                  "es": "Resaltar y explorar patrones, características clave, ideas relevantes y relaciones.",
-                  "en": "Highlight patterns, critical features, big ideas, and relationships.",
-                  "eu": "Ereduak, ezaugarri nagusiak, ideia garrantzitsuak eta harremanak nabarmentzea.",
-                  "la": "Evidentiare exemplaria, proprietates criticas, magnae ideae et relationes."
-                }
+              "row": {
+                "es": "Apoyo",
+                "en": "Support",
+                "eu": "Laguntza",
+                "la": "Subsidium"
               },
-              {
-                "id": "3-3",
-                "code": "3.3",
-                "description": {
-                  "es": "Fomentar múltiples formas de conocer y construir significado.",
-                  "en": "Cultivate multiple ways of knowing and making meaning.",
-                  "eu": "Ezagutza eta esanahia eraikitzeko modu anitzak sustatzea.",
-                  "la": "Colere varias vias cognoscendi et significationem creandi."
-                }
+              "name": {
+                "es": "Lenguaje y símbolos",
+                "en": "Language & Symbols",
+                "eu": "Hizkuntza eta sinboloak",
+                "la": "Lingua et Symbola"
               },
-              {
-                "id": "3-4",
-                "code": "3.4",
-                "description": {
-                  "es": "Maximizar la transferencia y la generalización.",
-                  "en": "Maximize transfer and generalization.",
-                  "eu": "Transferentzia eta orokortzea maximizatzea.",
-                  "la": "Maximare translationem et generalizationem."
+              "considerations": [
+                {
+                  "id": "2-1",
+                  "code": "2.1",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Aclarar el vocabulario, los símbolos y las estructuras lingüísticas.",
+                    "en": "Clarify vocabulary, symbols, and language structures.",
+                    "eu": "Hiztegia, sinboloak eta hizkuntza-egiturak argitzea.",
+                    "la": "Clarificare vocabularium, symbola et structuras linguae."
+                  }
+                },
+                {
+                  "id": "2-2",
+                  "code": "2.2",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Apoyar la decodificación de textos, notaciones matemáticas y símbolos.",
+                    "en": "Support decoding of text, mathematical notation, and symbols.",
+                    "eu": "Testuen, notazio matematikoen eta sinboloen ulermena babestea.",
+                    "la": "Sustinere interpretationem textuum, notationum mathematicarum et symbolorum."
+                  }
+                },
+                {
+                  "id": "2-3",
+                  "code": "2.3",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Promover la comprensión y el respeto entre todos los idiomas y dialectos.",
+                    "en": "Cultivate understanding and respect across languages and dialects.",
+                    "eu": "Hizkuntza eta dialekto guztiekiko ulermena eta errespetua sustatzea.",
+                    "la": "Colere intellectum et reverentiam inter linguas et dialectos."
+                  }
+                },
+                {
+                  "id": "2-4",
+                  "code": "2.4",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Abordar los sesgos en el uso del lenguaje y los símbolos.",
+                    "en": "Address biases in the use of language and symbols.",
+                    "eu": "Hizkuntzaren eta sinboloen erabilerako aurreiritziak lantzea.",
+                    "la": "Trahere praeiudicia in usu linguae et symbolorum."
+                  }
+                },
+                {
+                  "id": "2-5",
+                  "code": "2.5",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Ilustrar a través de múltiples medios.",
+                    "en": "Illustrate through multiple media.",
+                    "eu": "Hainbat bitartekoren bidez ilustratzea.",
+                    "la": "Illustrate per multos medios."
+                  }
                 }
-              }
-            ]
-          }
-        ]
+              ]
+            },
+            {
+              "id": "guideline-3",
+              "code": "3",
+              "color": "#CABFD9",
+              "preDescription": {
+                "es": "Opciones de diseño para el ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
+              },
+              "row": {
+                "es": "Función Ejecutiva",
+                "en": "Executive Function",
+                "eu": "Funtzio Exekutiboa",
+                "la": "Functio Executiva"
+              },
+              "name": {
+                "es": "Desarrollo de conocimientos",
+                "en": "Building Knowledge",
+                "eu": "Ezagutza garatzea",
+                "la": "Aedificatio Scientiae"
+              },
+              "considerations": [
+                {
+                  "id": "3-1",
+                  "code": "3.1",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Conectar los conocimientos previos con el nuevo aprendizaje.",
+                    "en": "Connect prior knowledge to new learning.",
+                    "eu": "Aurreko ezagutzak aktibatu edo hornitzea.",
+                    "la": "Coniungere cognitiones praevias cum nova disciplina."
+                  }
+                },
+                {
+                  "id": "3-2",
+                  "code": "3.2",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Resaltar y explorar patrones, características clave, ideas relevantes y relaciones.",
+                    "en": "Highlight patterns, critical features, big ideas, and relationships.",
+                    "eu": "Ereduak, ezaugarri nagusiak, ideia garrantzitsuak eta harremanak nabarmentzea.",
+                    "la": "Evidentiare exemplaria, proprietates criticas, magnae ideae et relationes."
+                  }
+                },
+                {
+                  "id": "3-3",
+                  "code": "3.3",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Fomentar múltiples formas de conocer y construir significado.",
+                    "en": "Cultivate multiple ways of knowing and making meaning.",
+                    "eu": "Ezagutza eta esanahia eraikitzeko modu anitzak sustatzea.",
+                    "la": "Colere varias vias cognoscendi et significationem creandi."
+                  }
+                },
+                {
+                  "id": "3-4",
+                  "code": "3.4",
+                  "color": "#CABFD9",
+                  "description": {
+                    "es": "Maximizar la transferencia y la generalización.",
+                    "en": "Maximize transfer and generalization.",
+                    "eu": "Transferentzia eta orokortzea maximizatzea.",
+                    "la": "Maximare translationem et generalizationem."
+                  }
+                }
+              ]
+            }
+          ]
+        }
       },
       {
-        "id": "action_expression",
+        "id": "strategic",
+        "color": "#037DB8",
         "name": {
-          "es": "Diseño de múltiples medios de acción y expresión",
-          "en": "Design Multiple Means of Action & Expression",
-          "eu": "Ekintza eta Adierazpena lortzeko bitarteko anitzen diseinua",
-          "la": "Designare Multiplices Modi Actionis et Expressio"
+          "es": "Redes Estratégicas",
+          "en": "Strategic Networks",
+          "eu": "Sare Estrategikoak",
+          "la": "Retia Strategica"
         },
-        "guidelines": [
-          {
-            "id": "guideline-4",
-            "code": "4",
-            "row": "Access",
-            "name": {
-              "es": "Interacción",
-              "en": "Interaction",
-              "eu": "Elkarrekintza",
-              "la": "Interactio"
-            },
-            "considerations": [
-              {
-                "id": "4-1",
-                "code": "4.1",
-                "description": {
-                  "es": "Diversificar y valorar los métodos de respuesta, orientación y movimiento.",
-                  "en": "Vary and honor the methods for response, navigation, and movement.",
-                  "eu": "Erantzuteko, orientatzeko eta mugitzeko metodoak dibertsifikatzea.",
-                  "la": "Variari et honorari modos responsionis, navigationis et motus."
-                }
-              },
-              {
-                "id": "4-2",
-                "code": "4.2",
-                "description": {
-                  "es": "Optimizar el acceso a materiales accesibles, tecnologías de apoyo y herramientas accesibles.",
-                  "en": "Optimize access to accessible materials and assistive and accessible technologies and tools.",
-                  "eu": "Material irisgarrietarako eta laguntza-teknologietarako sarbidea optimizatzea.",
-                  "la": "Optimare accessum ad materias accessibiles et technologias adiuvantes et accessibiles."
-                }
-              }
-            ]
+        "how": {
+          "es": "El \"cómo\" del aprendizaje",
+          "en": "The \"how\" of learning",
+          "eu": "Ikaskuntzaren \"nola\"",
+          "la": "\"Quomodo\" discendi"
+        },
+        "description": {
+          "es": "Planifican, ejecutan y monitorean tareas. Se vinculan al principio de proporcionar múltiples medios de acción y expresión.",
+          "en": "Plan, execute, and monitor tasks. They link to the principle of providing multiple means of action and expression.",
+          "eu": "Zereginak planifikatzen, exekutatzen eta monitorizatzen dituzte. Ekintza eta adierazpena lortzeko bitarteko anitzak eskaintzeko printzipioarekin lotzen dira.",
+          "la": "Planificant, exsequuntur et monitorant opera. Vincuntur ad principium praebendi multiplices modi actionis et expressionis."
+        },
+        "principle": {
+          "id": "action_expression",
+          "color": "#037DB8",
+          "preDescription": {
+            "es": "Diseño de múltiples medios de ",
+            "en": "Design Multiple Means of ",
+            "eu": "lortzeko bitarteko anitzen diseinua",
+            "la": "Designatio Multiplicum Modorum "
           },
-          {
-            "id": "guideline-5",
-            "code": "5",
-            "row": "Support",
-            "name": {
-              "es": "Expresión y comunicación",
-              "en": "Expression & Communication",
-              "eu": "Adierazpena eta komunikazioa",
-              "la": "Expressio et Communicatio"
-            },
-            "considerations": [
-              {
-                "id": "5-1",
-                "code": "5.1",
-                "description": {
-                  "es": "Usar múltiples medios para la comunicación.",
-                  "en": "Use multiple media for communication.",
-                  "eu": "Komunikaziorako hainbat bitarteko erabiltzea.",
-                  "la": "Uti pluribus mediis ad communicationem."
-                }
-              },
-              {
-                "id": "5-2",
-                "code": "5.2",
-                "description": {
-                  "es": "Usar múltiples herramientas para la construcción, la composición y la creatividad.",
-                  "en": "Use multiple tools for construction, composition, and creativity.",
-                  "eu": "Eraikuntza eta sormenerako hainbat tresna erabiltzea.",
-                  "la": "Uti pluribus instrumentis ad aedificationem, compositionem et creativitatem."
-                }
-              },
-              {
-                "id": "5-3",
-                "code": "5.3",
-                "description": {
-                  "es": "Desarrollar habilidades con apoyos graduados para la práctica y el desempeño.",
-                  "en": "Build fluencies with graduated support for practice and performance.",
-                  "eu": "Gaitasunak pixkanakako laguntzarekin garatzea.",
-                  "la": "Aedificare facultates cum graduato auxilio pro exercitatione et perficiendo."
-                }
-              },
-              {
-                "id": "5-4",
-                "code": "5.4",
-                "description": {
-                  "es": "Abordar los sesgos relacionados con los modos de expresión y comunicación.",
-                  "en": "Address biases related to modes of expression and communication.",
-                  "eu": "Adierazpen eta komunikazio moduekin lotutako aurreiritziak lantzea.",
-                  "la": "Trahere praeiudicia ad modos expressionis et communicationis."
-                }
-              }
-            ]
+          "name": {
+            "es": "Acción y Expresión",
+            "en": "Action & Expression",
+            "eu": "Ekintza eta Adierazpena",
+            "la": "Actio et Expressio"
           },
-          {
-            "id": "guideline-6",
-            "code": "6",
-            "row": "Executive Function",
-            "name": {
-              "es": "Desarrollo de estrategias",
-              "en": "Strategy Development",
-              "eu": "Funtzio exekutiboak",
-              "la": "Evolutio Rationum"
+          "guidelines": [
+            {
+              "id": "guideline-4",
+              "code": "4",
+              "color": "#A8DEF3",
+              "preDescription": {
+                "es": "Opciones de diseño para la ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
+              },
+              "row": {
+                "es": "Acceso",
+                "en": "Access",
+                "eu": "Sarbidea",
+                "la": "Accessus"
+              },
+              "name": {
+                "es": "Interacción",
+                "en": "Interaction",
+                "eu": "Elkarrekintza",
+                "la": "Interactio"
+              },
+              "considerations": [
+                {
+                  "id": "4-1",
+                  "code": "4.1",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Diversificar y valorar los métodos de respuesta, orientación y movimiento.",
+                    "en": "Vary and honor the methods for response, navigation, and movement.",
+                    "eu": "Erantzuteko, orientatzeko eta mugitzeko metodoak dibertsifikatzea.",
+                    "la": "Variari et honorari modos responsionis, navigationis et motus."
+                  }
+                },
+                {
+                  "id": "4-2",
+                  "code": "4.2",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Optimizar el acceso a materiales accesibles, tecnologías de apoyo y herramientas accesibles.",
+                    "en": "Optimize access to accessible materials and assistive and accessible technologies and tools.",
+                    "eu": "Material irisgarrietarako eta laguntza-teknologietarako sarbidea optimizatzea.",
+                    "la": "Optimare accessum ad materias accessibiles et technologias adiuvantes et accessibiles."
+                  }
+                }
+              ]
             },
-            "considerations": [
-              {
-                "id": "6-1",
-                "code": "6.1",
-                "description": {
-                  "es": "Establecer objetivos significativos.",
-                  "en": "Set meaningful goals.",
-                  "eu": "Helburu esanguratsuak ezartzea.",
-                  "la": "Ponere proposita significativa."
-                }
+            {
+              "id": "guideline-5",
+              "code": "5",
+              "color": "#A8DEF3",
+              "preDescription": {
+                "es": "Opciones de diseño para la ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
               },
-              {
-                "id": "6-2",
-                "code": "6.2",
-                "description": {
-                  "es": "Anticipar y planificar los desafíos.",
-                  "en": "Anticipate and plan for challenges.",
-                  "eu": "Erronkak planifikatu eta aurreikustea.",
-                  "la": "Praevidere et praeparare provocationes."
-                }
+              "row": {
+                "es": "Apoyo",
+                "en": "Support",
+                "eu": "Laguntza",
+                "la": "Subsidium"
               },
-              {
-                "id": "6-3",
-                "code": "6.3",
-                "description": {
-                  "es": "Organizar la información y los recursos.",
-                  "en": "Organize information and resources.",
-                  "eu": "Informazioa eta baliabideak antolatzea.",
-                  "la": "Ordinare informationem et subsidia."
-                }
+              "name": {
+                "es": "Expresión y comunicación",
+                "en": "Expression & Communication",
+                "eu": "Adierazpena eta komunikazioa",
+                "la": "Expressio et Communicatio"
               },
-              {
-                "id": "6-4",
-                "code": "6.4",
-                "description": {
-                  "es": "Mejorar la capacidad para supervisar el progreso.",
-                  "en": "Enhance capacity for monitoring progress.",
-                  "eu": "Aurrerapena kontrolatzeko gaitasuna handitzea.",
-                  "la": "Ampliare capacitatem ad progressum monitorandum."
+              "considerations": [
+                {
+                  "id": "5-1",
+                  "code": "5.1",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Usar múltiples medios para la comunicación.",
+                    "en": "Use multiple media for communication.",
+                    "eu": "Komunikaziorako hainbat bitarteko erabiltzea.",
+                    "la": "Uti pluribus mediis ad communicationem."
+                  }
+                },
+                {
+                  "id": "5-2",
+                  "code": "5.2",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Usar múltiples herramientas para la construcción, la composición y la creatividad.",
+                    "en": "Use multiple tools for construction, composition, and creativity.",
+                    "eu": "Eraikuntza eta sormenerako hainbat tresna erabiltzea.",
+                    "la": "Uti pluribus instrumentis ad aedificationem, compositionem et creativitatem."
+                  }
+                },
+                {
+                  "id": "5-3",
+                  "code": "5.3",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Desarrollar habilidades con apoyos graduados para la práctica y el desempeño.",
+                    "en": "Build fluencies with graduated support for practice and performance.",
+                    "eu": "Gaitasunak pixkanakako laguntzarekin garatzea.",
+                    "la": "Aedificare facultates cum graduato auxilio pro exercitatione et perficiendo."
+                  }
+                },
+                {
+                  "id": "5-4",
+                  "code": "5.4",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Abordar los sesgos relacionados con los modos de expresión y comunicación.",
+                    "en": "Address biases related to modes of expression and communication.",
+                    "eu": "Adierazpen eta komunikazio moduekin lotutako aurreiritziak lantzea.",
+                    "la": "Trahere praeiudicia ad modos expressionis et communicationis."
+                  }
                 }
+              ]
+            },
+            {
+              "id": "guideline-6",
+              "code": "6",
+              "color": "#A8DEF3",
+              "preDescription": {
+                "es": "Opciones de diseño para el ",
+                "en": "Design Options for ",
+                "eu": "lortzeko diseinu-aukerak",
+                "la": "Optiones designationis pro "
               },
-              {
-                "id": "6-5",
-                "code": "6.5",
-                "description": {
-                  "es": "Cuestionar las prácticas excluyentes.",
-                  "en": "Challenge exclusionary practices.",
-                  "eu": "Baztertzaileak diren praktikak zalantzan jartzea.",
-                  "la": "Provocare practicas exclusionarias."
+              "row": {
+                "es": "Función Ejecutiva",
+                "en": "Executive Function",
+                "eu": "Funtzio Exekutiboa",
+                "la": "Functio Executiva"
+              },
+              "name": {
+                "es": "Desarrollo de estrategias",
+                "en": "Strategy Development",
+                "eu": "Funtzio exekutiboak",
+                "la": "Evolutio Rationum"
+              },
+              "considerations": [
+                {
+                  "id": "6-1",
+                  "code": "6.1",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Establecer objetivos significativos.",
+                    "en": "Set meaningful goals.",
+                    "eu": "Helburu esanguratsuak ezartzea.",
+                    "la": "Ponere proposita significativa."
+                  }
+                },
+                {
+                  "id": "6-2",
+                  "code": "6.2",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Anticipar y planificar los desafíos.",
+                    "en": "Anticipate and plan for challenges.",
+                    "eu": "Erronkak planifikatu eta aurreikustea.",
+                    "la": "Praevidere et praeparare provocationes."
+                  }
+                },
+                {
+                  "id": "6-3",
+                  "code": "6.3",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Organizar la información y los recursos.",
+                    "en": "Organize information and resources.",
+                    "eu": "Informazioa eta baliabideak antolatzea.",
+                    "la": "Ordinare informationem et subsidia."
+                  }
+                },
+                {
+                  "id": "6-4",
+                  "code": "6.4",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Mejorar la capacidad para supervisar el progreso.",
+                    "en": "Enhance capacity for monitoring progress.",
+                    "eu": "Aurrerapena kontrolatzeko gaitasuna handitzea.",
+                    "la": "Ampliare capacitatem ad progressum monitorandum."
+                  }
+                },
+                {
+                  "id": "6-5",
+                  "code": "6.5",
+                  "color": "#A8DEF3",
+                  "description": {
+                    "es": "Cuestionar las prácticas excluyentes.",
+                    "en": "Challenge exclusionary practices.",
+                    "eu": "Baztertzaileak diren praktikak zalantzan jartzea.",
+                    "la": "Provocare practicas exclusionarias."
+                  }
                 }
-              }
-            ]
-          }
-        ]
+              ]
+            }
+          ]
+        }
       }
     ]
   }

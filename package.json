@@ -1,7 +1,7 @@
 {
   "name": "udl",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,8 +26,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "fuse.js": "^7.1.0",
     "lucide-svelte": "^0.563.0",
     "svelte-exmarkdown": "^5.0.2",
-    "svelte-motion": "^0.12.2"
+    "svelte-motion": "^0.12.2",
+    "svelte-spa-router": "^4.0.1"
   }
 }

@@ -1,0 +1,198 @@
+{
+  "navigation": {
+    "home": {
+      "es": "Inicio",
+      "en": "Home",
+      "eu": "Hasiera",
+      "la": "Domus"
+    },
+    "back": {
+      "es": "Volver",
+      "en": "Back",
+      "eu": "Atzera",
+      "la": "Redire"
+    },
+    "backToExplorer": {
+      "es": "Volver al explorador",
+      "en": "Back to explorer",
+      "eu": "Esploratzailera itzuli",
+      "la": "Redire ad exploratorem"
+    },
+    "viewCompleteModel": {
+      "es": "Ver modelo completo",
+      "en": "View Complete Model",
+      "eu": "Ikusi eredu osoa",
+      "la": "Videre Exemplar Completum"
+    },
+    "exploreGuidelines": {
+      "es": "Explorar pautas",
+      "en": "Explore Guidelines",
+      "eu": "Gidalerroak arakatu",
+      "la": "Explorare Directiones"
+    }
+  },
+  "buttons": {
+    "clearFilters": {
+      "es": "Limpiar filtros",
+      "en": "Clear filters",
+      "eu": "Iragazkiak garbitu",
+      "la": "Purgare filtros"
+    }
+  },
+  "labels": {
+    "filters": {
+      "es": "Filtros",
+      "en": "Filters",
+      "eu": "Iragazkiak",
+      "la": "Filtri"
+    },
+    "appTitle": {
+      "es": "Diseño Universal para el Aprendizaje (UDL)",
+      "en": "Universal Design for Learning (UDL)",
+      "eu": "Ikaskuntzarako Diseinu Unibertsala (UDL)",
+      "la": "Designatio Universalis pro Discendo (UDL)"
+    },
+    "versionLabel": {
+      "es": "Versión 3",
+      "en": "Version 3",
+      "eu": "3. bertsioa",
+      "la": "Versio III"
+    },
+    "allPrinciples": {
+      "es": "Todos los principios",
+      "en": "All principles",
+      "eu": "Printzipio guztiak",
+      "la": "Omnia principia"
+    },
+    "allGuidelines": {
+      "es": "Todas las pautas",
+      "en": "All guidelines",
+      "eu": "Gidalerro guztiak",
+      "la": "Omnes directiones"
+    },
+    "allConsiderations": {
+      "es": "Todas las consideraciones",
+      "en": "All considerations",
+      "eu": "Kontuan hartze guztiak",
+      "la": "Omnes considerationes"
+    },
+    "allTypes": {
+      "es": "Todos los tipos",
+      "en": "All types",
+      "eu": "Mota guztiak",
+      "la": "Omnes typi"
+    },
+    "results": {
+      "es": "resultados",
+      "en": "results",
+      "eu": "emaitzak",
+      "la": "eventus"
+    },
+    "result": {
+      "es": "resultado",
+      "en": "result",
+      "eu": "emaitza",
+      "la": "eventus"
+    },
+    "showConsiderations": {
+      "es": "Mostrar consideraciones",
+      "en": "Show considerations",
+      "eu": "Kontuan hartzeak erakutsi",
+      "la": "Ostendere considerationes"
+    },
+    "hideConsiderations": {
+      "es": "Ocultar consideraciones",
+      "en": "Hide considerations",
+      "eu": "Kontuan hartzeak ezkutatu",
+      "la": "Occultare considerationes"
+    },
+    "viewOptions": {
+      "es": "Opciones de vista",
+      "en": "View options",
+      "eu": "Ikusi aukerak",
+      "la": "Optiones visus"
+    },
+    "viewAction": {
+      "es": "Ver",
+      "en": "View",
+      "eu": "Ikusi",
+      "la": "Videre"
+    },
+    "searchAction": {
+      "es": "Buscar",
+      "en": "Search",
+      "eu": "Bilatu",
+      "la": "Quaerere"
+    },
+    "showAction": {
+      "es": "Mostrar",
+      "en": "Show",
+      "eu": "Erakutsi",
+      "la": "Ostendere"
+    },
+    "hideAction": {
+      "es": "Ocultar",
+      "en": "Hide",
+      "eu": "Ezkutatu",
+      "la": "Occultare"
+    },
+    "modelAction": {
+      "es": "Modelo",
+      "en": "Model",
+      "eu": "Eredua",
+      "la": "Exemplar"
+    }
+  },
+  "home": {
+    "whatIsUDL": {
+      "es": "¿Qué es el Diseño Universal para el Aprendizaje?",
+      "en": "What is Universal Design for Learning?",
+      "eu": "Zer da Ikaskuntzarako Diseinu Unibertsala?",
+      "la": "Quid est Designatio Universalis pro Discendo?"
+    },
+    "udlDescription": {
+      "es": "El Diseño Universal para el Aprendizaje (UDL) es un marco educativo basado en la investigación que guía el desarrollo de entornos de aprendizaje flexibles que pueden acomodar las diferencias individuales de los estudiantes.",
+      "en": "Universal Design for Learning (UDL) is a research-based educational framework that guides the development of flexible learning environments that can accommodate individual learner differences.",
+      "eu": "Ikaskuntzarako Diseinu Unibertsala (UDL) ikerketan oinarritutako hezkuntza esparrua da, ikasleen banakako ezberdintasunak onartu ditzaketen ikaskuntza ingurune malguak garatzen laguntzen duena.",
+      "la": "Designatio Universalis pro Discendo (UDL) est structura educativa in investigatione fundata quae dirigit evolutionem ambientium discendi flexibilium quae differentias individuales discentium accommodare possunt."
+    },
+    "udlPrinciples": {
+      "es": "El marco UDL se organiza en torno a tres principios fundamentales:",
+      "en": "The UDL framework is organized around three fundamental principles:",
+      "eu": "UDL esparrua hiru oinarrizko printzipioen inguruan antolatzen da:",
+      "la": "Structura UDL circa tria principia fundamentalia ordinatur:"
+    },
+    "engagementWhy": {
+      "es": "Compromiso: El \"por qué\" del aprendizaje",
+      "en": "Engagement: The \"why\" of learning",
+      "eu": "Inplikazioa: Ikaskuntzaren \"zergatia\"",
+      "la": "Implicatio: \"Cur\" discendi"
+    },
+    "representationWhat": {
+      "es": "Representación: El \"qué\" del aprendizaje",
+      "en": "Representation: The \"what\" of learning",
+      "eu": "Irudikapena: Ikaskuntzaren \"zer\"",
+      "la": "Repraesentatio: \"Quid\" discendi"
+    },
+    "actionExpressionHow": {
+      "es": "Acción y Expresión: El \"cómo\" del aprendizaje",
+      "en": "Action & Expression: The \"how\" of learning",
+      "eu": "Ekintza eta Adierazpena: Ikaskuntzaren \"nola\"",
+      "la": "Actio et Expressio: \"Quomodo\" discendi"
+    }
+  },
+  "messages": {
+    "noResults": {
+      "es": "No se encontraron resultados",
+      "en": "No results found",
+      "eu": "Ez da emaitzarik aurkitu",
+      "la": "Nulli eventus inventi"
+    },
+    "itemNotFound": {
+      "es": "Elemento no encontrado",
+      "en": "Item not found",
+      "eu": "Elementua ez da aurkitu",
+      "la": "Elementum non inventum"
+    }
+  }
+}

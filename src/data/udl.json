@@ -1,0 +1,200 @@
+{
+  "udl": {
+    "title": {
+      "es": "Pautas de Diseño Universal para el Aprendizaje, versión 3.0",
+      "en": "Universal Design for Learning Guidelines, version 3.0",
+      "eu": "Ikaskuntzarako Diseinu Unibertsalaren Jarraibideak, 3.0 bertsioa",
+      "la": "Normae Universalis Consilii ad Discendum, versio 3.0"
+    },
+    "author": "CAST",
+    "year": 2024,
+    "goal": {
+      "es": "Empoderar al aprendiz para que sea intencional y reflexivo, ingenioso y auténtico, estratégico y orientado a la acción.",
+      "en": "Empower the learner to be purposeful and reflective, resourceful and authentic, strategic and action-oriented.",
+      "eu": "Ikaslea ahalduntzea, nahita eta hausnartzaile, baliabidetsu eta benetako, estrategiko eta ekintzara bideratua izan dadin.",
+      "la": "Discentem roborare ut sit propositi conscius et reflexivus, sollers et authenticus, strategicus atque ad actionem directus."
+    },
+    "principles": [
+      {
+        "id": "engagement",
+        "name": {
+          "es": "Diseño de múltiples medios de compromiso",
+          "en": "Design Multiple Means of Engagement",
+          "eu": "Inplikazioa lortzeko bitarteko anitzen diseinua",
+          "la": "Consilium Multiplicium Modorum Participationis"
+        },
+        "guidelines": [
+          {
+            "id": "guideline-7",
+            "code": "7",
+            "row": "Access",
+            "name": {
+              "es": "Aceptación de intereses e identidades",
+              "en": "Welcoming Interests & Identities",
+              "eu": "Interesak eta identitateak aitortzea",
+              "la": "Acceptio Studiorum et Identitatum"
+            },
+            "considerations": [
+              {
+                "id": "7-1",
+                "code": "7.1",
+                "description": {
+                  "es": "Optimizar la elección y la autonomía.",
+                  "en": "Optimize choice and autonomy.",
+                  "eu": "Aukera eta autonomia optimizatzea.",
+                  "la": "Electionem et autonomiam optimare."
+                }
+              },
+              {
+                "id": "7-2",
+                "code": "7.2",
+                "description": {
+                  "es": "Optimizar la relevancia, el valor y la autenticidad.",
+                  "en": "Optimize relevance, value, and authenticity.",
+                  "eu": "Garrantzia, balioa eta benetakotasuna optimizatzea.",
+                  "la": "Momentum, valorem et authenticitatem augere."
+                }
+              },
+              {
+                "id": "7-3",
+                "code": "7.3",
+                "description": {
+                  "es": "Promover la alegría y el juego.",
+                  "en": "Nurture joy and play.",
+                  "eu": "Poza eta jolasa sustatzea.",
+                  "la": "Gaudium et ludum fovere."
+                }
+              },
+              {
+                "id": "7-4",
+                "code": "7.4",
+                "description": {
+                  "es": "Abordar sesgos, amenazas y distracciones.",
+                  "en": "Address biases, threats, and distractions.",
+                  "eu": "Aurreiritziak, mehatxuak eta distrazioak lantzea.",
+                  "la": "Praeiudicia, minas et distractiones tractare."
+                }
+              }
+            ]
+          },
+          {
+            "id": "guideline-8",
+            "code": "8",
+            "row": "Support",
+            "name": {
+              "es": "Mantener el esfuerzo y la constancia",
+              "en": "Sustaining Effort & Persistence",
+              "eu": "Ahalegina eta iraunkortasuna mantentzea",
+              "la": "Conservare Conatum et Perseverantiam"
+            },
+            "considerations": [
+              {
+                "id": "8-1",
+                "code": "8.1",
+                "description": {
+                  "es": "Aclarar el significado y el propósito de los objetivos.",
+                  "en": "Clarify the meaning and purpose of goals.",
+                  "eu": "Helburuen esanahia eta xedea argitzea.",
+                  "la": "Significationem et finem propositorum declarare."
+                }
+              },
+              {
+                "id": "8-2",
+                "code": "8.2",
+                "description": {
+                  "es": "Optimizar los desafíos y el apoyo.",
+                  "en": "Optimize challenge and support.",
+                  "eu": "Erronkak eta laguntza optimizatzea.",
+                  "la": "Provocationes et auxilium optimare."
+                }
+              },
+              {
+                "id": "8-3",
+                "code": "8.3",
+                "description": {
+                  "es": "Fomentar la colaboración, la interdependencia y el aprendizaje colectivo.",
+                  "en": "Foster collaboration, interdependence, and collective learning.",
+                  "eu": "Elkarlana, elkarren mendekotasuna eta ikaskuntza kolektiboa sustatzea.",
+                  "la": "Collaborationem, mutuam dependentiam et doctrinam collectivam promovere."
+                }
+              },
+              {
+                "id": "8-4",
+                "code": "8.4",
+                "description": {
+                  "es": "Fomentar la pertenencia y la comunidad.",
+                  "en": "Foster belonging and community.",
+                  "eu": "Kidetasuna eta komunitatea sustatzea.",
+                  "la": "Sensum adhaesionis et communitatem fovere."
+                }
+              },
+              {
+                "id": "8-5",
+                "code": "8.5",
+                "description": {
+                  "es": "Ofrecer retroalimentación orientada a la acción.",
+                  "en": "Offer action-oriented feedback.",
+                  "eu": "Ekintzara bideratutako feedback-a ematea.",
+                  "la": "Responsum ad actionem directum praebere."
+                }
+              }
+            ]
+          },
+          {
+            "id": "guideline-9",
+            "code": "9",
+            "row": "Executive Function",
+            "name": {
+              "es": "Capacidad emocional",
+              "en": "Emotional Capacity",
+              "eu": "Gaitasun emozionala",
+              "la": "Capacitas Emotionalis"
+            },
+            "considerations": [
+              {
+                "id": "9-1",
+                "code": "9.1",
+                "description": {
+                  "es": "Reconocer expectativas, creencias y motivaciones.",
+                  "en": "Recognize expectations, beliefs, and motivations.",
+                  "eu": "Itxaropenak, sinesmenak eta motibazioak aitortzea.",
+                  "la": "Exspectationes, opiniones et motivationes agnoscere."
+                }
+              },
+              {
+                "id": "9-2",
+                "code": "9.2",
+                "description": {
+                  "es": "Desarrollar la conciencia de uno mismo y de los demás.",
+                  "en": "Develop awareness of self and others.",
+                  "eu": "Norbere eta besteen kontzientzia garatzea.",
+                  "la": "Conscientiam sui et aliorum evolvere."
+                }
+              },
+              {
+                "id": "9-3",
+                "code": "9.3",
+                "description": {
+                  "es": "Promover la reflexión individual y colectiva.",
+                  "en": "Promote individual and collective reflection.",
+                  "eu": "Hausnarketa indibiduala eta kolektiboa sustatzea.",
+                  "la": "Reflectionem individualem et collectivam promovere."
+                }
+              },
+              {
+                "id": "9-4",
+                "code": "9.4",
+                "description": {
+                  "es": "Fomentar la empatía y las prácticas restaurativas.",
+                  "en": "Cultivate empathy and restorative practices.",
+                  "eu": "Enpatia eta praktika sendatzaileak sustatzea.",
+                  "la": "Empathiam et usus restaurativos colere."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

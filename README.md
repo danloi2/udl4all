@@ -1,9 +1,9 @@
+# 🧠 UDL Browser
+
 ![UDL Banner](https://img.shields.io/badge/UDL-3.0-blue?style=for-the-badge)
 ![Svelte](https://img.shields.io/badge/Svelte-4.0-ff3e00?style=for-the-badge&logo=svelte)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.0-38b2ac?style=for-the-badge&logo=tailwind-css)
-
-# 🧠 UDL Browser
 
 An interactive and professional explorer designed to facilitate the application of **Universal Design for Learning (UDL)** in educational environments. This tool allows navigating through the principles, guidelines, and checkpoints of the UDL 3.0 model, offering practical examples and design options for teachers.
 

@@ -9,6 +9,8 @@ import type {
   Consideration,
   Example,
   Activity,
+  Adaptation,
+  MultilingualText,
 } from '../types';
 import udlJson from '../data/json/udl-core.json';
 import {
@@ -119,7 +121,15 @@ export const udlIndex = derived(udlData, ($udlData) => {
             la: activityData.subject,
           },
       title: activityData.title,
-      duaAdaptations: activityData.duaAdaptations,
+      duaAdaptations: Object.fromEntries(
+        Object.entries(activityData.duaAdaptations as Record<string, any>).map(([code, value]) => {
+          if (typeof value === 'object' && 'text' in value) {
+            return [code, value as Adaptation];
+          }
+          // Support legacy format for backward compatibility
+          return [code, { text: value as MultilingualText, webTools: [] }];
+        })
+      ),
     };
 
     index.activities.set(activity.id, activity);
@@ -127,48 +137,46 @@ export const udlIndex = derived(udlData, ($udlData) => {
       index.activities.set(activity.code, activity);
     }
 
-    Object.entries(activityData.duaAdaptations as Record<string, any>).forEach(
-      ([code, adaptationText]) => {
-        let considerationId = null;
-        let considerationColor = '#666';
-        for (const [id, cons] of index.considerations) {
-          if (cons.code === code) {
-            considerationId = id;
-            considerationColor = cons.color || '#666';
-            break;
-          }
-        }
-
-        if (considerationId) {
-          const uniqueId = `${activityData.code}-${considerationId}`;
-          const example: Example = {
-            id: uniqueId,
-            code: activityData.code,
-            color: considerationColor,
-            educationalLevel: meta.level
-              ? meta.level.name
-              : {
-                  es: activityData.gradeLevel,
-                  en: activityData.gradeLevel,
-                  eu: activityData.gradeLevel,
-                  la: activityData.gradeLevel,
-                },
-            curricularArea: meta.area
-              ? meta.area.name
-              : {
-                  es: activityData.subject,
-                  en: activityData.subject,
-                  eu: activityData.subject,
-                  la: activityData.subject,
-                },
-            activity: activityData.title,
-            designOptions: adaptationText,
-            webTools: [],
-          };
-          index.examples.set(example.id, example);
+    Object.entries(activity.duaAdaptations).forEach(([code, adaptation]) => {
+      let considerationId = null;
+      let considerationColor = '#666';
+      for (const [id, cons] of index.considerations) {
+        if (cons.code === code) {
+          considerationId = id;
+          considerationColor = cons.color || '#666';
+          break;
         }
       }
-    );
+
+      if (considerationId) {
+        const uniqueId = `${activityData.code}-${considerationId}`;
+        const example: Example = {
+          id: uniqueId,
+          code: activityData.code,
+          color: considerationColor,
+          educationalLevel: meta.level
+            ? meta.level.name
+            : {
+                es: activityData.gradeLevel,
+                en: activityData.gradeLevel,
+                eu: activityData.gradeLevel,
+                la: activityData.gradeLevel,
+              },
+          curricularArea: meta.area
+            ? meta.area.name
+            : {
+                es: activityData.subject,
+                en: activityData.subject,
+                eu: activityData.subject,
+                la: activityData.subject,
+              },
+          activity: activityData.title,
+          designOptions: adaptation.text,
+          webTools: adaptation.webTools || [],
+        };
+        index.examples.set(example.id, example);
+      }
+    });
   });
 
   return index;

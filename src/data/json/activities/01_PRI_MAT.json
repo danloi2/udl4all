@@ -11,30 +11,50 @@
   },
   "duaAdaptations": {
     "7.1": {
-      "es": [
-        "Permitir que el estudiante elija el contexto del problema, por ejemplo calcular gastos de un videojuego, una receta de cocina o un presupuesto de viaje."
-      ],
-      "eu": [
-        "Ikasleari aukera ematea arazoaren testuingurua aukeratzeko, adibidez, bideojoko baten gastuak, errezeta bat edo bidaia baten aurrekontua kalkulatzea."
-      ],
-      "en": [
-        "Allow the student to choose the problem context, e.g., calculating expenses for a video game, a recipe, or a travel budget."
-      ],
-      "la": [
-        "Permitte discipulo contextum quaestionis eligere, exempli gratia expensas ludi electronici, recipe vel itineris computare."
+      "text": {
+        "es": [
+          "Permitir que el estudiante elija el contexto del problema, por ejemplo calcular gastos de un videojuego, una receta de cocina o un presupuesto de viaje."
+        ],
+        "eu": [
+          "Ikasleari aukera ematea arazoaren testuingurua aukeratzeko, adibidez, bideojoko baten gastuak, errezeta bat edo bidaia baten aurrekontua kalkulatzea."
+        ],
+        "en": [
+          "Allow the student to choose the problem context, e.g., calculating expenses for a video game, a recipe, or a travel budget."
+        ],
+        "la": [
+          "Permitte discipulo contextum quaestionis eligere, exempli gratia expensas ludi electronici, recipe vel itineris computare."
+        ]
+      },
+      "webTools": [
+        {
+          "name": "Geogebra",
+          "url": "https://www.geogebra.org",
+          "logo": "https://www.geogebra.org/favicon.ico"
+        }
       ]
     },
     "7.2": {
-      "es": "Utilizar recibos reales de supermercado o facturas de servicios del hogar para realizar los cálculos.",
-      "eu": "Supermerkatuetako erosketa-txartel edo etxeko zerbitzuen fakturak erabiltzea kalkuluak egiteko.",
-      "en": "Use real supermarket receipts or household bills to perform the calculations.",
-      "la": "Utere receptis realibus vel cautionibus domesticis ad computanda effectuanda."
+      "text": {
+        "es": "Utilizar recibos reales de supermercado o facturas de servicios del hogar para realizar los cálculos.",
+        "eu": "Supermerkatuetako erosketa-txartel edo etxeko zerbitzuen fakturak erabiltzea kalkuluak egiteko.",
+        "en": "Use real supermarket receipts or household bills to perform the calculations.",
+        "la": "Utere receptis realibus vel cautionibus domesticis ad computanda effectuanda."
+      }
     },
     "7.3": {
-      "es": "Integrar juegos de rol como 'la tiendita' o aplicaciones de gamificación como ClassCraft para practicar las operaciones.",
-      "eu": "'Denda txikia' bezalako rol-jokoak edo ClassCraft bezalako gamifikazio-aplikazioak integratzea eragiketak praktikatzeko.",
-      "en": "Integrate role-playing games like 'the little shop' or gamification apps like ClassCraft to practice operations.",
-      "la": "Integri ludi partes agendi ut 'parva taberna' vel applicationes ludificationis ut ClassCraft ad exercitationem operationum."
+      "text": {
+        "es": "Integrar juegos de rol como 'la tiendita' o aplicaciones de gamificación como ClassCraft para practicar las operaciones.",
+        "eu": "'Denda txikia' bezalako rol-jokoak edo ClassCraft bezalako gamifikazio-aplikazioak integratzea eragiketak praktikatzeko.",
+        "en": "Integrate role-playing games like 'the little shop' or gamification apps like ClassCraft to practice operations.",
+        "la": "Integri ludi partes agendi ut 'parva taberna' vel applicationes ludificationis ut ClassCraft ad exercitationem operationum."
+      },
+      "webTools": [
+        {
+          "name": "ClassCraft",
+          "url": "https://www.classcraft.com",
+          "logo": "https://www.classcraft.com/favicon.ico"
+        }
+      ]
     },
     "7.4": {
       "es": "Crear un clima donde el error sea una oportunidad para analizar la lógica matemática sin temor a la sanción.",

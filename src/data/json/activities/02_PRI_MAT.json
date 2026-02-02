@@ -11,220 +11,306 @@
   },
   "duaAdaptations": {
     "7.1": {
-      "es": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción).",
-      "eu": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción).",
-      "en": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción).",
-      "la": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción)."
+      "text": {
+        "es": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción).",
+        "eu": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción).",
+        "en": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción).",
+        "la": "Permitir que los estudiantes elijan qué objetos medir (sus juguetes favoritos, el patio de recreo o materiales del rincón de construcción)."
+      },
+      "webTools": [
+        {
+          "name": "Measure App",
+          "url": "https://www.google.com/search?q=measure+app",
+          "logo": "https://www.gstatic.com/images/branding/product/1x/measure_48dp.png"
+        }
+      ]
     },
     "7.2": {
-      "es": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa.",
-      "eu": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa.",
-      "en": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa.",
-      "la": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa."
+      "text": {
+        "es": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa.",
+        "eu": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa.",
+        "en": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa.",
+        "la": "Plantear un reto real, como medir el espacio disponible en el aula para ver si cabe una nueva estantería o mesa."
+      }
     },
     "7.3": {
-      "es": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg.",
-      "eu": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg.",
-      "en": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg.",
-      "la": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg."
+      "text": {
+        "es": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg.",
+        "eu": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg.",
+        "en": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg.",
+        "la": "Organizar una 'búsqueda del tesoro' donde deban encontrar objetos que midan exactamente 10 cm o pesen menos de 1 kg."
+      }
     },
     "7.4": {
-      "es": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje.",
-      "eu": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje.",
-      "en": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje.",
-      "la": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje."
+      "text": {
+        "es": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje.",
+        "eu": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje.",
+        "en": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje.",
+        "la": "Crear rutinas predecibles, como una estación de medición fija, y asegurar un clima donde el error al leer la escala sea visto como parte del proceso de aprendizaje."
+      }
     },
     "8.1": {
-      "es": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte.",
-      "eu": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte.",
-      "en": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte.",
-      "la": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte."
+      "text": {
+        "es": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte.",
+        "eu": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte.",
+        "en": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte.",
+        "la": "Explicar que saber medir nos ayuda a ser precisos en tareas como la cocina, la carpintería o el arte."
+      }
     },
     "8.2": {
-      "es": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos).",
-      "eu": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos).",
-      "en": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos).",
-      "la": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos)."
+      "text": {
+        "es": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos).",
+        "eu": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos).",
+        "en": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos).",
+        "la": "Ofrecer objetos de medición con diferentes grados de dificultad (desde formas rectas simples hasta perímetros curvos complejos)."
+      }
     },
     "8.3": {
-      "es": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles.",
-      "eu": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles.",
-      "en": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles.",
-      "la": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles."
+      "text": {
+        "es": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles.",
+        "eu": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles.",
+        "en": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles.",
+        "la": "Formar parejas donde uno sostenga la cinta métrica y el otro registre el dato, intercambiando roles."
+      }
     },
     "8.4": {
-      "es": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado.",
-      "eu": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado.",
-      "en": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado.",
-      "la": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado."
+      "text": {
+        "es": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado.",
+        "eu": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado.",
+        "en": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado.",
+        "la": "Medir objetos traídos de casa que representen las diferentes culturas e identidades del alumnado."
+      }
     },
     "8.5": {
-      "es": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'.",
-      "eu": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'.",
-      "en": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'.",
-      "la": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'."
+      "text": {
+        "es": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'.",
+        "eu": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'.",
+        "en": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'.",
+        "la": "Dar feedback específico como: 'Has alineado muy bien el cero de la regla con el borde del objeto'."
+      }
     },
     "9.1": {
-      "es": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'.",
-      "eu": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'.",
-      "en": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'.",
-      "la": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'."
+      "text": {
+        "es": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'.",
+        "eu": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'.",
+        "en": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'.",
+        "la": "Ayudar a los alumnos a establecer metas personales, como 'hoy mediré tres objetos sin ayuda'."
+      }
     },
     "9.2": {
-      "es": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular.",
-      "eu": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular.",
-      "en": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular.",
-      "la": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular."
+      "text": {
+        "es": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular.",
+        "eu": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular.",
+        "en": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular.",
+        "la": "Proporcionar estrategias para gestionar la frustración cuando la cinta métrica se enrolla o es difícil de manipular."
+      }
     },
     "9.3": {
-      "es": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil.",
-      "eu": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil.",
-      "en": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil.",
-      "la": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil."
+      "text": {
+        "es": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil.",
+        "eu": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil.",
+        "en": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil.",
+        "la": "Usar una 'diana de evaluación' para que reflexionen sobre qué técnica de medición les resultó más fácil."
+      }
     },
     "9.4": {
-      "es": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos.",
-      "eu": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos.",
-      "en": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos.",
-      "la": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos."
+      "text": {
+        "es": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos.",
+        "eu": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos.",
+        "en": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos.",
+        "la": "Discutir cómo las mediciones precisas son fundamentales para crear rampas y accesos inclusivos para todos."
+      }
     },
     "1.1": {
-      "es": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste.",
-      "eu": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste.",
-      "en": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste.",
-      "la": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste."
+      "text": {
+        "es": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste.",
+        "eu": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste.",
+        "en": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste.",
+        "la": "Usar aplicaciones digitales donde se pueda aumentar el tamaño de los números de la escala o cambiar el contraste."
+      },
+      "webTools": [
+        {
+          "name": "AR Ruler",
+          "url": "https://play.google.com/store/apps/details?id=com.grymala.aruler",
+          "logo": "https://lh3.googleusercontent.com/8-v6-r0-7_y5_u-O_R_J5z-u_r_Y-Y_U_L_F_I_N_G_E_R_P_R_I_N_T_48"
+        }
+      ]
     },
     "1.2": {
-      "es": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales.",
-      "eu": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales.",
-      "en": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales.",
-      "la": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales."
+      "text": {
+        "es": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales.",
+        "eu": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales.",
+        "en": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales.",
+        "la": "Ofrecer alternativas táctiles, como reglas con marcas en relieve o cintas métricas parlantes para alumnos con dificultades visuales."
+      }
     },
     "1.3": {
-      "es": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos).",
-      "eu": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos).",
-      "en": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos).",
-      "la": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos)."
+      "text": {
+        "es": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos).",
+        "eu": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos).",
+        "en": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos).",
+        "la": "Incluir ejemplos de cómo diferentes culturas han medido históricamente (usando palmos, pies o sistemas no métricos antiguos)."
+      }
     },
     "2.1": {
-      "es": "Pre-enseñar términos como 'longitud', 'masa', 'centímetro' o 'gramo' usando glosarios visuales o pictogramas.",
-      "eu": "Pre-enseñar términos como 'longitud', 'masa', 'centímetro' o 'gramo' usando glosarios visuales o pictogramas.",
-      "en": "Pre-teach terms like 'length', 'mass', 'centimeter' or 'gram' using visual glossaries or pictograms.",
-      "la": "Pre-enseñar términos como 'longitud', 'masa', 'centímetro' o 'gramo' usando glosarios visuales o pictogramas."
+      "text": {
+        "es": "Pre-enseñar términos como 'longitud', 'masa', 'centímetro' o 'gramo' usando glosarios visuales o pictogramas.",
+        "eu": "Pre-enseñar términos como 'longitud', 'masa', 'centímetro' o 'gramo' usando glosarios visuales o pictogramas.",
+        "en": "Pre-teach terms like 'length', 'mass', 'centimeter' or 'gram' using visual glossaries or pictograms.",
+        "la": "Pre-enseñar términos como 'longitud', 'masa', 'centímetro' o 'gramo' usando glosarios visuales o pictogramas."
+      }
     },
     "2.2": {
-      "es": "Usar software de texto a voz para leer las instrucciones de los problemas de medición.",
-      "eu": "Usar software de texto a voz para leer las instrucciones de los problemas de medición.",
-      "en": "Usar software de texto a voz para leer las instrucciones de los problemas de medición.",
-      "la": "Usar software de texto a voz para leer las instrucciones de los problemas de medición."
+      "text": {
+        "es": "Usar software de texto a voz para leer las instrucciones de los problemas de medición.",
+        "eu": "Usar software de texto a voz para leer las instrucciones de los problemas de medición.",
+        "en": "Usar software de texto a voz para leer las instrucciones de los problemas de medición.",
+        "la": "Usar software de texto a voz para leer las instrucciones de los problemas de medición."
+      }
     },
     "2.3": {
-      "es": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero.",
-      "eu": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero.",
-      "en": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero.",
-      "la": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero."
+      "text": {
+        "es": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero.",
+        "eu": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero.",
+        "en": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero.",
+        "la": "Incluir los términos de las unidades de medida en las lenguas maternas del alumnado extranjero."
+      }
     },
     "2.4": {
-      "es": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos.",
-      "eu": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos.",
-      "en": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos.",
-      "la": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos."
+      "text": {
+        "es": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos.",
+        "eu": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos.",
+        "en": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos.",
+        "la": "Evitar ejemplos que asocien 'medir y construir' solo con figuras masculinas en los materiales didácticos."
+      }
     },
     "2.5": {
-      "es": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente.",
-      "eu": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente.",
-      "en": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente.",
-      "la": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente."
+      "text": {
+        "es": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente.",
+        "eu": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente.",
+        "en": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente.",
+        "la": "Mostrar un vídeo tutorial o una animación sobre cómo colocar correctamente una balanza antes de usarla físicamente."
+      }
     },
     "3.1": {
-      "es": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado.",
-      "eu": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado.",
-      "en": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado.",
-      "la": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado."
+      "text": {
+        "es": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado.",
+        "eu": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado.",
+        "en": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado.",
+        "la": "Recordar experiencias cotidianas como cuando miden su altura en el médico o pesan fruta en el supermercado."
+      }
     },
     "3.2": {
-      "es": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra.",
-      "eu": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra.",
-      "en": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra.",
-      "la": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra."
+      "text": {
+        "es": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra.",
+        "eu": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra.",
+        "en": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra.",
+        "la": "Usar colores para resaltar la marca del cero en la regla o las líneas de los medios litros en una jarra."
+      }
     },
     "3.3": {
-      "es": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida.",
-      "eu": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida.",
-      "en": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida.",
-      "la": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida."
+      "text": {
+        "es": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida.",
+        "eu": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida.",
+        "en": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida.",
+        "la": "Permitir que los alumnos exploren la medición mediante el uso de cuerdas (cinestésico) antes de pasar a la regla rígida."
+      }
     },
     "3.4": {
-      "es": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala.",
-      "eu": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala.",
-      "en": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala.",
-      "la": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala."
+      "text": {
+        "es": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala.",
+        "eu": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala.",
+        "en": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala.",
+        "la": "Aplicar las medidas tomadas en el aula para dibujar un plano del patio a escala."
+      }
     },
     "4.1": {
-      "es": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta.",
-      "eu": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta.",
-      "en": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta.",
-      "la": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta."
+      "text": {
+        "es": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta.",
+        "eu": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta.",
+        "en": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta.",
+        "la": "Permitir que los estudiantes indiquen la medida señalando un número en una tabla, usando comandos de voz o escribiendo en una tableta."
+      }
     },
     "4.2": {
-      "es": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario.",
-      "eu": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario.",
-      "en": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario.",
-      "la": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario."
+      "text": {
+        "es": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario.",
+        "eu": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario.",
+        "en": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario.",
+        "la": "Garantizar que los instrumentos de medición (balanzas digitales, reglas) sean compatibles con pulsadores si es necesario."
+      }
     },
     "5.1": {
-      "es": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico.",
-      "eu": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico.",
-      "en": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico.",
-      "la": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico."
+      "text": {
+        "es": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico.",
+        "eu": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico.",
+        "en": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico.",
+        "la": "Dejar que los alumnos informen sus hallazgos mediante un dibujo técnico, una grabación de audio o un mural fotográfico."
+      }
     },
     "5.2": {
-      "es": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire).",
-      "eu": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire).",
-      "en": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire).",
-      "la": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire)."
+      "text": {
+        "es": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire).",
+        "eu": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire).",
+        "en": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire).",
+        "la": "Ofrecer desde reglas convencionales hasta medidores láser, apps de realidad aumentada o materiales manipulativos (regletas de Cuisenaire)."
+      }
     },
     "5.3": {
-      "es": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía.",
-      "eu": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía.",
-      "en": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía.",
-      "la": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía."
+      "text": {
+        "es": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía.",
+        "eu": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía.",
+        "en": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía.",
+        "la": "Proporcionar una guía de pasos ('1. Pon el borde en el cero, 2. Estira la cinta...') que se retire a medida que ganen autonomía."
+      }
     },
     "5.4": {
-      "es": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión.",
-      "eu": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión.",
-      "en": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión.",
-      "la": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión."
+      "text": {
+        "es": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión.",
+        "eu": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión.",
+        "en": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión.",
+        "la": "Valorar por igual un esquema hecho a mano alzada que uno diseñado por ordenador, siempre que cumpla el objetivo de precisión."
+      }
     },
     "6.1": {
-      "es": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico.",
-      "eu": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico.",
-      "en": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico.",
-      "la": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico."
+      "text": {
+        "es": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico.",
+        "eu": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico.",
+        "en": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico.",
+        "la": "Pedir que estimen cuánto mide un objeto antes de realizar la medición real para desarrollar el pensamiento estratégico."
+      }
     },
     "6.2": {
-      "es": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?).",
-      "eu": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?).",
-      "en": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?).",
-      "la": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?)."
+      "text": {
+        "es": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?).",
+        "eu": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?).",
+        "en": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?).",
+        "la": "Usar listas de comprobación de materiales necesarios antes de salir al entorno a medir (¿llevas la regla?, ¿el cuaderno?, ¿el lápiz?)."
+      }
     },
     "6.3": {
-      "es": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad.",
-      "eu": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad.",
-      "en": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad.",
-      "la": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad."
+      "text": {
+        "es": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad.",
+        "eu": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad.",
+        "en": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad.",
+        "la": "Proporcionar plantillas organizadas en tablas para registrar las medidas recogidas durante la actividad."
+      }
     },
     "6.4": {
-      "es": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica.",
-      "eu": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica.",
-      "en": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica.",
-      "la": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica."
+      "text": {
+        "es": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica.",
+        "eu": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica.",
+        "en": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica.",
+        "la": "Usar rúbricas sencillas donde el alumno marque si ha conseguido medir con precisión o si necesita repasar la técnica."
+      }
     },
     "6.5": {
-      "es": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos.",
-      "eu": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos.",
-      "en": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos.",
-      "la": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos."
+      "text": {
+        "es": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos.",
+        "eu": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos.",
+        "en": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos.",
+        "la": "Revisar que las actividades de medición en grupo no dejen fuera a alumnos con movilidad reducida, eligiendo entornos accesibles para todos."
+      }
     }
   }
 }

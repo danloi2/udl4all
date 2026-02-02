@@ -1,6 +1,6 @@
 <script lang="ts">
   import { link } from 'svelte-spa-router';
-  import { language, t } from '../stores/language';
+  import { language, t, tl } from '../stores/language';
   import { ui } from '../stores/ui';
   import { udlData } from '../stores/udlData';
   import { 
@@ -250,9 +250,30 @@
             </div>
           </div>
           
-          <p class="font-bold mb-3" style="color: {principle?.color || '#111827'}">
+          <p class="font-bold {(!result.item?.designOptions && result.type === 'example') ? '' : 'mb-3'}" style="color: {principle?.color || '#111827'}">
             {result.type === 'example' ? t(result.item.activity, currentLang) : getDisplayText(result)}
           </p>
+
+          {#if result.type === 'example' && result.item.designOptions}
+            <div class="mb-3 text-sm text-gray-600 line-clamp-2">
+              {#each tl(result.item.designOptions, currentLang) as paragraph}
+                <span>{paragraph} </span>
+              {/each}
+            </div>
+          {/if}
+
+          {#if result.type === 'example' && result.item.webTools && result.item.webTools.length > 0}
+            <div class="flex flex-wrap gap-2 mb-3">
+              {#each result.item.webTools as tool}
+                <div class="flex items-center gap-1.5 px-2 py-1 bg-gray-50 rounded-lg border border-gray-100 transition-colors">
+                  {#if tool.logo}
+                    <img src={tool.logo} alt="" class="w-3.5 h-3.5 object-contain" on:error={(e) => { if (e.currentTarget instanceof HTMLImageElement) e.currentTarget.style.display = 'none'; }} />
+                  {/if}
+                  <span class="text-[10px] font-bold text-gray-700">{tool.name}</span>
+                </div>
+              {/each}
+            </div>
+          {/if}
           
           <div class="flex items-center justify-between mt-3">
             {#if principle?.color}

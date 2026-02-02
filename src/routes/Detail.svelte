@@ -193,7 +193,7 @@
                      </h2>
                      
                      <div class="grid grid-cols-1 gap-6">
-                         {#each sortAdaptations(activity.duaAdaptations) as [code, text]}
+                         {#each sortAdaptations(activity.duaAdaptations) as [code, adaptation]}
                            {@const cons = getConsiderationByCode(code)}
                            {@const p = cons ? getPrincipleForConsideration(cons.id, $udlData) : null}
                            
@@ -214,7 +214,7 @@
                                        </h3>
                                    {/if}
                                    <div class="space-y-4">
-                                       {#each tl(text, currentLang) as paragraph}
+                                       {#each tl(adaptation.text, currentLang) as paragraph}
                                            <div class="flex gap-3 items-start">
                                                <div class="mt-1 shrink-0">
                                                    <Lightbulb class="w-5 h-5" style="color: {p?.color || '#ccc'}" />
@@ -225,6 +225,22 @@
                                            </div>
                                        {/each}
                                    </div>
+
+                                   {#if adaptation.webTools && adaptation.webTools.length > 0}
+                                       <div class="mt-6 pt-4 border-t border-gray-50 flex flex-wrap gap-3">
+                                           {#each adaptation.webTools as tool}
+                                               <a href={tool.url} target="_blank" rel="noopener noreferrer" 
+                                                  class="flex items-center gap-3 px-3 py-2 bg-gray-50 hover:bg-white border border-gray-100 hover:border-blue-300 rounded-xl transition-all group shadow-sm hover:shadow-md">
+                                                   {#if tool.logo}
+                                                       <img src={tool.logo} alt="" class="w-5 h-5 object-contain" />
+                                                   {/if}
+                                                   <span class="text-sm font-bold text-gray-700 group-hover:text-blue-600">
+                                                       {tool.name}
+                                                   </span>
+                                               </a>
+                                           {/each}
+                                       </div>
+                                   {/if}
                                </div>
                            </div>
                          {/each}
@@ -325,10 +341,30 @@
                      <div class="relative z-10">
                       <h3 class="text-xs font-black uppercase tracking-widest text-white/60 mb-4">{$ui.designOptions}</h3>
                       <div class="prose prose-invert prose-lg max-w-none">
-                        <p class="text-white font-bold leading-relaxed">
-                          {t(example.designOptions, currentLang)}
-                        </p>
+                        <div class="space-y-4">
+                          {#each tl(example.designOptions, currentLang) as paragraph}
+                            <p class="text-white font-bold leading-relaxed">
+                              {paragraph}
+                            </p>
+                          {/each}
+                        </div>
                       </div>
+
+                      {#if example.webTools && example.webTools.length > 0}
+                        <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap gap-3">
+                          {#each example.webTools as tool}
+                            <a href={tool.url} target="_blank" rel="noopener noreferrer" 
+                               class="flex items-center gap-3 px-4 py-2.5 bg-white/10 hover:bg-white border border-white/20 hover:border-white rounded-xl transition-all group backdrop-blur-sm">
+                              {#if tool.logo}
+                                <img src={tool.logo} alt="" class="w-5 h-5 object-contain group-hover:invert-0 transition-all opacity-80 group-hover:opacity-100" />
+                              {/if}
+                              <span class="text-sm font-bold text-white group-hover:text-gray-900 transition-colors">
+                                {tool.name}
+                              </span>
+                            </a>
+                          {/each}
+                        </div>
+                      {/if}
                      </div>
                   </div>
                 </div>
@@ -471,10 +507,33 @@
                             </div>
                           </div>
                           <div class="p-6 relative z-10">
-                            <div class="text-gray-700 leading-relaxed font-medium pointer-events-none">
+                            <div class="text-gray-700 leading-relaxed font-medium pointer-events-none mb-4">
                               <div class="mb-2"><span class="font-bold">{$ui.activity}:</span> {t(example.activity, currentLang)}</div>
-                              <div><span class="font-bold">{$ui.designOptions}:</span> {t(example.designOptions, currentLang)}</div>
+                              <div>
+                                <span class="font-bold">{$ui.designOptions}:</span>
+                                <div class="mt-1 space-y-2">
+                                  {#each tl(example.designOptions, currentLang) as paragraph}
+                                    <p>{paragraph}</p>
+                                  {/each}
+                                </div>
+                              </div>
                             </div>
+
+                            {#if example.webTools && example.webTools.length > 0}
+                              <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50 relative z-20">
+                                {#each example.webTools as tool}
+                                  <a href={tool.url} target="_blank" rel="noopener noreferrer" 
+                                     class="flex items-center gap-2 px-2 py-1 bg-white hover:bg-blue-50 border border-gray-100 hover:border-blue-200 rounded-lg transition-all group shadow-sm">
+                                    {#if tool.logo}
+                                      <img src={tool.logo} alt="" class="w-4 h-4 object-contain" />
+                                    {/if}
+                                    <span class="text-[11px] font-bold text-gray-600 group-hover:text-blue-600">
+                                      {tool.name}
+                                    </span>
+                                  </a>
+                                {/each}
+                              </div>
+                            {/if}
                           </div>
                         </div>
                       {/each}

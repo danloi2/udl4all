@@ -93,13 +93,18 @@ export interface WebTool {
   logo: string;
 }
 
+export interface Adaptation {
+  text: MultilingualText;
+  webTools?: WebTool[];
+}
+
 export interface Activity {
   id: string; // "01_PRI_MAT"
   code: string; // "01-PRI-MAT"
   gradeLevel: MultilingualText; // Full name (resolvable)
   subject: MultilingualText; // Full name (resolvable)
   title: MultilingualText;
-  duaAdaptations: Record<string, MultilingualText>; // Keyed by consideration code (e.g. "7.1")
+  duaAdaptations: Record<string, Adaptation>; // Keyed by consideration code (e.g. "7.1")
 }
 
 export interface Example {

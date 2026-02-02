@@ -25,6 +25,7 @@ Full support for 4 simultaneous languages, allowing language switching on the fl
 - **Network Visualization**: Clear representation of Affective, Recognition, and Strategic networks.
 - **Professional Hierarchy**: Fluid navigation from Principles to specific Considerations.
 - **Activity Bank**: Integration of real-world examples based on curricular activities (Math, etc.).
+- **Interactive Web Tools**: Support for external tools (GeoGebra, ClassCraft, etc.) integrated into UDL adaptations, including links and logos.
 
 ### 🖨️ High-Density PDF Optimization
 
@@ -96,13 +97,11 @@ Model and activity data are centralized for easy editing:
 The organization of principles, guidelines, and considerations follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.  
 All textual content and examples are original, and the visual style has been adapted.
 
---- 
+---
 
 ## 📄 License
 
 This project is available under the MIT license. Feel free to use and adapt it for your educational needs.
-
-
 
 ## 👥 Author
 

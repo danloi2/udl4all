@@ -91,15 +91,22 @@ Model and activity data are centralized for easy editing:
 
 ---
 
+## Inspiration
+
+The organization of principles, guidelines, and considerations follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.  
+All textual content and examples are original, and the visual style has been adapted.
+
+--- 
+
 ## 📄 License
 
 This project is available under the MIT license. Feel free to use and adapt it for your educational needs.
 
----
+
 
 ## 👥 Author
 
-**Developed by danloi2**
+**Developed by Daniel Losada**
 
 [![GitHub](https://img.shields.io/badge/GitHub-danloi2-181717?style=for-the-badge&logo=github)](https://github.com/danloi2)
 [![Researcher EHU](https://img.shields.io/badge/Researcher-EHU-blue?style=for-the-badge&logo=researchgate)](https://github.com/danloi2)

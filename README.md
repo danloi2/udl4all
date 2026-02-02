@@ -1,47 +1,109 @@
-# Svelte + TS + Vite  
+# 🧠 UDL Browser (Navegador DUA)
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+An interactive and professional explorer designed to facilitate the application of **Universal Design for Learning (UDL)** in educational environments. This tool allows navigating through the principles, guidelines, and checkpoints of the UDL 3.0 model, offering practical examples and design options for teachers.
 
-## Recommended IDE Setup
+![UDL Banner](https://img.shields.io/badge/UDL-3.0-blue?style=for-the-badge)
+![Svelte](https://img.shields.io/badge/Svelte-4.0-ff3e00?style=for-the-badge&logo=svelte)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-3.0-38b2ac?style=for-the-badge&logo=tailwind-css)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+---
 
-## Need an official Svelte framework?
+## ✨ Key Features
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### 🌍 Multilingual by Default
 
-## Technical considerations
+Full support for 4 simultaneous languages, allowing language switching on the fly without losing context:
 
-**Why use this over SvelteKit?**
+- **Spanish (es)**
+- **English (en)**
+- **Basque (eu)**
+- **Latin (la)**
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+### 📖 Complete Interactive Model
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+- **Network Visualization**: Clear representation of Affective, Recognition, and Strategic networks.
+- **Professional Hierarchy**: Fluid navigation from Principles to specific Considerations.
+- **Activity Bank**: Integration of real-world examples based on curricular activities (Math, etc.).
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+### 🖨️ High-Density PDF Optimization
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+Print system designed to generate professional documents:
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- **Landscape Model**: The complete model compressed into a single A4 sheet with minimal margins (3mm) and maximized scale (0.98).
+- **Detail Sheets**: Detailed documents that flow across multiple pages if necessary, featuring decorative icons and header protection.
 
-**Why include `.vscode/extensions.json`?**
+### 🏗️ Data-Driven Architecture
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- **Dynamic Loading**: Activities are automatically loaded from JSON files using `import.meta.glob`.
+- **Flexible Structure**: Support for multiple paragraphs and optional notes in translations.
 
-**Why enable `allowJs` in the TS template?**
+---
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+## 🚀 Technologies
 
-**Why is HMR not preserving my local component state?**
+This project is built with a modern stack focused on speed and user experience:
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [Aquí hay que poner algo](https://github.com/rixo/svelte-hmr#svelte-hmr).
+- **Framework**: [Svelte](https://svelte.dev/) (Vite)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Iconography**: [Lucide Svelte](https://lucide.dev/)
+- **Routing**: `svelte-spa-router`
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+---
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+## 🛠️ Installation and Development
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-user/udl-browser.git
+   cd udl-browser
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run in development mode**:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+
+```bash
+npm run build
 ```
+
+---
+
+## 📂 Data Organization
+
+Model and activity data are centralized for easy editing:
+
+- `src/data/json/activities/`: Folder for new activity examples (in JSON format).
+- `src/data/udl-core.json`: Main UDL model structure (Principles and Guidelines).
+- `src/stores/udlData.ts`: Indexing and search logic.
+
+---
+
+## 📄 License
+
+This project is available under the MIT license. Feel free to use and adapt it for your educational needs.
+
+---
+
+## 👥 Author
+
+**Developed by danloi2**
+
+[![GitHub](https://img.shields.io/badge/GitHub-danloi2-181717?style=for-the-badge&logo=github)](https://github.com/danloi2)
+[![Researcher EHU](https://img.shields.io/badge/Researcher-EHU-blue?style=for-the-badge&logo=researchgate)](https://github.com/danloi2)
+
+---
+
+_Developed with ❤️ for the educational community._

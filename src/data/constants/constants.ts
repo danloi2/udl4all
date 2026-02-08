@@ -1,6 +1,6 @@
 export const AREAS_INFANTIL = {
   CRECIMIENTO_ARMONIA: {
-    id: 'CRE',
+    id: 'ARM',
     name: {
       es: 'Crecimiento en Armonía',
       en: 'Growth in Harmony',
@@ -29,6 +29,15 @@ export const AREAS_INFANTIL = {
 } as const;
 
 export const NIVELES = {
+  INFANTIL: {
+    id: 'INF',
+    name: {
+      es: 'Educación Infantil',
+      en: 'Early Childhood Education',
+      eu: 'Haur Hezkuntza',
+      la: 'Educatio Infantilis',
+    },
+  },
   PRIMARIA: {
     id: 'PRI',
     name: {
@@ -54,6 +63,51 @@ export const NIVELES = {
       en: 'Baccalaureate',
       eu: 'Batxilergoa',
       la: 'Baccalaureatus',
+    },
+  },
+  FPB: {
+    id: 'FPB',
+    name: {
+      es: 'Formación Profesional Básica',
+      en: 'Basic Vocational Training',
+      eu: 'Oinarrizko Lanbide Heziketa',
+      la: 'Formatio Professionalis Basica',
+    },
+  },
+  EPA: {
+    id: 'EPA',
+    name: {
+      es: 'Educación de Personas Adultas',
+      en: 'Adult Education',
+      eu: 'Pertsona Helduen Hezkuntza',
+      la: 'Educatio Adultorum',
+    },
+  },
+  CGM: {
+    id: 'CGM',
+    name: {
+      es: 'Ciclo Formativo de Grado Medio',
+      en: 'Intermediate Vocational Training',
+      eu: 'Erdi Mailako Heziketa Zikloa',
+      la: 'Cyclus Formativus Gradus Medii',
+    },
+  },
+  CGS: {
+    id: 'CGS',
+    name: {
+      es: 'Ciclo Formativo de Grado Superior',
+      en: 'Higher Vocational Training',
+      eu: 'Goi Mailako Heziketa Zikloa',
+      la: 'Cyclus Formativus Gradus Superioris',
+    },
+  },
+  UNIVERSIDAD: {
+    id: 'UNI',
+    name: {
+      es: 'Universidad',
+      en: 'University',
+      eu: 'Unibertsitatea',
+      la: 'Universitas',
     },
   },
 } as const;

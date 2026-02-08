@@ -1,0 +1,574 @@
+{
+  "id": "01_PRI_MAT",
+  "code": "01-PRI-MAT",
+  "gradeLevel": "PRI",
+  "subject": "MAT",
+  "title": {
+    "es": "Resolver problemas cotidianos usando sumas, restas, multiplicaciones o divisiones",
+    "eu": "Eguneroko arazoak konpontzea batuketa, kenketa, biderketa edo zatiketa erabiliz",
+    "en": "Solve everyday problems using addition, subtraction, multiplication, or division",
+    "la": "Quaestiones quotidianas solvendae addendo, subtrahendo, multiplicando vel dividendo"
+  },
+  "duaAdaptations": {
+    "1.1": {
+      "text": {
+        "es": "Proporcionar problemas en formato digital donde se pueda ajustar el tamaño de los números y el contraste del fondo.",
+        "eu": "Arazoak formatu digitalean eskaintzea, non zenbakien tamaina eta atzeko planoaren kontrastea egokitu daitezkeen.",
+        "en": "Provide digital problems where number size and background contrast can be adjusted.",
+        "la": "Praebe quaestiones digitales ubi numerorum magnitudo et contraria fundi accommodari possint."
+      },
+      "webTools": [
+        {
+          "name": "Microsoft Immersive Reader",
+          "url": "https://www.microsoft.com/education",
+          "logo": "https://www.microsoft.com/favicon.ico"
+        },
+        {
+          "name": "LearningApps",
+          "url": "https://learningapps.org",
+          "logo": "https://learningapps.org/favicon.ico"
+        }
+      ]
+    },
+    "1.2": {
+      "text": {
+        "es": "Acompañar los problemas escritos con versiones en audio o usar bloques multibase (Base 10) para representar cantidades físicamente.",
+        "eu": "Idatzitako arazoei audio bertsioak edo Base 10 blokeak gehitzea kantitateak modu fisikoan irudikatzeko.",
+        "en": "Accompany written problems with audio versions or use Base 10 blocks to physically represent quantities.",
+        "la": "Adscribe versiones audio quaestionibus scriptis vel utere blocis Base 10 ad quantitates physice repraesentandas."
+      },
+      "webTools": [
+        {
+          "name": "Read&Write",
+          "url": "https://www.texthelp.com/products/read-and-write-education/",
+          "logo": "https://www.texthelp.com/favicon.ico"
+        },
+        {
+          "name": "Toy Theater – Base Ten Blocks",
+          "url": "https://toytheater.com/base-ten-blocks/",
+          "logo": "https://toytheater.com/favicon.ico"
+        }
+      ]
+    },
+    "1.3": {
+      "text": {
+        "es": "Incluir problemas que narren historias de científicos o matemáticos de diversas culturas y géneros.",
+        "eu": "Arazoak sartzea kultura eta genero anitzeko zientzialari edo matematikarien istorioekin.",
+        "en": "Include problems that tell stories of scientists or mathematicians from diverse cultures and genders.",
+        "la": "Include quaestiones narrantes historias scientistarum vel mathematicorum ex variis culturis et generibus."
+      },
+      "webTools": [
+        {
+          "name": "StoryWeaver",
+          "url": "https://storyweaver.org.in",
+          "logo": "https://storyweaver.org.in/favicon.ico"
+        }
+      ]
+    },
+    "2.1": {
+      "text": {
+        "es": "Pre-enseñar términos como 'producto', 'cociente' o 'residuo' mediante glosarios visuales.",
+        "eu": "‘Produktua’, ‘zatidura’ edo ‘hondarra’ bezalako terminoak aurretik lantzea glosario bisualen bidez.",
+        "en": "Pre-teach terms like 'product', 'quotient', or 'remainder' using visual glossaries.",
+        "la": "Prae-docere terminos ut ‘productum’, ‘quotientem’ vel ‘reliquum’ per glossaria visualia."
+      },
+      "webTools": [
+        {
+          "name": "Quizlet",
+          "url": "https://quizlet.com",
+          "logo": "https://quizlet.com/favicon.ico"
+        }
+      ]
+    },
+    "2.2": {
+      "text": {
+        "es": "Permitir que el software de texto a voz lea las fórmulas y símbolos matemáticos complejos.",
+        "eu": "Testutik ahotsera softwareari formula eta ikur matematiko konplexuak irakurtzen uztea.",
+        "en": "Allow text-to-speech software to read complex formulas and mathematical symbols.",
+        "la": "Permitte software textum ad vocem formulas et symbola mathematica complexa legere."
+      },
+      "webTools": [
+        {
+          "name": "Natural Reader",
+          "url": "https://www.naturalreaders.com",
+          "logo": "https://www.naturalreaders.com/favicon.ico"
+        }
+      ]
+    },
+    "2.3": {
+      "text": {
+        "es": "Ofrecer los enunciados de los problemas en la lengua materna del estudiante junto con la lengua vehicular.",
+        "eu": "Arazoen enuntziatuak ikaslearen ama-hizkuntzan eta ikaskuntza-hizkuntzan eskaintzea.",
+        "en": "Provide problem statements in the student's mother tongue along with the instructional language.",
+        "la": "Praebe enuntiationes quaestionum in lingua materna discipuli una cum lingua instructionis."
+      },
+      "webTools": [
+        {
+          "name": "Google Translate",
+          "url": "https://translate.google.com",
+          "logo": "https://translate.google.com/favicon.ico"
+        }
+      ]
+    },
+    "2.4": {
+      "text": {
+        "es": "Evitar problemas que refuercen estereotipos de género.",
+        "eu": "Genero-estereotipoak indartzen dituzten arazoak saihestea.",
+        "en": "Avoid problems that reinforce gender stereotypes.",
+        "la": "Vitare quaestiones quae stereotypos generis corroborant."
+      },
+      "webTools": [
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com",
+          "logo": "https://www.canva.com/favicon.ico"
+        }
+      ]
+    },
+    "2.5": {
+      "text": {
+        "es": "Mostrar un vídeo de una situación real para ilustrar el concepto de división.",
+        "eu": "Benetako egoera baten bideoa erakustea zatiketa azaltzeko.",
+        "en": "Show a real-life video to illustrate the concept of division.",
+        "la": "Monstra video rei verae ad notionem divisionis illustrandam."
+      },
+      "webTools": [
+        {
+          "name": "Edpuzzle",
+          "url": "https://edpuzzle.com",
+          "logo": "https://edpuzzle.com/favicon.ico"
+        }
+      ]
+    },
+    "3.1": {
+      "text": {
+        "es": "Vincular la suma con situaciones familiares.",
+        "eu": "Batuketa egoera ezagunekin lotzea.",
+        "en": "Link addition to familiar situations.",
+        "la": "Additionem cum rebus familiaribus coniungere."
+      },
+      "webTools": [
+        {
+          "name": "Khan Academy",
+          "url": "https://www.khanacademy.org",
+          "logo": "https://www.khanacademy.org/favicon.ico"
+        }
+      ]
+    },
+    "3.2": {
+      "text": {
+        "es": "Destacar los datos numéricos esenciales con colores o negritas.",
+        "eu": "Datu numeriko garrantzitsuak kolorez edo letra lodiz nabarmentzea.",
+        "en": "Highlight key numeric data using colors or bold text.",
+        "la": "Notare data numerica clavia coloribus vel litteris crassis."
+      },
+      "webTools": [
+        {
+          "name": "Google Docs",
+          "url": "https://docs.google.com",
+          "logo": "https://docs.google.com/favicon.ico"
+        }
+      ]
+    },
+    "3.3": {
+      "text": {
+        "es": "Explorar la multiplicación mediante suma repetida o modelos de área.",
+        "eu": "Biderketa batuketa errepikatuaren edo azalera-ereduen bidez lantzea.",
+        "en": "Explore multiplication through repeated addition or area models.",
+        "la": "Multiplicationem per additionem repetitam vel exempla areae explorare."
+      },
+      "webTools": [
+        {
+          "name": "GeoGebra",
+          "url": "https://www.geogebra.org",
+          "logo": "https://www.geogebra.org/favicon.ico"
+        }
+      ]
+    },
+    "3.4": {
+      "text": {
+        "es": "Aplicar lo aprendido para calcular el cambio de dinero en contextos reales.",
+        "eu": "Ikasitakoa testuinguru errealetan aplikatzea diru-itzulketa kalkulatzeko.",
+        "en": "Apply learning to calculate change in real contexts.",
+        "la": "Discendi applicare ad mutationem pecuniae in rebus veris computandam."
+      },
+      "webTools": [
+        {
+          "name": "Math Playground",
+          "url": "https://www.mathplayground.com",
+          "logo": "https://www.mathplayground.com/favicon.ico"
+        }
+      ]
+    },
+    "4.1": {
+      "text": {
+        "es": "Permitir múltiples formas de respuesta: tableta, voz u objetos físicos.",
+        "eu": "Erantzuteko modu anitzak baimentzea: tableta, ahotsa edo objektuak.",
+        "en": "Allow multiple response formats: tablet, voice, or physical objects.",
+        "la": "Permitte varias formas respondendi: tabula, vox vel res physicae."
+      },
+      "webTools": [
+        {
+          "name": "Seesaw",
+          "url": "https://web.seesaw.me",
+          "logo": "https://web.seesaw.me/favicon.ico"
+        }
+      ]
+    },
+    "4.2": {
+      "text": {
+        "es": "Garantizar la compatibilidad con teclados adaptados o conmutadores.",
+        "eu": "Teklatu egokitu edo etengailuekin bateragarritasuna bermatzea.",
+        "en": "Ensure compatibility with adapted keyboards or switches.",
+        "la": "Compatibilitatem cum claviaturis adaptatis vel interruptoribus curare."
+      },
+      "webTools": [
+        {
+          "name": "Clicker",
+          "url": "https://www.cricksoft.com",
+          "logo": "https://www.cricksoft.com/favicon.ico"
+        }
+      ]
+    },
+    "5.1": {
+      "text": {
+        "es": "Explicar la resolución mediante dibujo, audio o mural.",
+        "eu": "Konponbidea marrazki, audio edo mural bidez azaltzea.",
+        "en": "Explain problem-solving through drawing, audio, or mural.",
+        "la": "Solutionem per picturam, vocem vel muralem explicare."
+      },
+      "webTools": [
+        {
+          "name": "Explain Everything",
+          "url": "https://explaineverything.com",
+          "logo": "https://explaineverything.com/favicon.ico"
+        }
+      ]
+    },
+    "5.2": {
+      "text": {
+        "es": "Facilitar calculadoras, ábacos o regletas.",
+        "eu": "Kalkulagailuak, abakoak edo regletak eskaintzea.",
+        "en": "Provide calculators, abaci, or rods.",
+        "la": "Praebe calculatores, abacos vel baculos."
+      },
+      "webTools": [
+        {
+          "name": "Didax Virtual Manipulatives",
+          "url": "https://www.didax.com/math/virtual-manipulatives.html",
+          "logo": "https://www.didax.com/favicon.ico"
+        }
+      ]
+    },
+    "5.3": {
+      "text": {
+        "es": "Ofrecer tablas de multiplicar de apoyo retiradas progresivamente.",
+        "eu": "Biderketa-taulak pixkanaka kentzea.",
+        "en": "Provide multiplication tables with gradual removal.",
+        "la": "Praebe tabulas multiplicationis gradatim removendas."
+      },
+      "webTools": [
+        {
+          "name": "Times Tables Rock Stars",
+          "url": "https://ttrockstars.com",
+          "logo": "https://ttrockstars.com/favicon.ico"
+        }
+      ]
+    },
+    "5.4": {
+      "text": {
+        "es": "Valorar por igual la resolución mental y escrita.",
+        "eu": "Konponbide mentala eta idatzizkoa berdin baloratzea.",
+        "en": "Value mental and written solutions equally.",
+        "la": "Solutionem mentalem et scriptam aeque aestimare."
+      },
+      "webTools": [
+        {
+          "name": "Google Classroom",
+          "url": "https://classroom.google.com",
+          "logo": "https://classroom.google.com/favicon.ico"
+        }
+      ]
+    },
+    "6.1": {
+      "text": {
+        "es": "Estimar el tiempo necesario antes de comenzar una tarea.",
+        "eu": "Jarduera hasi aurretik behar den denbora estimatzea.",
+        "en": "Estimate time needed before starting a task.",
+        "la": "Tempus necessarium ante initium operis aestimare."
+      },
+      "webTools": [
+        {
+          "name": "Time Timer",
+          "url": "https://www.timetimer.com",
+          "logo": "https://www.timetimer.com/favicon.ico"
+        }
+      ]
+    },
+    "6.2": {
+      "text": {
+        "es": "Usar listas de verificación paso a paso.",
+        "eu": "Pausoz pauso egiaztapen-zerrendak erabiltzea.",
+        "en": "Use step-by-step checklists.",
+        "la": "Indicibus gradatim uti."
+      },
+      "webTools": [
+        {
+          "name": "Google Keep",
+          "url": "https://keep.google.com",
+          "logo": "https://keep.google.com/favicon.ico"
+        }
+      ]
+    },
+    "6.3": {
+      "text": {
+        "es": "Clasificar datos e incógnitas con organizadores gráficos.",
+        "eu": "Datuak eta ezezagunak antolatzaile grafikoekin sailkatzea.",
+        "en": "Classify data and unknowns with graphic organizers.",
+        "la": "Data et ignota per organizatores graphicos ordinare."
+      },
+      "webTools": [
+        {
+          "name": "Lucidchart",
+          "url": "https://www.lucidchart.com",
+          "logo": "https://www.lucidchart.com/favicon.ico"
+        }
+      ]
+    },
+    "6.4": {
+      "text": {
+        "es": "Utilizar plantillas de autoevaluación.",
+        "eu": "Autoebaluazio txantiloiak erabiltzea.",
+        "en": "Use self-assessment templates.",
+        "la": "Schematibus autoevaluationis uti."
+      },
+      "webTools": [
+        {
+          "name": "Google Forms",
+          "url": "https://forms.google.com",
+          "logo": "https://forms.google.com/favicon.ico"
+        }
+      ]
+    },
+    "6.5": {
+      "text": {
+        "es": "Ofrecer alternativas a pruebas cronometradas.",
+        "eu": "Denboraz mugatutako proben ordezko aukerak eskaintzea.",
+        "en": "Offer alternatives to timed tests.",
+        "la": "Alternativas probationibus temporis praebere."
+      },
+      "webTools": [
+        {
+          "name": "Seesaw",
+          "url": "https://web.seesaw.me",
+          "logo": "https://web.seesaw.me/favicon.ico"
+        }
+      ]
+    },
+    "7.1": {
+      "text": {
+        "es": "Permitir que el estudiante elija el contexto del problema, por ejemplo calcular gastos de un videojuego, una receta de cocina o un presupuesto de viaje.",
+        "eu": "Ikasleari aukera ematea arazoaren testuingurua aukeratzeko, adibidez, bideojoko baten gastuak, errezeta bat edo bidaia baten aurrekontua kalkulatzea.",
+        "en": "Allow the student to choose the problem context, e.g., calculating expenses for a video game, a recipe, or a travel budget.",
+        "la": "Permitte discipulo contextum quaestionis eligere, exempli gratia expensas ludi electronici, recipe vel itineris computare."
+      },
+      "webTools": [
+        {
+          "name": "GeoGebra",
+          "url": "https://www.geogebra.org",
+          "logo": "https://www.geogebra.org/favicon.ico"
+        },
+        {
+          "name": "Khan Academy",
+          "url": "https://www.khanacademy.org",
+          "logo": "https://www.khanacademy.org/favicon.ico"
+        }
+      ]
+    },
+    "7.2": {
+      "text": {
+        "es": "Utilizar recibos reales de supermercado o facturas de servicios del hogar para realizar los cálculos.",
+        "eu": "Supermerkatuetako erosketa-txartel edo etxeko zerbitzuen fakturak erabiltzea kalkuluak egiteko.",
+        "en": "Use real supermarket receipts or household bills to perform the calculations.",
+        "la": "Utere receptis realibus vel cautionibus domesticis ad computanda effectuanda."
+      },
+      "webTools": [
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com",
+          "logo": "https://www.canva.com/favicon.ico"
+        }
+      ]
+    },
+    "7.3": {
+      "text": {
+        "es": "Integrar juegos de rol como 'la tiendita' o aplicaciones de gamificación como ClassCraft para practicar las operaciones.",
+        "eu": "'Denda txikia' bezalako rol-jokoak edo ClassCraft bezalako gamifikazio-aplikazioak integratzea eragiketak praktikatzeko.",
+        "en": "Integrate role-playing games like 'the little shop' or gamification apps like ClassCraft to practice operations.",
+        "la": "Integri ludi partes agendi ut 'parva taberna' vel applicationes ludificationis ut ClassCraft ad exercitationem operationum."
+      },
+      "webTools": [
+        {
+          "name": "ClassCraft",
+          "url": "https://www.classcraft.com",
+          "logo": "https://www.classcraft.com/favicon.ico"
+        },
+        {
+          "name": "Minecraft Education",
+          "url": "https://education.minecraft.net",
+          "logo": "https://education.minecraft.net/favicon.ico"
+        }
+      ]
+    },
+    "7.4": {
+      "text": {
+        "es": "Crear un clima donde el error sea una oportunidad para analizar la lógica matemática sin temor a la sanción.",
+        "eu": "Sortu giro bat non errorea aukera den logika matematikoa aztertzeko, zigorrik gabe.",
+        "en": "Create a climate where mistakes are opportunities to analyze mathematical logic without fear of penalty.",
+        "la": "Crea ambitum ubi error opportunitas sit ad logicam mathematicam sine metu poenae examinandam."
+      },
+      "webTools": [
+        {
+          "name": "Padlet",
+          "url": "https://padlet.com",
+          "logo": "https://padlet.com/favicon.ico"
+        }
+      ]
+    },
+    "8.1": {
+      "text": {
+        "es": "Explicar explícitamente que aprender a dividir ayuda a repartir recursos de forma equitativa en la comunidad.",
+        "eu": "Argi azaldu zatiketa ikasteak baliabideak modu bidezkoan banatzen laguntzen duela komunitatean.",
+        "en": "Explicitly explain that learning to divide helps distribute resources fairly in the community.",
+        "la": "Explicite explica discere dividere auxilium dare ad aequaliter distribuenda facultates in communitate."
+      },
+      "webTools": [
+        {
+          "name": "Khan Academy",
+          "url": "https://www.khanacademy.org",
+          "logo": "https://www.khanacademy.org/favicon.ico"
+        }
+      ]
+    },
+    "8.2": {
+      "text": {
+        "es": "Ofrecer problemas con diferentes niveles de complejidad, desde operaciones simples hasta problemas de varios pasos.",
+        "eu": "Arazoak eskaintzea maila desberdinetako konplexutasunarekin, eragiketa sinpletik hainbat pausoko arazoetara.",
+        "en": "Provide problems with different complexity levels, from simple operations to multi-step problems.",
+        "la": "Praebe quaestiones diversae complexitatis, ab operationibus simplicibus ad quaestiones multorum gradus."
+      },
+      "webTools": [
+        {
+          "name": "LearningApps",
+          "url": "https://learningapps.org",
+          "logo": "https://learningapps.org/favicon.ico"
+        }
+      ]
+    },
+    "8.3": {
+      "text": {
+        "es": "Implementar la técnica 'Lápices al centro' para que los estudiantes resuelvan un problema complejo en equipo.",
+        "eu": "'Lápices al centro' teknika erabiltzea taldean arazo konplexu bat konpontzeko.",
+        "en": "Use the 'Pencils in the center' technique so students solve a complex problem as a team.",
+        "la": "Utere technica 'Graphium in centro' ut discipuli quaestionem complures gradus solvant in turmis."
+      },
+      "webTools": [
+        {
+          "name": "Google Jamboard",
+          "url": "https://jamboard.google.com",
+          "logo": "https://ssl.gstatic.com/jamboard/favicon.ico"
+        }
+      ]
+    },
+    "8.4": {
+      "text": {
+        "es": "Diseñar problemas que incluyan nombres y situaciones culturales diversas que reflejen la identidad de todos los alumnos.",
+        "eu": "Arazoak diseinatzea izenak eta egoera kultural desberdinak barne hartuz, ikasleen nortasuna islatzeko.",
+        "en": "Design problems that include names and diverse cultural situations reflecting all students' identities.",
+        "la": "Designa quaestiones quae nomina et diversae culturae situations includant identitatem omnium studentium reflectentes."
+      },
+      "webTools": [
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com",
+          "logo": "https://www.canva.com/favicon.ico"
+        }
+      ]
+    },
+    "8.5": {
+      "text": {
+        "es": "Proporcionar retroalimentación específica sobre el proceso en lugar de solo calificar el resultado final.",
+        "eu": "Prozesuari buruzko feedback zehatza eskaintzea emaitza bakarrik kalifikatzea baino.",
+        "en": "Provide specific feedback on the process rather than only grading the final result.",
+        "la": "Praebe feedback specificam de processu potius quam de tantum fine gradu."
+      },
+      "webTools": [
+        {
+          "name": "Google Classroom",
+          "url": "https://classroom.google.com",
+          "logo": "https://classroom.google.com/favicon.ico"
+        }
+      ]
+    },
+    "9.1": {
+      "text": {
+        "es": "Ayudar a los alumnos a establecer metas personales de dominio.",
+        "eu": "Ikasleak helburu pertsonalak ezartzen laguntzea.",
+        "en": "Help students set personal mastery goals.",
+        "la": "Adiuvare discipulos metas personales constituere."
+      },
+      "webTools": [
+        {
+          "name": "Trello",
+          "url": "https://trello.com",
+          "logo": "https://trello.com/favicon.ico"
+        }
+      ]
+    },
+    "9.2": {
+      "text": {
+        "es": "Enseñar estrategias de respiración y autorregulación.",
+        "eu": "Arnasketa eta autoerregulazioa irakastea.",
+        "en": "Teach breathing and self-regulation strategies.",
+        "la": "Strategias respirationis et moderationis docere."
+      },
+      "webTools": [
+        {
+          "name": "GoNoodle",
+          "url": "https://www.gonoodle.com",
+          "logo": "https://www.gonoodle.com/favicon.ico"
+        }
+      ]
+    },
+    "9.3": {
+      "text": {
+        "es": "Utilizar la escalera de la metacognición.",
+        "eu": "Metakognizioaren eskailera erabiltzea.",
+        "en": "Use the metacognition ladder.",
+        "la": "Scala metacognitionis uti."
+      },
+      "webTools": [
+        {
+          "name": "Padlet",
+          "url": "https://padlet.com",
+          "logo": "https://padlet.com/favicon.ico"
+        }
+      ]
+    },
+    "9.4": {
+      "text": {
+        "es": "Usar problemas matemáticos para analizar inequidades sociales.",
+        "eu": "Gizarte-desberdintasunak aztertzeko arazo matematikoak erabiltzea.",
+        "en": "Use math problems to analyze social inequities.",
+        "la": "Utere quaestiones mathematicas ad iniquitates sociales examinandas."
+      },
+      "webTools": [
+        {
+          "name": "Gapminder",
+          "url": "https://www.gapminder.org",
+          "logo": "https://www.gapminder.org/favicon.ico"
+        }
+      ]
+    }
+  }
+}

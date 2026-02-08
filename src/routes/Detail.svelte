@@ -115,15 +115,62 @@
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
-  // Helper to sort adaptations numerically (1.1, 1.2, ..., 9.4)
+  // Custom sort: Engagement (7,8,9) -> Representation (1,2,3) -> Action & Expression (4,5,6)
   function sortAdaptations(adaptations: Record<string, any>) {
+      const getPriority = (guidelineNum: number) => {
+          if (guidelineNum >= 7 && guidelineNum <= 9) return 0; // Engagement
+          if (guidelineNum >= 1 && guidelineNum <= 3) return 1; // Representation
+          if (guidelineNum >= 4 && guidelineNum <= 6) return 2; // Action & Expression
+          return 3;
+      };
+
       return Object.entries(adaptations).sort(([codeA], [codeB]) => {
           const [a1, a2] = codeA.split('.').map(Number);
           const [b1, b2] = codeB.split('.').map(Number);
-          if (a1 !== b1) return a1 - b1;
-          return a2 - b2;
+          
+          const p1 = getPriority(a1);
+          const p2 = getPriority(b1);
+
+          if (p1 !== p2) return p1 - p2; // Sort by Principle
+          if (a1 !== b1) return a1 - b1; // Then by Guideline
+          return a2 - b2; // Then by Consideration
       });
   }
+
+  // Group adaptations by Principle > Guideline
+  function groupAdaptations(adaptations: Record<string, any>) {
+      const sorted = sortAdaptations(adaptations);
+      const result: { principle: Principle, guidelines: { guideline: Guideline, items: [string, any][] }[] }[] = [];
+      
+      sorted.forEach(([code, adaptation]) => {
+         // Skip empty adaptations if needed? No, user wants to see them (skeletons). 
+         // But wait, if text is empty? 02_pri_mat has empty texts. 
+         // Logic so far displayed everything. Maintaining that.
+         
+         const cons = getConsiderationByCode(code);
+         if (!cons) return;
+         const p = getPrincipleForConsideration(cons.id, $udlData);
+         const g = getGuidelineForConsideration(cons.id, $udlData);
+         if (!p || !g) return;
+
+         let pGroup = result.find(pg => pg.principle.id === p.id);
+         if (!pGroup) {
+             pGroup = { principle: p, guidelines: [] };
+             result.push(pGroup);
+         }
+         
+         let gGroup = pGroup.guidelines.find(gg => gg.guideline.id === g.id);
+         if (!gGroup) {
+             gGroup = { guideline: g, items: [] };
+             pGroup.guidelines.push(gGroup);
+         }
+         
+         gGroup.items.push([code, adaptation]);
+      });
+      
+      return result;
+  }
+
 
   // Helper to get Consideration for a code (e.g. "7.1")
   function getConsiderationByCode(code: string) {
@@ -186,65 +233,95 @@
              <!-- Body -->
              <div class="px-8 py-8 space-y-12">
                  <!-- Adaptations List -->
-                 <div class="space-y-8">
+                 <div class="space-y-12">
                      <h2 class="text-xl font-black uppercase tracking-widest text-gray-900 flex items-center gap-3">
                          <LayoutGrid class="w-6 h-6" />
                          {$ui.examples} / Adaptaciones
                      </h2>
                      
-                     <div class="grid grid-cols-1 gap-6">
-                         {#each sortAdaptations(activity.duaAdaptations) as [code, adaptation]}
-                           {@const cons = getConsiderationByCode(code)}
-                           {@const p = cons ? getPrincipleForConsideration(cons.id, $udlData) : null}
-                           
-                           <div class="flex gap-6 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow">
-                               <!-- Consideration Badge -->
-                               <div class="w-16 shrink-0 flex flex-col items-center gap-2">
-                                   <div class="w-12 h-12 rounded-xl flex items-center justify-center font-mono font-black text-white shadow-sm"
-                                        style="background-color: {p?.color || '#ccc'}">
-                                       {code}
-                                   </div>
-                               </div>
-                               
-                               <!-- Content -->
-                               <div class="space-y-1">
-                                   {#if cons}
-                                       <h3 class="text-xs font-black uppercase tracking-widest text-gray-400">
-                                           {t(cons.description, currentLang)}
-                                       </h3>
-                                   {/if}
-                                   <div class="space-y-4">
-                                       {#each tl(adaptation.text, currentLang) as paragraph}
-                                           <div class="flex gap-3 items-start">
-                                               <div class="mt-1 shrink-0">
-                                                   <Lightbulb class="w-5 h-5" style="color: {p?.color || '#ccc'}" />
+                     <div class="space-y-12">
+                          {#each groupAdaptations(activity.duaAdaptations) as pGroup}
+                            <div class="space-y-8 animate-in fade-in slide-in-from-bottom-4 bg-white rounded-3xl p-6 border-2 border-dashed border-gray-100">
+                                <!-- Principle Header -->
+                                <h3 class="text-2xl font-black uppercase tracking-wider flex items-center gap-3" style="color: {pGroup.principle.color}">
+                                    <span class="w-3 h-10 rounded-full" style="background-color: {pGroup.principle.color}"></span>
+                                    {t(pGroup.principle.name, currentLang)}
+                                </h3>
+                                
+                                <div class="space-y-8 pl-4 lg:pl-8">
+                                   {#each pGroup.guidelines as gGroup}
+                                      <div class="space-y-4">
+                                         <!-- Guideline Header -->
+                                         <div class="flex items-center gap-4 bg-gray-50/50 p-3 rounded-xl w-fit">
+                                            <span class="font-mono text-xl font-black px-3 py-1 rounded-lg text-white shadow-sm" style="background-color: {pGroup.principle.color}">
+                                               {gGroup.guideline.code}
+                                            </span>
+                                            <h4 class="text-lg font-bold text-gray-800">
+                                               {t(gGroup.guideline.name, currentLang)}
+                                            </h4>
+                                         </div>
+                                         
+                                         <!-- Items Grid -->
+                                         <div class="grid grid-cols-1 gap-6 border-l-4 pl-6" style="border-color: {pGroup.principle.color}20">
+                                            {#each gGroup.items as [code, adaptation]}
+                                               {@const cons = getConsiderationByCode(code)}
+                                               
+                                               <div class="flex flex-col md:flex-row gap-6 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all bg-white hover:border-blue-200">
+                                                   <!-- Badge -->
+                                                   <div class="shrink-0 flex md:flex-col items-center gap-3">
+                                                       <div class="w-14 h-14 rounded-2xl flex items-center justify-center font-mono text-lg font-black text-white shadow-sm"
+                                                            style="background-color: {pGroup.principle.color}">
+                                                           {code}
+                                                       </div>
+                                                   </div>
+                                                   
+                                                   <!-- Content -->
+                                                   <div class="space-y-3 grow">
+                                                       {#if cons}
+                                                           <h5 class="text-xs font-black uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2">
+                                                               {t(cons.description, currentLang)}
+                                                           </h5>
+                                                       {/if}
+                                                       
+                                                       <div class="space-y-3">
+                                                           {#each tl(adaptation.text, currentLang) as paragraph}
+                                                              {#if paragraph.trim()}
+                                                                <div class="flex gap-3 items-start">
+                                                                    <Lightbulb class="w-5 h-5 shrink-0 mt-0.5" style="color: {pGroup.principle.color}" />
+                                                                    <p class="text-gray-800 font-medium leading-relaxed text-lg">
+                                                                        {paragraph}
+                                                                    </p>
+                                                                </div>
+                                                              {/if}
+                                                           {/each}
+                                                       </div>
+                        
+                                                       {#if adaptation.webTools && adaptation.webTools.length > 0}
+                                                           <div class="mt-4 pt-4 border-t border-gray-50 flex flex-wrap gap-2">
+                                                               <span class="text-xs font-bold text-gray-400 uppercase tracking-wider mr-2 self-center">{$ui.webTools}:</span>
+                                                               {#each adaptation.webTools as tool}
+                                                                   <a href={tool.url} target="_blank" rel="noopener noreferrer" 
+                                                                      class="flex items-center gap-2 px-3 py-1.5 bg-gray-50 hover:bg-white border border-gray-200 hover:border-blue-400 rounded-lg transition-all group shadow-sm">
+                                                                       {#if tool.logo}
+                                                                           <img src={tool.logo} alt="" class="w-4 h-4 object-contain" />
+                                                                       {/if}
+                                                                       <span class="text-xs font-bold text-gray-700 group-hover:text-blue-600">
+                                                                           {tool.name}
+                                                                       </span>
+                                                                   </a>
+                                                               {/each}
+                                                           </div>
+                                                       {/if}
+                                                   </div>
                                                </div>
-                                               <p class="text-gray-900 font-medium leading-relaxed">
-                                                   {paragraph}
-                                               </p>
-                                           </div>
-                                       {/each}
-                                   </div>
-
-                                   {#if adaptation.webTools && adaptation.webTools.length > 0}
-                                       <div class="mt-6 pt-4 border-t border-gray-50 flex flex-wrap gap-3">
-                                           {#each adaptation.webTools as tool}
-                                               <a href={tool.url} target="_blank" rel="noopener noreferrer" 
-                                                  class="flex items-center gap-3 px-3 py-2 bg-gray-50 hover:bg-white border border-gray-100 hover:border-blue-300 rounded-xl transition-all group shadow-sm hover:shadow-md">
-                                                   {#if tool.logo}
-                                                       <img src={tool.logo} alt="" class="w-5 h-5 object-contain transition-transform duration-300 group-hover:scale-125" />
-                                                   {/if}
-                                                   <span class="text-sm font-bold text-gray-700 group-hover:text-blue-600">
-                                                       {tool.name}
-                                                   </span>
-                                               </a>
-                                           {/each}
-                                       </div>
-                                   {/if}
-                               </div>
-                           </div>
-                         {/each}
-                     </div>
+                                            {/each}
+                                         </div>
+                                      </div>
+                                   {/each}
+                                </div>
+                            </div>
+                          {/each}
+                      </div>
                  </div>
              </div>
         </div>

@@ -28,7 +28,7 @@ const rawData = udlJson as UDLRoot;
 export const udlData = writable<UDLData>(rawData.udl);
 
 // Import Activities dynamically
-const activityModules = import.meta.glob('../data/json/activities/*.json', { eager: true });
+const activityModules = import.meta.glob('../data/json/activities/**/*.json', { eager: true });
 const allActivityFiles = Object.values(activityModules).map((mod: any) => mod.default || mod);
 
 // Helper to resolve Level and Area from explicit codes in JSON (e.g., "PRI", "MAT")

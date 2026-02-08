@@ -1,0 +1,12 @@
+{
+  "requiredFields": ["id", "code", "gradeLevel", "subject", "title", "duaAdaptations"],
+  "multilingualFields": ["title"],
+  "languages": ["es", "en", "eu", "la"],
+  "adaptations": {
+    "pattern": "^[1-9]\\.[1-9]$",
+    "structure": {
+      "text": "multilingual",
+      "webTools": "array"
+    }
+  }
+}

@@ -3,12 +3,11 @@ import { useUDLData } from '../contexts/UDLDataContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useUI } from '../contexts/UIContext';
 import { useSettings } from '../contexts/SettingsContext';
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import Header from '../components/Header';
 import PrincipleHeader from '../components/model/PrincipleHeader';
 import GuidelineCard from '../components/model/GuidelineCard';
 import FloatingNavigation from '../components/FloatingNavigation';
-import Breadcrumbs from '../components/Breadcrumbs';
-import { Home, LayoutGrid } from 'lucide-react';
+import { LayoutGrid } from 'lucide-react';
 
 export default function Model() {
   const { udlData } = useUDLData();
@@ -19,7 +18,7 @@ export default function Model() {
   // Breadcrumbs
   const breadcrumbItems = useMemo(
     () => [
-      { label: '', href: '/', icon: Home },
+      { label: '', href: '/', icon: undefined }, // Icon handled in Header or Breadcrumbs
       { label: ui.modelAction, icon: LayoutGrid },
     ],
     [ui.modelAction]
@@ -27,17 +26,7 @@ export default function Model() {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
-      {/* Header */}
-      <div className="bg-white border-b border-gray-200 sticky top-0 z-20 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex-1 min-w-0 mr-4">
-              <Breadcrumbs items={breadcrumbItems} />
-            </div>
-            <LanguageSwitcher />
-          </div>
-        </div>
-      </div>
+      <Header breadcrumbItems={breadcrumbItems} />
 
       {/* 3x3 Grid Layout */}
       <div

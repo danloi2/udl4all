@@ -4,13 +4,12 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useUI } from '../contexts/UIContext';
 import { useUDLData } from '../contexts/UDLDataContext';
 import { useSearch } from '../contexts/SearchContext';
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import Tag from '../components/Tag';
 import LevelBadge from '../components/model/LevelBadge';
 import FloatingNavigation from '../components/FloatingNavigation';
-import Breadcrumbs from '../components/Breadcrumbs';
-import { Home, Search, Filter } from 'lucide-react';
+import { Search, Filter } from 'lucide-react';
 import { getGuidelineStyles } from '../utils/colors';
 import type { SearchResult } from '../types';
 
@@ -56,7 +55,7 @@ export default function Explorer() {
 
   const breadcrumbItems = useMemo(
     () => [
-      { label: '', href: '/', icon: Home },
+      { label: '', href: '/', icon: undefined },
       { label: ui.searchAction, icon: Search },
     ],
     [ui.searchAction]
@@ -101,17 +100,7 @@ export default function Explorer() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white border-b border-gray-200 sticky top-0 z-20 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex-1 min-w-0 mr-4">
-              <Breadcrumbs items={breadcrumbItems} />
-            </div>
-            <LanguageSwitcher />
-          </div>
-        </div>
-      </div>
+      <Header breadcrumbItems={breadcrumbItems} />
 
       <div className="flex justify-center mt-8">
         <SearchBar />

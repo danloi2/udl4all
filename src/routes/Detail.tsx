@@ -3,12 +3,11 @@ import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useUI } from '../contexts/UIContext';
 import { useUDLData } from '../contexts/UDLDataContext';
-import LanguageSwitcher from '../components/LanguageSwitcher';
-import Breadcrumbs from '../components/Breadcrumbs';
+import Header from '../components/Header';
 import Tag from '../components/Tag';
 import LevelBadge from '../components/model/LevelBadge';
 import FloatingNavigation from '../components/FloatingNavigation';
-import { LayoutGrid, Search, Home, Lightbulb } from 'lucide-react';
+import { LayoutGrid, Search, Lightbulb } from 'lucide-react';
 import { getGuidelineStyles, getColorStyles } from '../utils/colors';
 import type { Consideration, Guideline, Principle, Example, Activity } from '../types';
 
@@ -118,8 +117,8 @@ export default function Detail() {
   };
 
   const breadcrumbItems = useMemo(() => {
-    const items = [
-      { label: '', href: '/', icon: Home },
+    const items: any[] = [
+      { label: '', href: '/', icon: undefined },
       { label: ui.modelAction, href: '/model', icon: LayoutGrid },
     ];
 
@@ -272,30 +271,19 @@ export default function Detail() {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
-      {/* Header */}
-      <div
-        className="border-b border-gray-200 sticky top-0 z-20 shadow-sm transition-colors duration-300"
-        style={colors ? { backgroundColor: colors.bgLightHex } : { backgroundColor: 'white' }}
-      >
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex-1 min-w-0 mr-4">
-              {activity ? (
-                <Breadcrumbs
-                  items={[
-                    { label: '', href: '/', icon: Home },
-                    { label: ui.modelAction, href: '/model', icon: LayoutGrid },
-                    { label: activity.code },
-                  ]}
-                />
-              ) : (
-                <Breadcrumbs items={breadcrumbItems} color={principle?.color} />
-              )}
-            </div>
-            <LanguageSwitcher />
-          </div>
-        </div>
-      </div>
+      <Header
+        breadcrumbItems={
+          activity
+            ? [
+                { label: '', href: '/', icon: undefined },
+                { label: ui.modelAction, href: '/model', icon: LayoutGrid },
+                { label: activity.code },
+              ]
+            : breadcrumbItems
+        }
+        bgColor={colors ? colors.bgLight : 'bg-white'}
+        breadcrumbColor={principle?.color}
+      />
 
       {/* Content */}
       <div
@@ -468,7 +456,7 @@ export default function Detail() {
             <div
               className="px-8 py-8 border-b-4 relative overflow-hidden"
               style={{
-                backgroundColor: colors.bgLightHex,
+                backgroundColor: colors.bgLight,
                 borderColor: principle?.color || '#ccc',
               }}
             >
@@ -710,7 +698,7 @@ export default function Detail() {
                       className="rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
                       style={{
                         borderTop: `4px solid ${principle?.color || '#ccc'}`,
-                        backgroundColor: colors.bgLightHex,
+                        backgroundColor: colors.bgLight,
                       }}
                     >
                       <h2 className="text-xs font-black uppercase tracking-widest text-gray-500 mb-3">

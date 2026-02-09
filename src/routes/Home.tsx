@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { Github, ArrowRight, Scale } from 'lucide-react';
+import pkg from '../../package.json';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useUI } from '../contexts/UIContext';
 import { useUDLData } from '../contexts/UDLDataContext';
@@ -145,6 +146,54 @@ export default function Home() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-white/20 blur-3xl mix-blend-overlay"></div>
       </div>
 
+      <footer className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-center z-50">
+        {/* Left: Branding & Version Badge */}
+        <div className="flex items-center gap-3">
+          <div className="flex items-center font-black tracking-tight text-xl logo-elegant-hover transition-all duration-300">
+            <span style={{ color: '#078743' }}>udl</span>
+            <span style={{ color: '#831682' }}>4</span>
+            <span style={{ color: '#295e86' }}>all</span>
+          </div>
+          <span className="px-2 py-0.5 bg-white/50 backdrop-blur-md text-gray-900 font-black text-[10px] rounded-md border border-white/40 shadow-sm uppercase tracking-tighter">
+            v{pkg.version}
+          </span>
+        </div>
+
+        {/* Right: Copyright & GitHub/License Icons */}
+        <div className="flex items-center gap-4 text-gray-700 text-[11px] font-bold">
+          <a
+            href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/130988/detalle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-block tracking-wide uppercase hover:text-black hover:underline transition-all"
+          >
+            © 2026 Daniel Losada
+          </a>
+
+          <div className="flex items-center gap-2">
+            <a
+              href="https://github.com/danloi2/udl/blob/main/LICENSE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-white/40 backdrop-blur-md rounded-full border border-white/30 shadow-xs hover:bg-white/60 hover:scale-110 hover:shadow-md transition-all duration-300 group"
+              title="MIT License"
+            >
+              <Scale className="w-5 h-5 text-gray-800 group-hover:text-black transition-colors" />
+            </a>
+
+            <a
+              href="https://github.com/danloi2/udl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-white/40 backdrop-blur-md rounded-full border border-white/30 shadow-xs hover:bg-white/60 hover:scale-110 hover:shadow-md transition-all duration-300 group"
+              title="GitHub Repository"
+            >
+              <Github className="w-5 h-5 text-gray-800 group-hover:text-black transition-colors" />
+            </a>
+          </div>
+        </div>
+      </footer>
+
       <style>{`
         .theme-bg-gradient {
           background-image: linear-gradient(to bottom right, var(--theme-color-5), var(--theme-color-10), var(--theme-color-5));
@@ -157,6 +206,10 @@ export default function Home() {
         }
         .fade-in {
           animation: fadeIn 1s ease-out;
+        }
+        .logo-elegant-hover:hover {
+          filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+          transform: scale(1.05);
         }
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }

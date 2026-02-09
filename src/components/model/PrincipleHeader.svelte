@@ -7,6 +7,8 @@
   import recognitionLogo from '../../assets/brains/recognition_logo.svg';
   import strategicLogo from '../../assets/brains/strategic_logo.svg';
 
+  import ContextTooltip from '../ContextTooltip.svelte';
+
   export let network: Network;
   export let currentLang: Language;
 
@@ -23,11 +25,13 @@
   $: networkLabel = network.why || network.what || network.how;
 </script>
 
-<a href="/detail/{principle.id}" use:link class="px-4 py-6 md:py-10 flex flex-col items-center gap-2 md:gap-6 shadow-md transition-all duration-500 rounded-t-xl h-full justify-center hover:opacity-95 print:py-2 print:gap-1" style="background-color: {principle.color || '#666'}">
+<a href="/detail/{principle.id}" use:link class="px-4 py-6 md:py-10 flex flex-col items-center gap-2 md:gap-6 shadow-md transition-all duration-500 rounded-xl h-full justify-center hover:opacity-95 print:py-2 print:gap-1 group-header" style="background-color: {principle.color || '#666'}">
   <!-- Logo Container with Solid White Background for better visibility -->
-  <div class="w-12 h-12 md:w-20 md:h-20 flex items-center justify-center rounded-xl md:rounded-2xl bg-white shadow-2xl p-2 md:p-4 transform hover:scale-110 transition-transform duration-300 border border-white/50 shrink-0 print:w-8 print:h-8 print:p-1 print:rounded-lg">
-    <img src={logo} alt={t(network.name, currentLang)} class="w-full h-full object-contain" />
-  </div>
+  <ContextTooltip type="network" id={network.id} position="bottom">
+    <div class="w-12 h-12 md:w-20 md:h-20 flex items-center justify-center rounded-xl md:rounded-2xl bg-white shadow-2xl p-2 md:p-4 transform hover:scale-110 transition-transform duration-300 border border-white/50 shrink-0 print:w-8 print:h-8 print:p-1 print:rounded-lg">
+        <img src={logo} alt={t(network.name, currentLang)} class="w-full h-full object-contain" />
+    </div>
+  </ContextTooltip>
   
   <div class="text-center flex flex-col items-center">
     {#if principle.preDescription}

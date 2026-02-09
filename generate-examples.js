@@ -1,7 +1,9 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const udlCorePath = path.join('/home/danloi/Containers/udl/src/data/udl-core.json');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const udlCorePath = path.join(__dirname, 'src/data/json/udl-core.json');
 const udlCore = JSON.parse(fs.readFileSync(udlCorePath, 'utf8'));
 
 // Extract principle colors and map them to guideline IDs
@@ -96,7 +98,7 @@ for (let i = 1; i <= guidelinesCount; i++) {
   };
 
   fs.writeFileSync(
-    path.join('/home/danloi/Containers/udl/src/data/', `udl-guideline-${i}.json`),
+    path.join(__dirname, 'src/data/json/', `udl-guideline-${i}.json`),
     JSON.stringify(guidelineData, null, 2)
   );
 }

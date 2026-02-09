@@ -1,9 +1,10 @@
 # 🧠 UDL Browser
 
 ![UDL Banner](https://img.shields.io/badge/UDL-3.0-blue?style=for-the-badge)
-![Svelte](https://img.shields.io/badge/Svelte-4.0-ff3e00?style=for-the-badge&logo=svelte)
+![React](https://img.shields.io/badge/React-18.2-61dafb?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-3.0-38b2ac?style=for-the-badge&logo=tailwind-css)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0-38b2ac?style=for-the-badge&logo=tailwind-css)
+![Radix UI](https://img.shields.io/badge/Radix_UI-1.0-6e56cf?style=for-the-badge&logo=radix-ui)
 
 An interactive and professional explorer designed to facilitate the application of **Universal Design for Learning (UDL)** in educational environments. This tool allows navigating through the principles, guidelines, and checkpoints of the UDL 3.0 model, offering practical examples and design options for teachers.
 
@@ -25,31 +26,32 @@ Full support for 4 simultaneous languages, allowing language switching on the fl
 - **Network Visualization**: Clear representation of Affective, Recognition, and Strategic networks.
 - **Professional Hierarchy**: Fluid navigation from Principles to specific Considerations.
 - **Activity Bank**: Integration of real-world examples based on curricular activities (Math, etc.).
-- **Interactive Web Tools**: Support for external tools (GeoGebra, ClassCraft, etc.) integrated into UDL adaptations, including links and logos.
+- **Interactive Web Tools**: Support for external tools (GeoGebra, Padlet, etc.) integrated into UDL adaptations.
 
 ### 🖨️ High-Density PDF Optimization
 
 Print system designed to generate professional documents:
 
-- **Landscape Model**: The complete model compressed into a single A4 sheet with minimal margins (3mm) and maximized scale (0.98).
-- **Detail Sheets**: Detailed documents that flow across multiple pages if necessary, featuring decorative icons and header protection.
+- **Landscape Model**: The complete model compressed into a single A4 sheet.
+- **Detail Sheets**: Detailed documents that flow across multiple pages with header protection.
 
 ### 🏗️ Data-Driven Architecture
 
-- **Dynamic Loading**: Activities are automatically loaded from JSON files using `import.meta.glob`.
-- **Flexible Structure**: Support for multiple paragraphs and optional notes in translations.
+- **Dynamic Loading**: Activities are automatically loaded using `import.meta.glob`.
+- **Flexible Structure**: Ported from Svelte to React with specialized Context Providers for performance.
 
 ---
 
 ## 🚀 Technologies
 
-This project is built with a modern stack focused on speed and user experience:
+This project is built with a modern stack prioritized for speed and accessibility:
 
-- **Framework**: [Svelte](https://svelte.dev/) (Vite)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Iconography**: [Lucide Svelte](https://lucide.dev/)
-- **Routing**: `svelte-spa-router`
+- **Framework**: [React 18](https://reactjs.org/) (Vite)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: `react-router-dom` (HashRouter)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
 
 ---
 
@@ -75,10 +77,9 @@ This project is built with a modern stack focused on speed and user experience:
    ```
 
 4. **Build for production**:
-
-```bash
-npm run build
-```
+   ```bash
+   npm run build
+   ```
 
 ---
 
@@ -86,30 +87,24 @@ npm run build
 
 Model and activity data are centralized for easy editing:
 
-- `src/data/json/activities/`: Folder for new activity examples (in JSON format).
-- `src/data/udl-core.json`: Main UDL model structure (Principles and Guidelines).
-- `src/stores/udlData.ts`: Indexing and search logic.
+- `src/data/json/activities/`: Folder for new activity examples (JSON).
+- `src/data/json/udl-core.json`: Main UDL model structure.
+- `src/contexts/UDLDataContext.tsx`: Indexing and search logic using React Context.
 
 ---
 
 ## Inspiration
 
-The organization of principles, guidelines, and considerations follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.  
-All textual content and examples are original, and the visual style has been adapted.
+The organization of principles, guidelines, and considerations follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.
 
 ---
 
 ## 📄 License
 
-This project is available under the MIT license. Feel free to use and adapt it for your educational needs.
+MIT License.
 
 ## 👥 Author
 
-**Developed by Daniel Losada**
+### Developed by Daniel Losada
 
 [![GitHub](https://img.shields.io/badge/GitHub-danloi2-181717?style=for-the-badge&logo=github)](https://github.com/danloi2)
-[![Researcher EHU](https://img.shields.io/badge/Researcher-EHU-blue?style=for-the-badge&logo=researchgate)](https://github.com/danloi2)
-
----
-
-_Developed with ❤️ for the educational community._

@@ -1,13 +1,14 @@
 {
   "name": "udl",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "sync-version": "node scripts/sync-version.mjs"
   },
   "devDependencies": {
     "@types/node": "^25.1.0",

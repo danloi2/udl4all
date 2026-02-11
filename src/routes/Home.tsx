@@ -17,12 +17,24 @@ export default function Home() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(-1);
   const [isTyping, setIsTyping] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
+  
+  // Refs para control de procesos
   const timeoutRef = useRef<any>(null);
   const cursorIntervalRef = useRef<any>(null);
+  const isMounted = useRef(true);
+  
+  // Ref CRÍTICO: Mantiene siempre la versión más fresca de la función 't'
+  // Esto evita que el bucle se quede "atrapado" con el idioma antiguo.
+  const tRef = useRef(t);
 
-  // Reactively derive themes from udl-core.json data
+  // Actualizamos tRef cada vez que cambia el idioma
+  useEffect(() => {
+    tRef.current = t;
+  }, [t]);
+
+  // Mapeo de temas corregido con tipos para TS
   const themeMap = udlData.networks.reduce(
-    (acc, network) => {
+    (acc: Record<string, { color: string }>, network: any) => {
       const pId = network.principle.id;
       acc[pId] = { color: network.color || '#000000' };
       return acc;
@@ -32,16 +44,18 @@ export default function Home() {
 
   const [currentTheme, setCurrentTheme] = useState({ color: '#078743' });
 
-  const getRandomQuestionIndex = () => {
+  const getRandomQuestionIndex = (prevIndex: number) => {
     let newIndex;
     do {
       newIndex = Math.floor(Math.random() * questions.length);
-    } while (newIndex === currentQuestionIndex && questions.length > 1);
+    } while (newIndex === prevIndex && questions.length > 1);
     return newIndex;
   };
 
   const typeWriterLoop = async () => {
-    const questionIndex = getRandomQuestionIndex();
+    if (!isMounted.current) return;
+
+    const questionIndex = getRandomQuestionIndex(currentQuestionIndex);
     setCurrentQuestionIndex(questionIndex);
 
     const question = questions[questionIndex];
@@ -49,40 +63,60 @@ export default function Home() {
       setCurrentTheme(themeMap[question.principle]);
     }
 
-    const fullText = t(question);
+    // USAMOS tRef.current AQUÍ:
+    // Esto asegura que cogemos la traducción del idioma ACTUAL, no del viejo.
+    const fullText = tRef.current(question);
+    
     setIsTyping(true);
     setDisplayedText('');
 
-    // Type out
-    for (let i = 0; i < fullText.length; i++) {
+    // --- Escribir ---
+    for (let i = 0; i <= fullText.length; i++) {
+      if (!isMounted.current) return;
       await new Promise((r) => {
         timeoutRef.current = setTimeout(r, 20 + Math.random() * 30);
       });
-      setDisplayedText(fullText.slice(0, i + 1));
+      // Volvemos a chequear si se desmontó durante la espera
+      if (!isMounted.current) return;
+      setDisplayedText(fullText.slice(0, i));
     }
 
     setIsTyping(false);
+    
+    // Espera con la frase completa
     await new Promise((r) => {
       timeoutRef.current = setTimeout(r, 4500);
     });
 
-    // Delete
+    if (!isMounted.current) return;
+
+    // --- Borrar ---
     setIsTyping(true);
-    for (let i = fullText.length; i > 0; i--) {
+    for (let i = fullText.length; i >= 0; i--) {
+      if (!isMounted.current) return;
       await new Promise((r) => {
         timeoutRef.current = setTimeout(r, 10);
       });
-      setDisplayedText(fullText.slice(0, i - 1));
+      if (!isMounted.current) return;
+      setDisplayedText(fullText.slice(0, i));
     }
+    
     setIsTyping(false);
+    
     await new Promise((r) => {
       timeoutRef.current = setTimeout(r, 600);
     });
 
-    typeWriterLoop();
+    // Llamada recursiva
+    if (isMounted.current) {
+      typeWriterLoop();
+    }
   };
 
+  // Efecto de inicio (Mount/Unmount)
   useEffect(() => {
+    isMounted.current = true;
+    
     cursorIntervalRef.current = setInterval(() => {
       setCursorVisible((v) => !v);
     }, 530);
@@ -90,17 +124,19 @@ export default function Home() {
     typeWriterLoop();
 
     return () => {
+      isMounted.current = false;
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       if (cursorIntervalRef.current) clearInterval(cursorIntervalRef.current);
     };
   }, []);
 
-  // Update text when language changes (if not typing)
+  // Efecto para cambiar el texto INSTANTÁNEAMENTE si cambiamos de idioma
+  // mientras la frase está quieta (no escribiéndose/borrándose)
   useEffect(() => {
     if (!isTyping && currentQuestionIndex !== -1) {
       setDisplayedText(t(questions[currentQuestionIndex]));
     }
-  }, [language]);
+  }, [language, t]);
 
   return (
     <div
@@ -147,7 +183,6 @@ export default function Home() {
       </div>
 
       <footer className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end z-50">
-        {/* Left: Branding & Version Badge (Stacked) */}
         <div className="flex flex-col items-start leading-none gap-1.5">
           <div className="flex items-center font-black tracking-tighter text-2xl logo-elegant-hover transition-all duration-300">
             <span style={{ color: '#078743' }}>udl</span>
@@ -159,7 +194,6 @@ export default function Home() {
           </span>
         </div>
 
-        {/* Right: Copyright & Icons (Stacked) */}
         <div className="flex flex-col items-end leading-none gap-1.5">
           <a
             href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/130988/detalle"

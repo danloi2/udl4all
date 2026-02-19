@@ -7,6 +7,7 @@ interface UIContextType {
   home: string;
   back: string;
   backToExplorer: string;
+  dashboard: string;
   viewCompleteModel: string;
   exploreGuidelines: string;
   clearFilters: string;
@@ -86,6 +87,7 @@ export function UIProvider({ children }: { children: ReactNode }) {
       home: uiTranslations.navigation.home[language],
       back: uiTranslations.navigation.back[language],
       backToExplorer: uiTranslations.navigation.backToExplorer[language],
+      dashboard: uiTranslations.navigation.dashboard[language],
       viewCompleteModel: uiTranslations.navigation.viewCompleteModel[language],
       exploreGuidelines: uiTranslations.navigation.exploreGuidelines[language],
 

@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -23,7 +24,15 @@ export default function Header({
   const ui = useUI();
   const { pathname } = useLocation();
 
-  const backDestination = pathname === '/dashboard' ? '/' : '/dashboard';
+  const backDestination = useMemo(() => {
+    if (breadcrumbItems && breadcrumbItems.length >= 2) {
+      const prevItem = breadcrumbItems[breadcrumbItems.length - 2];
+      if (prevItem.href && prevItem.href !== '#') {
+        return prevItem.href;
+      }
+    }
+    return pathname === '/dashboard' ? '/' : '/dashboard';
+  }, [pathname, breadcrumbItems]);
 
   return (
     <div

@@ -129,7 +129,8 @@ export default function Activities() {
   // Construct breadcrumbs for Header
   const breadcrumbItems = useMemo(() => {
     const items = [
-      { label: '', href: '/', icon: undefined }, // This might be handled by Header globally or we pass specific ones
+      { label: '', href: '/', icon: undefined },
+      { label: ui.dashboard, href: '/dashboard' },
       { label: ui.dashActivities || 'Actividades', href: '/activities' },
     ];
 

@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useUDLData } from '../contexts/UDLDataContext';
-import { Film, Play, Globe, Layers, Grid3x3, Sparkles } from 'lucide-react';
+import { Film, Play, Globe, Layers, Grid3x3, Sparkles, Video } from 'lucide-react';
 import FloatingNavigation from '../components/FloatingNavigation';
+import Header from '../components/Header';
+import { useUI } from '../contexts/UIContext';
+import { useMemo } from 'react';
 
 type VideoCategory = 'constellation' | 'network' | 'guideline';
 type Lang = 'es' | 'en' | 'eu' | 'la';
@@ -48,10 +51,20 @@ const CATEGORY_INFO: Record<
 
 export default function Videos() {
   const { language, t } = useLanguage();
+  const ui = useUI();
   const { udlData } = useUDLData();
   const [selectedCategory, setSelectedCategory] = useState<VideoCategory | 'all'>('all');
   const [selectedLang, setSelectedLang] = useState<Lang>(language as Lang);
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
+
+  const breadcrumbItems = useMemo(
+    () => [
+      { label: '', href: '/', icon: undefined },
+      { label: ui.dashboard, href: '/dashboard' },
+      { label: ui.dashVideos, icon: Video },
+    ],
+    [ui.dashboard, ui.dashVideos]
+  );
 
   // Build video catalog from UDL data
   const videos: VideoItem[] = [];
@@ -120,29 +133,34 @@ export default function Videos() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-40">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+      <Header breadcrumbItems={breadcrumbItems} />
+
+      {/* Filter Bar */}
+      <div className="bg-white border-b border-gray-200 sticky top-[72px] z-30 shadow-sm transition-all animate-in fade-in slide-in-from-top-4">
+        <div className="container mx-auto px-6 py-3">
+          <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <Film className="w-6 h-6 text-purple-600" />
-              <h1 className="text-xl font-bold text-gray-800">Vídeos UDL</h1>
-              <span className="text-sm text-gray-400 font-mono">
+              <Film className="w-5 h-5 text-purple-600" />
+              <h2 className="text-sm font-black text-gray-900 uppercase tracking-widest">
+                {ui.dashVideos}
+              </h2>
+              <span className="px-2 py-0.5 bg-gray-100 text-gray-500 font-mono text-[10px] rounded border border-gray-200">
                 {filteredVideos.length} vídeos
               </span>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               {/* Language filter */}
-              <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1">
-                <Globe className="w-4 h-4 text-gray-500 ml-2" />
+              <div className="flex items-center gap-1 bg-gray-50 border border-gray-100 rounded-xl p-1 shadow-inner">
+                <Globe className="w-4 h-4 text-gray-400 ml-2" />
                 {langs.map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setSelectedLang(lang)}
-                    className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all ${
+                    className={`px-3 py-1 text-xs font-black uppercase tracking-wider rounded-lg transition-all ${
                       selectedLang === lang
-                        ? 'bg-white shadow-sm text-gray-900'
-                        : 'text-gray-500 hover:text-gray-700'
+                        ? 'bg-white shadow-md text-purple-600 border border-purple-100'
+                        : 'text-gray-400 hover:text-gray-600'
                     }`}
                   >
                     {lang.toUpperCase()}
@@ -151,13 +169,13 @@ export default function Videos() {
               </div>
 
               {/* Category filter */}
-              <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1">
+              <div className="flex items-center gap-1 bg-gray-50 border border-gray-100 rounded-xl p-1 shadow-inner">
                 <button
                   onClick={() => setSelectedCategory('all')}
-                  className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all ${
+                  className={`px-4 py-1.5 text-xs font-black uppercase tracking-wider rounded-lg transition-all ${
                     selectedCategory === 'all'
-                      ? 'bg-white shadow-sm text-gray-900'
-                      : 'text-gray-500 hover:text-gray-700'
+                      ? 'bg-white shadow-md text-gray-900 border border-gray-100'
+                      : 'text-gray-400 hover:text-gray-600'
                   }`}
                 >
                   Todos
@@ -169,10 +187,10 @@ export default function Videos() {
                     <button
                       key={cat}
                       onClick={() => setSelectedCategory(cat)}
-                      className={`flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md transition-all ${
+                      className={`flex items-center gap-2 px-4 py-1.5 text-xs font-black uppercase tracking-wider rounded-lg transition-all ${
                         selectedCategory === cat
-                          ? 'bg-white shadow-sm text-gray-900'
-                          : 'text-gray-500 hover:text-gray-700'
+                          ? 'bg-white shadow-md text-gray-900 border border-gray-100'
+                          : 'text-gray-400 hover:text-gray-600'
                       }`}
                     >
                       <Icon className="w-3.5 h-3.5" />
@@ -184,7 +202,7 @@ export default function Videos() {
             </div>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Content */}
       <main className="container mx-auto px-6 py-8">

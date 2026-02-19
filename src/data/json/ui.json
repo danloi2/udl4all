@@ -29,6 +29,12 @@
       "en": "Explore Guidelines",
       "eu": "Gidalerroak arakatu",
       "la": "Explorare Directiones"
+    },
+    "dashboard": {
+      "es": "Panel",
+      "en": "Dashboard",
+      "eu": "Arbeila",
+      "la": "Tabula"
     }
   },
   "buttons": {

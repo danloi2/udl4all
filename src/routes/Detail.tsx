@@ -121,6 +121,7 @@ export default function Detail() {
   const breadcrumbItems = useMemo(() => {
     const items: any[] = [
       { label: '', href: '/', icon: undefined },
+      { label: ui.dashboard, href: '/dashboard' },
       { label: ui.modelAction, href: '/model', icon: LayoutGrid },
     ];
 

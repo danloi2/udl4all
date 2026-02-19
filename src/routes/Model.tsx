@@ -25,7 +25,8 @@ export default function Model() {
   // Breadcrumbs
   const breadcrumbItems = useMemo(
     () => [
-      { label: '', href: '/', icon: undefined }, // Icon handled in Header or Breadcrumbs
+      { label: '', href: '/', icon: undefined },
+      { label: ui.dashboard, href: '/dashboard' },
       { label: ui.modelAction, icon: LayoutGrid },
     ],
     [ui.modelAction]

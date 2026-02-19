@@ -58,6 +58,7 @@ export default function Explorer() {
   const breadcrumbItems = useMemo(
     () => [
       { label: '', href: '/', icon: undefined },
+      { label: ui.dashboard, href: '/dashboard' },
       { label: ui.searchAction, icon: Search },
     ],
     [ui.searchAction]

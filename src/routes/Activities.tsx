@@ -184,47 +184,53 @@ export default function Activities() {
         <div className="ab__content">
           <FloatingNavigation currentPage="activities" printOrientation="portrait" />
           {/* Internal Navigation / Title Area */}
-          <div className="ab__nav-area">
-            {step !== 'level' && (
-              <button
-                onClick={() => {
-                  if (step === 'activity') {
-                    setStep('area');
-                    setSelectedAreaId(null);
-                  } else {
-                    setStep('level');
-                    setSelectedLevelId(null);
-                  }
-                }}
-                className="ab__back-btn"
-                style={{ color: currentColor, borderColor: currentColor }}
-              >
-                <div className="flex items-center gap-1">
-                  <ChevronRight className="w-4 h-4 rotate-180" />
-                  <span>{step === 'activity' ? ui.abBackToAreas : ui.abBackToLevels}</span>
-                </div>
-              </button>
-            )}
-
-            <h1
-              className="ab__title"
-              style={{ color: step === 'level' ? '#1e293b' : currentColor }}
-            >
-              {step === 'level' && ui.abSelectLevel}
-              {step === 'area' && (
-                <>
-                  <span className="opacity-50 font-normal">{t(selectedLevel?.name)}:</span>{' '}
-                  {ui.abSelectArea}
-                </>
-              )}
-              {step === 'activity' && (
-                <>
-                  <span className="opacity-50 font-normal">{t(selectedArea?.name)}:</span>{' '}
-                  {ui.abSelectActivity}
-                </>
-              )}
+          {/* Page Header (Branding) */}
+          <div className="flex items-center gap-4 mb-8">
+            <img src="logo.png" alt="" className="w-12 h-12 object-contain" />
+            <h1 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tighter leading-none">
+              {ui.dashActivities || 'Actividades'}
             </h1>
           </div>
+
+          {step !== 'level' && (
+            <button
+              onClick={() => {
+                if (step === 'activity') {
+                  setStep('area');
+                  setSelectedAreaId(null);
+                } else {
+                  setStep('level');
+                  setSelectedLevelId(null);
+                }
+              }}
+              className="ab__back-btn"
+              style={{ color: currentColor, borderColor: currentColor }}
+            >
+              <div className="flex items-center gap-1">
+                <ChevronRight className="w-4 h-4 rotate-180" />
+                <span>{step === 'activity' ? ui.abBackToAreas : ui.abBackToLevels}</span>
+              </div>
+            </button>
+          )}
+
+          <h2
+            className="ab__step-title"
+            style={{ color: step === 'level' ? '#64748b' : currentColor }}
+          >
+            {step === 'level' && ui.abSelectLevel}
+            {step === 'area' && (
+              <>
+                <span className="opacity-50 font-normal">{t(selectedLevel?.name)}:</span>{' '}
+                {ui.abSelectArea}
+              </>
+            )}
+            {step === 'activity' && (
+              <>
+                <span className="opacity-50 font-normal">{t(selectedArea?.name)}:</span>{' '}
+                {ui.abSelectActivity}
+              </>
+            )}
+          </h2>
 
           {/* Step 1: Levels */}
           {step === 'level' && (
@@ -330,7 +336,7 @@ export default function Activities() {
         }
 
         .ab__nav-area {
-          margin-bottom: 2rem;
+          margin-bottom: 3rem;
         }
 
         .ab__back-btn {
@@ -343,7 +349,7 @@ export default function Activities() {
           background: white;
           font-weight: 700;
           font-size: 0.8rem;
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
           cursor: pointer;
           transition: all 0.2s;
         }
@@ -353,13 +359,16 @@ export default function Activities() {
           box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
-        .ab__title {
-          font-size: clamp(1.5rem, 4vw, 2.5rem);
-          font-weight: 900;
-          color: #1e293b;
+        .ab__step-title {
+          font-size: 1.25rem;
+          font-weight: 800;
+          color: #64748b;
           margin: 0;
-          letter-spacing: -0.03em;
-          line-height: 1.1;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          border-bottom: 2px solid currentColor;
+          padding-bottom: 0.5rem;
+          width: fit-content;
         }
 
         /* Grid for levels and areas */

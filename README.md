@@ -1,10 +1,10 @@
-# 🧠 UDL Browser
+# 🧠 udl4all (UDL Browser)
 
 ![UDL Banner](https://img.shields.io/badge/UDL-3.0-blue?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18.2-61dafb?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0-38b2ac?style=for-the-badge&logo=tailwind-css)
-![Radix UI](https://img.shields.io/badge/Radix_UI-1.0-6e56cf?style=for-the-badge&logo=radix-ui)
+![Remotion](https://img.shields.io/badge/Remotion-4.0-blueviolet?style=for-the-badge&logo=remotion)
 
 An interactive and professional explorer designed to facilitate the application of **Universal Design for Learning (UDL)** in educational environments. This tool allows navigating through the principles, guidelines, and checkpoints of the UDL 3.0 model, offering practical examples and design options for teachers.
 
@@ -23,10 +23,17 @@ Full support for 4 simultaneous languages, allowing language switching on the fl
 
 ### 📖 Complete Interactive Model
 
-- **Network Visualization**: Clear representation of Affective, Recognition, and Strategic networks.
-- **Professional Hierarchy**: Fluid navigation from Principles to specific Considerations.
-- **Activity Bank**: Integration of real-world examples based on curricular activities (Math, etc.).
+- **Network Visualization**: Powered by `@xyflow/react` for a clear representation of Affective, Recognition, and Strategic networks.
+- **Professional Hierarchy**: Fluid navigation from Principles to individual Considerations.
+- **Activity Bank**: Integration of real-world examples based on curricular activities.
 - **Interactive Web Tools**: Support for external tools (GeoGebra, Padlet, etc.) integrated into UDL adaptations.
+
+### 🎬 Video Generation
+
+Integrated with **Remotion** to generate explanatory video content for UDL guidelines:
+
+- **Studio Mode**: Preview and refine video compositions.
+- **Automated Rendering**: Scripts for batch rendering videos in all supported languages.
 
 ### 🖨️ High-Density PDF Optimization
 
@@ -35,23 +42,21 @@ Print system designed to generate professional documents:
 - **Landscape Model**: The complete model compressed into a single A4 sheet.
 - **Detail Sheets**: Detailed documents that flow across multiple pages with header protection.
 
-### 🏗️ Data-Driven Architecture
-
-- **Dynamic Loading**: Activities are automatically loaded using `import.meta.glob`.
-- **Flexible Structure**: Ported from Svelte to React with specialized Context Providers for performance.
-
 ---
 
 ## 🚀 Technologies
 
 This project is built with a modern stack prioritized for speed and accessibility:
 
-- **Framework**: [React 18](https://reactjs.org/) (Vite)
+- **Framework**: [React 18](https://reactjs.org/) (with [Vite](https://vitejs.dev/))
+- **Graph Engine**: [@xyflow/react](https://reactflow.dev/) (formerly React Flow)
+- **Search**: [Fuse.js](https://www.fusejs.io/) for high-speed fuzzy searching.
 - **UI Components**: [Radix UI](https://www.radix-ui.com/)
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Routing**: `react-router-dom` (HashRouter)
+- **Routing**: `react-router-dom` (HashRouter for simplified static hosting)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Video Rendering**: [Remotion](https://www.remotion.dev/)
 
 ---
 
@@ -60,8 +65,8 @@ This project is built with a modern stack prioritized for speed and accessibilit
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-user/udl-browser.git
-   cd udl-browser
+   git clone https://github.com/danloi2/udl4all.git
+   cd udl4all
    ```
 
 2. **Install dependencies**:
@@ -76,40 +81,39 @@ This project is built with a modern stack prioritized for speed and accessibilit
    npm run dev
    ```
 
-4. **Build for production**:
+4. **Video Generation (Remotion)**:
    ```bash
-   npm run build
+   # Start Remotion Studio
+   npm run video:studio
+   # Render all videos
+   npm run video:render
    ```
 
 ---
 
-## 📂 Data Organization
+## 📂 Data & Structure
 
-Model and activity data are centralized for easy editing:
+- `src/data/json/activities/`: Centralized folder for activity examples (JSON).
+- `src/data/json/udl-core.json`: Main UDL 3.0 model structure.
+- `video/`: Remotion project for automated video content creation.
+- `scripts/`: Utility scripts for data generation and sync.
 
-- `src/data/json/activities/`: Folder for new activity examples (JSON).
-- `src/data/json/udl-core.json`: Main UDL model structure.
-- `src/contexts/UDLDataContext.tsx`: Indexing and search logic using React Context.
+### 📝 Adding New Activities
+
+To add a new activity, simply create a JSON file in `src/data/json/activities/` following the established schema. The application uses `import.meta.glob` to automatically index and load new content.
 
 ---
 
-## Inspiration
+## 🙏 Credits & Inspiration
 
-The organization of principles, guidelines, and considerations follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.
+- **UDL Model**: The organization follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.
+- **ROMCAL**: This project utilizes [ROMCAL](https://github.com/romcal/romcal) for specialized liturgical and calendar data integration.
 
 ---
 
 ## 📄 License
 
-MIT License
-
-Copyright (c) 2026 Daniel Losada
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+MIT License - Copyright (c) 2026 Daniel Losada.
 
 ## 👥 Author
 

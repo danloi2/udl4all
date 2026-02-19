@@ -186,11 +186,39 @@ export default function Activities() {
           <FloatingNavigation currentPage="activities" printOrientation="portrait" />
           {/* Internal Navigation / Title Area */}
           {/* Page Header (Branding) */}
-          <div className="flex items-center gap-4 mb-8">
-            <img src="logo.png" alt="" className="w-12 h-12 object-contain" />
-            <h1 className="text-4xl md:text-5xl font-black text-gray-900 tracking-tighter leading-none">
-              {ui.dashActivities || 'Actividades'}
-            </h1>
+          <div className="flex flex-col gap-6 mb-12">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b-4 border-gray-900 pb-6">
+              <div className="flex items-center gap-4">
+                <img src="logo.png" alt="" className="w-16 h-16 object-contain" />
+                <div className="flex flex-col">
+                  <h1 className="text-5xl font-black text-gray-900 tracking-tighter leading-none">
+                    {ui.dashActivities || 'Actividades'}
+                  </h1>
+                  <div className="flex items-center gap-2 mt-2">
+                    <span className="px-2 py-0.5 bg-gray-100 text-gray-500 font-black rounded text-[10px] uppercase tracking-widest border border-gray-200">
+                      v{pkg.version}
+                    </span>
+                    <span className="px-2 py-0.5 bg-blue-50 text-blue-700 font-black rounded-full border border-blue-100 text-[10px] uppercase tracking-wide">
+                      {t({ es: 'V 3.0.0', en: 'V 3.0.0' })}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:items-end gap-2">
+                <h2 className="text-sm md:text-base font-black text-gray-400 tracking-tight uppercase">
+                  {ui.appTitle}
+                </h2>
+                <a
+                  href="https://udlguidelines.cast.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex px-3 py-1 bg-gray-900 text-white rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-gray-700 transition-colors w-fit"
+                >
+                  CAST (2024)
+                </a>
+              </div>
+            </div>
           </div>
 
           {step !== 'level' && (

@@ -11,6 +11,7 @@ import {
 } from '../../data/constants/constants';
 import type { Activity } from '../../types';
 import { GraduationCap, BookOpen, ChevronRight } from 'lucide-react';
+import pkg from '../../../package.json';
 
 // Helper to get areas (duplicated from Activities.tsx)
 function getAreasForLevel(levelId: string) {
@@ -78,14 +79,33 @@ export default function ActivitiesPDF({
 
   return (
     <div className="w-full bg-white text-black p-8">
-      {/* Header */}
-      <div className="mb-8 border-b-2 border-gray-200 pb-4">
-        <div className="flex items-center gap-3 mb-2">
-          <img src="logo.png" alt="" className="w-10 h-10 object-contain" />
-          <h1 className="text-3xl font-black text-gray-900 leading-none pt-1">
-            {ui.dashActivities || 'Actividades'}
+      {/* Integrated Header */}
+      <div className="w-full text-center border-b border-gray-300 pb-1 mb-6">
+        <div className="flex justify-between items-baseline px-2">
+          <div className="flex items-baseline gap-2">
+            <div className="flex items-center gap-1.5">
+              <img src="logo.png" alt="" className="w-5 h-5 object-contain" />
+              <span className="font-black tracking-tighter text-sm leading-none">
+                <span style={{ color: '#078743' }}>udl</span>
+                <span style={{ color: '#831682' }}>4</span>
+                <span style={{ color: '#295e86' }}>all</span>
+              </span>
+            </div>
+            <span className="text-[6px] text-gray-500 font-bold uppercase tracking-widest border border-gray-300 px-1 rounded-sm">
+              v{pkg.version}
+            </span>
+          </div>
+          <h1 className="text-xs font-black text-gray-900 tracking-tight flex-1 text-center mx-4 uppercase">
+            {ui.appTitle}
           </h1>
+          <div className="text-[10px] text-gray-500 font-bold uppercase">CAST (2024)</div>
         </div>
+      </div>
+
+      <div className="mb-8 border-b-2 border-gray-200 pb-4">
+        <h2 className="text-3xl font-black text-gray-900 mb-2">
+          {ui.dashActivities || 'Actividades'}
+        </h2>
         {selectedLevel && (
           <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
             <span style={{ color: levelColors[selectedLevel.id] }}>{t(selectedLevel.name)}</span>

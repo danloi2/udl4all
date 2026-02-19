@@ -1,122 +1,128 @@
-# 🧠 udl4all (UDL Browser)
+# 🧠 udl4all (UDL Browser) v3.0
 
 ![UDL Banner](https://img.shields.io/badge/UDL-3.0-blue?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18.2-61dafb?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0-38b2ac?style=for-the-badge&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=for-the-badge&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-4.1-38b2ac?style=for-the-badge&logo=tailwind-css)
 ![Remotion](https://img.shields.io/badge/Remotion-4.0-blueviolet?style=for-the-badge&logo=remotion)
 
-An interactive and professional explorer designed to facilitate the application of **Universal Design for Learning (UDL)** in educational environments. This tool allows navigating through the principles, guidelines, and checkpoints of the UDL 3.0 model, offering practical examples and design options for teachers.
+An advanced, interactive explorer designed to facilitate the implementation of **Universal Design for Learning (UDL)** in educational environments. This professional tool allows teachers to navigate through the complex hierarchy of the **UDL 3.0 model**, providing contextual adaptations, practical activities, and design options.
 
 ---
 
-## ✨ Key Features
+## 🏗️ Technical Architecture
 
-### 🌍 Multilingual by Default
+The application is built as a high-performance **Single Page Application (SPA)** using React and Vite, with a heavy emphasis on data-driven modularity.
 
-Full support for 4 simultaneous languages, allowing language switching on the fly without losing context:
+### 🧩 Core State Management
 
-- **Spanish (es)**
-- **English (en)**
-- **Basque (eu)**
-- **Latin (la)**
+The system utilizes specialized **React Context Providers** to manage global state without the overhead of external libraries:
 
-### 📖 Complete Interactive Model
+- **`UDLDataContext`**: The "brain" of the app. It handles the dynamic loading of JSON activities, builds a searchable index in-memory at runtime, and provides optimized lookup methods (`getConsiderationById`, etc.).
+- **`SearchContext`**: Powered by **Fuse.js**, it implements a high-speed fuzzy search engine that indexes principles, guidelines, considerations, and activities dynamically.
+- **`UIContext`**: Manages interaction states, such as panel visibility and layout preferences.
+- **`LanguageContext`**: Facilitates instant switching between **Spanish, English, Basque, and Latin** across the entire UI.
 
-- **Network Visualization**: Powered by `@xyflow/react` for a clear representation of Affective, Recognition, and Strategic networks.
-- **Professional Hierarchy**: Fluid navigation from Principles to individual Considerations.
-- **Activity Bank**: Integration of real-world examples based on curricular activities.
-- **Interactive Web Tools**: Support for external tools (GeoGebra, Padlet, etc.) integrated into UDL adaptations.
+### 📊 Visualization & Interaction
 
-### 🎬 Video Generation
-
-Integrated with **Remotion** to generate explanatory video content for UDL guidelines:
-
-- **Studio Mode**: Preview and refine video compositions.
-- **Automated Rendering**: Scripts for batch rendering videos in all supported languages.
-
-### 🖨️ High-Density PDF Optimization
-
-Print system designed to generate professional documents:
-
-- **Landscape Model**: The complete model compressed into a single A4 sheet.
-- **Detail Sheets**: Detailed documents that flow across multiple pages with header protection.
+- **Interactive Concept Maps**: Uses **`@xyflow/react`** (React Flow) to render the UDL networks as interactive nodes and edges, allowing visual exploration of the relationships between principles.
+- **Responsive Layout**: Designed for both desktop and mobile, with a focus on "High-Density" information display.
+- **Flash-Fast Navigation**: Uses `HashRouter` for zero-latency transitions and easy deployment on static hosts like GitHub Pages.
 
 ---
 
-## 🚀 Technologies
+## 🎬 Video Generation Pipeline
 
-This project is built with a modern stack prioritized for speed and accessibility:
+A unique feature of **udl4all** is its integrated video creation engine located in the `video/` directory, built on **Remotion**.
 
-- **Framework**: [React 18](https://reactjs.org/) (with [Vite](https://vitejs.dev/))
-- **Graph Engine**: [@xyflow/react](https://reactflow.dev/) (formerly React Flow)
-- **Search**: [Fuse.js](https://www.fusejs.io/) for high-speed fuzzy searching.
-- **UI Components**: [Radix UI](https://www.radix-ui.com/)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Routing**: `react-router-dom` (HashRouter for simplified static hosting)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Video Rendering**: [Remotion](https://www.remotion.dev/)
+- **Programmatic Video**: Guideline explanations are rendered as videos using React components.
+- **Multilingual Renders**: Automated scripts generate synchronized videos in all 4 supported languages.
+- **Batch Processing**:
+
+  ```bash
+  # Preview and refine compositions
+  npm run video:studio
+  # Render all 52 specialized videos
+  npm run video:render
+  ```
 
 ---
 
-## 🛠️ Installation and Development
+## 📂 Project Structure & Data Flow
 
-1. **Clone the repository**:
+```text
+├── src/
+│   ├── components/       # Atomic and complex UI components (Breadcrumbs, FloatingNav)
+│   ├── contexts/         # State management and data indexing logic
+│   ├── data/
+│   │   ├── json/         # Centralized data store
+│   │   │   ├── activities/ # Auto-indexed activity bank
+│   │   │   └── udl-core.json # Main UDL 3.0 hierarchy
+│   ├── routes/           # Page containers (Explorer, Model, Videos, etc.)
+│   └── utils/            # Shared logic and formatting helpers
+├── video/                # Independent Remotion project for video assets
+├── scripts/              # Internal maintenance and automation tools
+└── public/               # Static assets (favicons, metadata) served at the root
+```
+
+### 📁 Asset Management
+
+To ensure clarity and performance, the project distinguishes between two types of assets:
+
+- **`public/` folder**: Use this for files that must keep their names and be served from the root (`/`).
+  - **Favicons**: `logo.png` is served at `/logo.png` for headers and browsers.
+  - **Metadata**: Files like `version.json` used by scripts.
+  - **Note**: Files here are copied as-is to the `dist` folder.
+- **`src/assets/` folder**: Use this for images or fonts used within your React components via `import`.
+  - Vite will process, optimize, and version these files (e.g., adding a hash to the filename) during the build.
+
+### 📝 Dynamic Activity Loading
+
+Activities are NOT hardcoded. The application uses Vite's `import.meta.glob` to scan the `src/data/json/activities/` folder at build time. To add new content, simply drop a validated JSON file in that directory.
+
+---
+
+## 🛠️ Internal Tooling
+
+The project includes custom-built maintenance scripts:
+
+- **`generate-activities.mjs`**: Standardizes the creation of JSON activity files from Markdown sources.
+- **`sync-version.mjs`**: Automatically synchronizes project versions across `package.json`, `udl-core.json`, and the public metadata.
+- **`verify_activity.js`**: A validation utility to ensure all JSON data matches the expected UDL schemas.
+
+---
+
+## 🚀 Deployment & Installation
+
+1. **Setup**:
 
    ```bash
    git clone https://github.com/danloi2/udl4all.git
-   cd udl4all
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
    npm install
    ```
 
-3. **Run in development mode**:
+2. **Development**:
 
    ```bash
    npm run dev
    ```
 
-4. **Video Generation (Remotion)**:
+3. **Build**:
    ```bash
-   # Start Remotion Studio
-   npm run video:studio
-   # Render all videos
-   npm run video:render
+   npm run build # Generates optimized static build in /dist
    ```
-
----
-
-## 📂 Data & Structure
-
-- `src/data/json/activities/`: Centralized folder for activity examples (JSON).
-- `src/data/json/udl-core.json`: Main UDL 3.0 model structure.
-- `video/`: Remotion project for automated video content creation.
-- `scripts/`: Utility scripts for data generation and sync.
-
-### 📝 Adding New Activities
-
-To add a new activity, simply create a JSON file in `src/data/json/activities/` following the established schema. The application uses `import.meta.glob` to automatically index and load new content.
 
 ---
 
 ## 🙏 Credits & Inspiration
 
-- **UDL Model**: The organization follows the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.
-- **ROMCAL**: This project utilizes [ROMCAL](https://github.com/romcal/romcal) for specialized liturgical and calendar data integration.
+- **UDL Framework**: Based on the **Universal Design for Learning (UDL)** model from [CAST UDL Guidelines™ v3.0](https://udlguidelines.cast.org/), © CAST, Inc. 2024.
+- **Icons & UI**: [Lucide React](https://lucide.dev/) and [Radix UI](https://www.radix-ui.com/).
 
 ---
 
-## 📄 License
+## 📄 License & Author
 
-MIT License - Copyright (c) 2026 Daniel Losada.
-
-## 👥 Author
-
-### Developed by Daniel Losada
+**MIT License** - Copyright (c) 2026 **Daniel Losada**.
 
 [![GitHub](https://img.shields.io/badge/GitHub-danloi2-181717?style=for-the-badge&logo=github)](https://github.com/danloi2)

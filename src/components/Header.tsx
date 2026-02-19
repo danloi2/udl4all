@@ -59,11 +59,14 @@ export default function Header({
             <div className="flex flex-col items-start leading-none">
               <Link
                 to={backDestination}
-                className="flex items-center font-black tracking-tighter text-xl text-gray-800 hover:opacity-80 transition-opacity print:text-xs leading-none"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity print:text-xs"
               >
-                <span style={{ color: '#078743' }}>udl</span>
-                <span style={{ color: '#831682' }}>4</span>
-                <span style={{ color: '#295e86' }}>all</span>
+                <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+                <div className="flex font-black tracking-tighter text-xl text-gray-800 leading-none">
+                  <span style={{ color: '#078743' }}>udl</span>
+                  <span style={{ color: '#831682' }}>4</span>
+                  <span style={{ color: '#295e86' }}>all</span>
+                </div>
               </Link>
               <span className="px-1.5 py-0.5 bg-gray-100/50 text-gray-500 font-black rounded text-[9px] uppercase tracking-widest border border-gray-200 mt-0.5 print:text-[6px] print:mt-0">
                 v{pkg.version}

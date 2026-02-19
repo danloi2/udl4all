@@ -61,7 +61,7 @@ export default function Header({
                 to={backDestination}
                 className="flex items-center gap-2 hover:opacity-80 transition-opacity print:text-xs"
               >
-                <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+                <img src="logo.png" alt="Logo" className="w-8 h-8 object-contain" />
                 <div className="flex font-black tracking-tighter text-xl text-gray-800 leading-none">
                   <span style={{ color: '#078743' }}>udl</span>
                   <span style={{ color: '#831682' }}>4</span>

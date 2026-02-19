@@ -7,6 +7,7 @@ import { useUDLData } from '../contexts/UDLDataContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import pkg from '../../package.json';
 
 import FloatingNavigation from '../components/FloatingNavigation';
 import {

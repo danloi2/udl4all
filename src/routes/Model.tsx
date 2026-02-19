@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import { useUDLData } from '../contexts/UDLDataContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useUI } from '../contexts/UIContext';
@@ -16,7 +16,11 @@ export default function Model() {
   const { udlData } = useUDLData();
   const { t } = useLanguage();
   const ui = useUI();
-  const { showConsiderations } = useSettings();
+  const { showConsiderations, setShowConsiderations } = useSettings();
+
+  useEffect(() => {
+    setShowConsiderations(true);
+  }, [setShowConsiderations]);
 
   // Breadcrumbs
   const breadcrumbItems = useMemo(
@@ -131,12 +135,7 @@ export default function Model() {
         </div>
       </div>
 
-      <FloatingNavigation
-        currentPage="model"
-        printOrientation="landscape"
-        printScale={0.9}
-  
-      />
+      <FloatingNavigation currentPage="model" printOrientation="landscape" printScale={0.9} />
 
       <div className="print:hidden">
         <Footer />

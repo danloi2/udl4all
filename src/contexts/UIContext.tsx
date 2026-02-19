@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useMemo, ReactNode } from 'react';
+import { createContext, useContext, useMemo, ReactNode } from 'react';
 import { useLanguage } from './LanguageContext';
 import { useUDLData } from './UDLDataContext';
 import uiTranslations from '../data/json/ui.json';
@@ -52,6 +52,24 @@ interface UIContextType {
   example: string;
   activity: string;
   designOptions: string;
+  // Dashboard
+  dashModelUdl: string;
+  dashModelUdlDesc: string;
+  dashActivities: string;
+  dashActivitiesDesc: string;
+  dashVideos: string;
+  dashVideosDesc: string;
+  dashSearch: string;
+  dashSearchDesc: string;
+  dashBackToHome: string;
+  // Activity Browser
+  abSelectLevel: string;
+  abSelectArea: string;
+  abSelectActivity: string;
+  abNoActivities: string;
+  abBackToLevels: string;
+  abBackToAreas: string;
+  abActivitiesCount: string;
 }
 
 const UIContext = createContext<UIContextType | undefined>(undefined);
@@ -125,10 +143,32 @@ export function UIProvider({ children }: { children: ReactNode }) {
       webTools: uiTranslations.labels.webTools[language],
       allEducationalLevels: uiTranslations.labels.allEducationalLevels[language],
       allCurricularAreas: uiTranslations.labels.allCurricularAreas[language],
-      udlAcronym: udlData.acronym[language],
+      udlAcronym: (Array.isArray(udlData.acronym[language])
+        ? udlData.acronym[language][0]
+        : udlData.acronym[language]) as string,
       example: uiTranslations.labels.example[language],
       activity: uiTranslations.labels.activity[language],
       designOptions: uiTranslations.labels.designOptions[language],
+
+      // Dashboard
+      dashModelUdl: uiTranslations.dashboard.modelUdl[language],
+      dashModelUdlDesc: uiTranslations.dashboard.modelUdlDesc[language],
+      dashActivities: uiTranslations.dashboard.activities[language],
+      dashActivitiesDesc: uiTranslations.dashboard.activitiesDesc[language],
+      dashVideos: uiTranslations.dashboard.videos[language],
+      dashVideosDesc: uiTranslations.dashboard.videosDesc[language],
+      dashSearch: uiTranslations.dashboard.search[language],
+      dashSearchDesc: uiTranslations.dashboard.searchDesc[language],
+      dashBackToHome: uiTranslations.dashboard.backToHome[language],
+
+      // Activity Browser
+      abSelectLevel: uiTranslations.activityBrowser.selectLevel[language],
+      abSelectArea: uiTranslations.activityBrowser.selectArea[language],
+      abSelectActivity: uiTranslations.activityBrowser.selectActivity[language],
+      abNoActivities: uiTranslations.activityBrowser.noActivities[language],
+      abBackToLevels: uiTranslations.activityBrowser.backToLevels[language],
+      abBackToAreas: uiTranslations.activityBrowser.backToAreas[language],
+      abActivitiesCount: uiTranslations.activityBrowser.activitiesCount[language],
     };
   }, [language, udlData]);
 

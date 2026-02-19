@@ -254,5 +254,105 @@
       "eu": "Elementua ez da aurkitu",
       "la": "Elementum non inventum"
     }
+  },
+  "dashboard": {
+    "modelUdl": {
+      "es": "Modelo UDL",
+      "en": "UDL Model",
+      "eu": "UDL Eredua",
+      "la": "Exemplar UDL"
+    },
+    "modelUdlDesc": {
+      "es": "Explora el marco completo del Diseño Universal para el Aprendizaje",
+      "en": "Explore the complete Universal Design for Learning framework",
+      "eu": "Ikaskuntzarako Diseinu Unibertsalaren esparru osoa arakatu",
+      "la": "Explora structuram completam Designationis Universalis pro Discendo"
+    },
+    "activities": {
+      "es": "Actividades",
+      "en": "Activities",
+      "eu": "Jarduerak",
+      "la": "Actiones"
+    },
+    "activitiesDesc": {
+      "es": "Descubre actividades prácticas para aplicar los principios UDL",
+      "en": "Discover practical activities to apply UDL principles",
+      "eu": "Aurkitu jarduera praktikoak UDL printzipioak aplikatzeko",
+      "la": "Inveni actiones practicas ad principia UDL applicanda"
+    },
+    "videos": {
+      "es": "Vídeos",
+      "en": "Videos",
+      "eu": "Bideoak",
+      "la": "Videographia"
+    },
+    "videosDesc": {
+      "es": "Aprende con vídeos explicativos sobre el Diseño Universal",
+      "en": "Learn with explanatory videos about Universal Design",
+      "eu": "Ikasi Diseinu Unibertsaleko bideo azalpenekin",
+      "la": "Disce cum videographiis de Designatione Universali"
+    },
+    "search": {
+      "es": "Buscar",
+      "en": "Search",
+      "eu": "Bilatu",
+      "la": "Quaerere"
+    },
+    "searchDesc": {
+      "es": "Encuentra cualquier pauta, principio o consideración rápidamente",
+      "en": "Quickly find any guideline, principle, or consideration",
+      "eu": "Aurkitu azkar edozein gidalerro, printzipio edo kontuan hartze",
+      "la": "Inveni celeriter quamlibet directionem, principium vel considerationem"
+    },
+    "backToHome": {
+      "es": "Inicio",
+      "en": "Home",
+      "eu": "Hasiera",
+      "la": "Domus"
+    }
+  },
+  "activityBrowser": {
+    "selectLevel": {
+      "es": "Selecciona un nivel educativo",
+      "en": "Select an educational level",
+      "eu": "Hautatu hezkuntza maila bat",
+      "la": "Elige gradum educativum"
+    },
+    "selectArea": {
+      "es": "Selecciona un área curricular",
+      "en": "Select a curricular area",
+      "eu": "Hautatu arlo kurrikular bat",
+      "la": "Elige aream curricularem"
+    },
+    "selectActivity": {
+      "es": "Selecciona una actividad",
+      "en": "Select an activity",
+      "eu": "Hautatu jarduera bat",
+      "la": "Elige actionem"
+    },
+    "noActivities": {
+      "es": "No hay actividades disponibles para esta selección",
+      "en": "No activities available for this selection",
+      "eu": "Ez dago jarduerarik aukeraketa honetarako",
+      "la": "Nullae actiones praesto sunt pro hac selectione"
+    },
+    "backToLevels": {
+      "es": "Niveles",
+      "en": "Levels",
+      "eu": "Mailak",
+      "la": "Gradus"
+    },
+    "backToAreas": {
+      "es": "Áreas",
+      "en": "Areas",
+      "eu": "Arloak",
+      "la": "Areae"
+    },
+    "activitiesCount": {
+      "es": "actividades",
+      "en": "activities",
+      "eu": "jarduera",
+      "la": "actiones"
+    }
   }
 }

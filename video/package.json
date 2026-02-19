@@ -1,0 +1,28 @@
+{
+  "name": "udl4all-video",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "tsx render.ts",
+    "render:all": "tsx render.ts --type all --lang all",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.242",
+    "@remotion/google-fonts": "4.0.242",
+    "@remotion/renderer": "4.0.242",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "4.0.242",
+    "tsx": "^4.7.0",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/minimist": "^1.2.5",
+    "typescript": "~5.9.3"
+  }
+}

@@ -1,60 +1,18 @@
-/* app.css — Print styles and overrides (fonts/tailwind loaded via base.css) */
+/* ============================================================
+   @page rules MUST be at top level — NOT inside @media print.
+   Browsers silently ignore @page when nested inside @media.
+   ============================================================ */
 
-/* Custom UDL styles */
-:root {
-  font-family:
-    'Inter',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Default page: portrait with standard margins */
+@page {
+  size: A4 landscape;
+  margin: 2mm 5mm;
 }
 
-/* --- Model Header Font Control (Web/Screen) --- */
-.app-model-title {
-  font-size: 1.875rem; /* Equivalent to text-3xl */
-}
-
-@media (min-width: 768px) {
-  .app-model-title {
-    font-size: 2.25rem; /* Equivalent to text-4xl */
-  }
-}
-
-.app-model-version {
-  font-size: 0.875rem; /* Equivalent to text-sm */
-}
-
-.app-model-cast {
-  font-size: 0.75rem; /* Equivalent to text-xs */
-}
-/* ---------------------------------------------- */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-#app {
-  min-height: 100vh;
-}
+/* ============================================================
+   All other print styles inside @media print
+   ============================================================ */
 @media print {
-  @page {
-    size: A4 landscape;
-    margin: 10mm;
-  }
-
-  /* Remove default portrait and named landscape page */
-
   body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -67,40 +25,56 @@ body {
   }
 
   #app {
-    display: block !important;
     height: auto !important;
     position: relative !important;
+  }
+
+  /* The wrapper that holds Header + Model + Footer for single-page print */
+  .print-wrapper {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    /* Soften 'avoid' to prevent forcing huge blocks to next page. Allow flow. */
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
   }
 
   /* Remove padding from print-landscape to rely on Flexbox spacing */
   .print-landscape {
     height: auto !important;
     min-height: 0 !important;
-    display: block !important; /* Revert to block */
+    display: block !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     overflow: visible !important;
   }
 
-  /* Ensure root containers force full page height for Flexbox to work */
+  /* Ensure root containers collapse for print */
   .min-h-screen {
     height: auto !important;
     min-height: 0 !important;
-    display: block !important; /* Block layout for print */
+    display: block !important;
     padding-bottom: 0 !important;
   }
 
-  /* Force 3-column model to fit - larger scale for 2 pages */
-  .print-model-container {
-    transform: none !important;
-  }
-
+  /* Model container: scale down to fit one A4 landscape page.
+     NO 'page:' property here — that forces a page break before the element. */
+  /* Model container: scale handled globally via script or manual adjustment.
+     NO 'page:' property here — that forces a page break before the element. */
   .print-model-container {
     width: 100% !important;
     max-width: none !important;
-    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     padding: 0 !important;
+    /* Allow browser to find best break point if needed (prevent forced whole-block jump) */
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    /* Allow shrinking */
+    flex-shrink: 1 !important;
   }
 
   .print-header-container {
@@ -110,6 +84,16 @@ body {
     gap: 1.5rem !important;
     margin-bottom: 0.25rem !important;
     text-align: center !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Glue Header to content */
+  .app-header {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    margin-bottom: 0 !important;
+    border-bottom: 0 !important; /* Remove border to save space */
   }
 
   .app-model-title {
@@ -130,20 +114,45 @@ body {
     color: #333 !important;
     margin-bottom: 5mm !important;
     text-align: center !important;
+    text-align: center !important;
     max-width: 100% !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
 
-  /* Print content grid - allow natural page breaks */
+  /* Glue Goal Wrapper to Grid */
+  .model-goal-wrapper {
+    margin-bottom: 2mm !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Print content grid */
   .print-content {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 3mm !important;
+    gap: 1mm !important;
     width: 100% !important;
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+    /* Allow break inside to fill the page content */
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    margin-top: 0 !important;
   }
 
   /* Each column in print */
   .print-content > div {
     page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  /* Don't split individual cards or headers */
+  .print-content > div > div {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
   }
 
   /* Shrink components radically for print model */
@@ -160,8 +169,8 @@ body {
 
   /* Principle Header Compactness (Landscape Model) */
   .print-model-container .px-4.py-6.md\:py-10 {
-    padding-top: 0.3rem !important;
-    padding-bottom: 0.3rem !important;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
   }
 
   /* Logo Size in Print Model */
@@ -177,22 +186,22 @@ body {
     padding-bottom: 0.2rem !important;
   }
 
-  /* Increase Guideline Name Font Size */
+  /* Increase Guideline Name Font Size (reduced from 14pt to 12pt for density) */
   .print-model-container h3 span:not(.pre-description-text) {
-    font-size: 14pt !important;
+    font-size: 12pt !important;
     line-height: 1.1 !important;
   }
 
   /* Shrink Pre-descriptions (Guideline and Principle) */
   .print-model-container .pre-description-text {
-    font-size: 10pt !important;
-    letter-spacing: 0.1em !important;
+    font-size: 8pt !important;
+    letter-spacing: 0em !important;
     line-height: 1 !important;
   }
 
   /* Increase Principle Names */
   .print-model-container h2 {
-    font-size: 18pt !important;
+    font-size: 16pt !important;
     margin-top: 0.1rem !important;
     margin-bottom: 0.1rem !important;
   }
@@ -214,18 +223,18 @@ body {
   }
 
   .print-model-container .p-3.space-y-1 .text-sm {
-    font-size: 11pt !important;
+    font-size: 9.5pt !important;
     line-height: 1.05 !important;
   }
 
   .print-model-container .gap-2 {
-    gap: 0.2rem !important;
+    gap: 0.1rem !important;
   }
 
   /* Portrait Detail Views (Principles, Guidelines, Considerations) */
   .print-portrait-compact {
-    page-break-inside: auto !important; /* Allow multi-page for long content (many examples) */
-    transform: none !important; /* Scaling on containers breaks page break calculations */
+    page-break-inside: auto !important;
+    transform: none !important;
   }
 
   .print-multi-page {
@@ -292,6 +301,7 @@ body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
+
   /* Adjust typography for print density */
   p,
   h1,
@@ -304,36 +314,40 @@ body {
   .lg\:hidden {
     display: none !important;
   }
-}
 
-/* Smooth transitions */
-a,
-button {
-  transition: all 0.2s ease-in-out;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Print styles */
-@media print {
   .no-print {
     display: none !important;
+  }
+
+  /* Hide nav, fixed elements, buttons */
+  .fixed,
+  header,
+  button:not(.no-print-hide),
+  .no-print,
+  #language-switcher-header,
+  .floating-nav {
+    display: none !important;
+  }
+
+  /* Hide the AppFooter in print — Model provides its own print footer */
+  .app-footer {
+    display: none !important;
+  }
+
+  /* Show Model's inline print footer */
+  .model-print-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-top: 1px solid #ccc !important;
+    padding-top: 2mm !important;
+    margin-top: 2mm !important;
+    font-size: 9pt !important;
+    color: #555 !important;
+    color: #555 !important;
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 }

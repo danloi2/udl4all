@@ -1,14 +1,26 @@
 import { Link } from 'react-router-dom';
 import { useUI } from '../contexts/UIContext';
 import { useSettings } from '../contexts/SettingsContext';
-import { ArrowLeft, LayoutGrid, Search, Eye, EyeOff, Home } from 'lucide-react';
+import { LayoutGrid, Search, Eye, EyeOff, Home, Workflow } from 'lucide-react';
 import PrintPDFButton from './PrintPDFButton';
 
 interface FloatingNavigationProps {
-  currentPage: 'model' | 'explorer' | 'detail';
+  currentPage: 'model' | 'explorer' | 'detail' | 'map' | 'home' | 'activities' | 'videos';
+  onBeforePrint?: () => void;
+  onAfterPrint?: () => void;
+  printInstructions?: string[];
+  printOrientation?: 'landscape' | 'portrait';
+  printScale?: number;
 }
 
-export default function FloatingNavigation({ currentPage }: FloatingNavigationProps) {
+export default function FloatingNavigation({
+  currentPage,
+  onBeforePrint,
+  onAfterPrint,
+  printInstructions,
+  printOrientation,
+  printScale,
+}: FloatingNavigationProps) {
   const ui = useUI();
   const { showConsiderations, setShowConsiderations } = useSettings();
 
@@ -48,6 +60,15 @@ export default function FloatingNavigation({ currentPage }: FloatingNavigationPr
         </Link>
       )}
 
+      {/* Concept Map Button */}
+      {currentPage !== 'map' && (
+        <Link to="/map" className={`${btnClass} ${secondaryClass}`} title="Mapa">
+          <Workflow className="w-6 h-6 mb-1" />
+          <span className="text-[10px] font-black uppercase tracking-widest">Mapa</span>
+          <span className={tooltipClass}>Mapa Conceptual</span>
+        </Link>
+      )}
+
       {/* Show/Hide Considerations */}
       {currentPage === 'model' && (
         <button
@@ -77,7 +98,13 @@ export default function FloatingNavigation({ currentPage }: FloatingNavigationPr
       )}
 
       {/* PDF Button */}
-      <PrintPDFButton />
+      <PrintPDFButton
+        onBeforePrint={onBeforePrint}
+        onAfterPrint={onAfterPrint}
+        instructions={printInstructions}
+        orientation={printOrientation}
+        scale={printScale}
+      />
     </div>
   );
 }

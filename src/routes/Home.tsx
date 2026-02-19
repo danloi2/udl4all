@@ -17,12 +17,12 @@ export default function Home() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(-1);
   const [isTyping, setIsTyping] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
-  
+
   // Refs para control de procesos
   const timeoutRef = useRef<any>(null);
   const cursorIntervalRef = useRef<any>(null);
   const isMounted = useRef(true);
-  
+
   // Ref CRÍTICO: Mantiene siempre la versión más fresca de la función 't'
   // Esto evita que el bucle se quede "atrapado" con el idioma antiguo.
   const tRef = useRef(t);
@@ -66,7 +66,7 @@ export default function Home() {
     // USAMOS tRef.current AQUÍ:
     // Esto asegura que cogemos la traducción del idioma ACTUAL, no del viejo.
     const fullText = tRef.current(question);
-    
+
     setIsTyping(true);
     setDisplayedText('');
 
@@ -82,7 +82,7 @@ export default function Home() {
     }
 
     setIsTyping(false);
-    
+
     // Espera con la frase completa
     await new Promise((r) => {
       timeoutRef.current = setTimeout(r, 4500);
@@ -100,9 +100,9 @@ export default function Home() {
       if (!isMounted.current) return;
       setDisplayedText(fullText.slice(0, i));
     }
-    
+
     setIsTyping(false);
-    
+
     await new Promise((r) => {
       timeoutRef.current = setTimeout(r, 600);
     });
@@ -116,7 +116,7 @@ export default function Home() {
   // Efecto de inicio (Mount/Unmount)
   useEffect(() => {
     isMounted.current = true;
-    
+
     cursorIntervalRef.current = setInterval(() => {
       setCursorVisible((v) => !v);
     }, 530);
@@ -167,7 +167,7 @@ export default function Home() {
 
         <div className="mt-20 flex justify-center fade-in">
           <Link
-            to="/model"
+            to="/dashboard"
             className="group relative inline-flex items-center gap-3 px-8 py-4 text-white text-lg font-bold rounded-full shadow-lg hover:shadow-2xl hover:brightness-110 hover:-translate-y-1 transition-all duration-300 theme-button"
           >
             <span>{ui.readyToTeach}</span>

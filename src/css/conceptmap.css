@@ -1,0 +1,454 @@
+/* ═══════════════════════════════════════════════════════════════════
+   UDL Concept Map — Estilos
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── Contenedor principal ─────────────────────────────────────── */
+.concept-map-container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* ─── Nodos base ───────────────────────────────────────────────── */
+.udl-node {
+  padding: 12px 16px;
+  /* Irregular borders simulating hand-drawn shapes */
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  /* Double border effect using box-shadow */
+  border: 2px solid #334155;
+  box-shadow:
+    2px 3px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 10px rgba(0, 0, 0, 0.02);
+  background: #fff;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  transition: all 0.2s ease;
+}
+
+.udl-node:hover {
+  transform: scale(1.02) rotate(-1deg);
+  box-shadow:
+    4px 6px 0 rgba(0, 0, 0, 0.15),
+    inset 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ─── Nodo Central UDL ─────────────────────────────────────────── */
+.udl-node--central {
+  padding: 24px 32px;
+  /* More circular but still organic */
+  border-radius: 50% 40% 50% 45% / 40% 50% 45% 50%;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Sketchy dark fill */
+  background: #1e293b;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  border: 3px solid #0f172a;
+  color: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.udl-node--central:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.udl-node--central .udl-node__icon {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.udl-node--central .udl-node__label {
+  font-size: 28px;
+  font-weight: 400; /* Font is naturally bold */
+  letter-spacing: 1px;
+}
+
+.udl-node--central .udl-node__subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 4px;
+  max-width: 140px;
+  line-height: 1.1;
+}
+
+/* ─── Nodo de Red Neuronal ─────────────────────────────────────── */
+.udl-node--network {
+  padding: 18px 26px;
+  border-radius: 20px 225px 30px 235px / 235px 20px 215px 25px;
+  border-width: 3px;
+  min-width: 220px;
+  max-width: 280px;
+  background: #f8fafc;
+}
+
+.udl-node--network .udl-node__badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px 25px 15px 20px;
+  border: 2px solid currentColor;
+  font-size: 18px;
+  margin-bottom: 8px;
+  background: white;
+}
+
+.udl-node--network .udl-node__label {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.udl-node--network .udl-node__why {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ─── Nodo de Principio ────────────────────────────────────────── */
+.udl-node--principle {
+  padding: 16px 22px;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  min-width: 200px;
+  max-width: 260px;
+  background: #fff;
+}
+
+.udl-node--principle .udl-node__pre {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.udl-node--principle .udl-node__label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* ─── Nodo de Pauta ────────────────────────────────────────────── */
+.udl-node--guideline {
+  padding: 12px 16px;
+  border-radius: 15px 225px 20px 235px / 235px 15px 225px 20px;
+  min-width: 170px;
+  max-width: 230px;
+  background: white;
+}
+
+.udl-node--guideline .udl-node__row-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 15px 25px 12px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.udl-node--guideline .udl-node__code {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.udl-node--guideline .udl-node__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  line-height: 1.2;
+}
+
+/* ─── Nodo de Consideración ────────────────────────────────────── */
+.udl-node--consideration {
+  padding: 10px 14px;
+  border-radius: 5px; /* Stickies often square-ish but imperfect */
+  border-radius: 255px 5px 225px 5px / 5px 225px 5px 255px;
+  min-width: 150px;
+  max-width: 190px;
+  border-width: 1px;
+  background: #fffff0; /* Slight yellow tint like sticky note */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.udl-node--consideration .udl-node__code-small {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.udl-node--consideration .udl-node__label-small {
+  font-size: 13px; /* Slightly larger for handwritten font legibility */
+  color: #475569;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Allow one more line as handwritten font can be wider */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─── Handles (conectores) ─────────────────────────────────────── */
+.udl-handle {
+  width: 8px !important;
+  height: 8px !important;
+  border: 2px solid white !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.udl-handle--central {
+  background: #475569 !important;
+}
+
+.udl-handle--small {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+/* ─── Panel de control ─────────────────────────────────────────── */
+.concept-map-panel {
+  background: white;
+  /* Sketchy border */
+  border-radius: 5px 255px 7px 225px / 225px 5px 255px 7px;
+  padding: 12px;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid #334155;
+}
+
+.concept-map-panel__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.concept-map-panel__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.concept-map-panel__btn {
+  padding: 6px 14px;
+  border: 2px solid #334155;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  white-space: nowrap;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.concept-map-panel__btn:hover {
+  background: #f1f5f9;
+  transform: scale(1.02) rotate(-0.5deg);
+}
+
+.concept-map-panel__btn--active {
+  background: #334155;
+  color: white;
+  border-color: #334155;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.concept-map-panel__btn--active:hover {
+  background: #475569;
+}
+
+/* ─── Leyenda ──────────────────────────────────────────────────── */
+.concept-map-legend {
+  background: white;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  padding: 12px 16px;
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid #334155;
+  max-width: 320px;
+  z-index: 10;
+}
+
+.concept-map-legend__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: 'Patrick Hand', cursive;
+  border-bottom: 2px dashed #cbd5e1;
+  padding-bottom: 4px;
+}
+
+.concept-map-legend__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.concept-map-legend__item:last-child {
+  margin-bottom: 0;
+}
+
+.concept-map-legend__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.concept-map-legend__label {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.3;
+  font-family: 'Patrick Hand', cursive;
+}
+
+/* ─── MiniMap ──────────────────────────────────────────────────── */
+.concept-map-minimap {
+  border-radius: 5px 225px 5px 255px / 255px 5px 225px 5px !important;
+  border: 2px solid #334155 !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1) !important;
+  z-index: 10 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  background: white !important;
+}
+
+/* Posicionar el minimapa en la esquina inferior izquierda */
+.concept-map-container .react-flow__minimap {
+  bottom: 10px !important;
+  left: 10px !important;
+  right: auto !important;
+  top: auto !important;
+}
+
+/* ─── React Flow overrides ─────────────────────────────────────── */
+.concept-map-container .react-flow__edge-path {
+  stroke-width: 3px !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  /* Slight opacity for marker look */
+  opacity: 0.8 !important;
+  /* "Wobbly" edges are hard with pure CSS on SVG path, but we can make them thick/marker-like */
+}
+
+/* Make connection handles bigger and irregular */
+.udl-handle {
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px solid #334155 !important;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2) !important;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% !important; /* Irregular circle */
+  background: white !important;
+}
+
+.udl-handle--central {
+  background: #475569 !important;
+}
+
+.udl-handle--small {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.concept-map-container .react-flow__controls {
+  border-radius: 5px 255px 7px 225px / 225px 5px 255px 7px;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid #334155;
+  overflow: hidden;
+}
+
+.concept-map-container .react-flow__controls-button {
+  border: none;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.concept-map-container .react-flow__controls-button:hover {
+  background: #f1f5f9;
+}
+
+/* ─── Animación de entrada ─────────────────────────────────────── */
+@keyframes nodeAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.udl-node {
+  animation: nodeAppear 0.4s ease-out;
+}
+
+/* ─── Estilos de impresión ───────────────────────────────────────── */
+@media print {
+  @page {
+    size: landscape;
+    margin: 5mm;
+  }
+
+  /* Force background images and colors */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Force the live map/image to be visible and clear */
+  .concept-map-container {
+    height: 100% !important;
+    width: 100% !important;
+    background: white !important;
+    visibility: visible !important;
+    display: block !important;
+  }
+
+  .react-flow {
+    background: transparent !important;
+  }
+
+  /* Simplify print logic */
+  .react-flow__controls,
+  .react-flow__minimap,
+  .concept-map-panel,
+  .concept-map-legend,
+  .react-flow__attribution {
+    display: none !important;
+  }
+
+  /* Ensure ReactFlow viewport is visible */
+  .react-flow__viewport {
+    transform-origin: center center !important;
+  }
+
+  /* Ocultar el fondo de puntos en impresión */
+  .react-flow__background {
+    display: none !important;
+  }
+}

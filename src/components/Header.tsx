@@ -1,11 +1,14 @@
-import { Github, Scale } from 'lucide-react';
-import * as Tooltip from '@radix-ui/react-tooltip';
-import pkg from '../../package.json';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import Breadcrumbs from './Breadcrumbs';
+import { useUDLData } from '../contexts/UDLDataContext';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useUI } from '../contexts/UIContext';
+import pkg from '../../package.json';
 
 interface HeaderProps {
-  breadcrumbItems: Array<{ label: string; href?: string; icon?: any }>;
+  breadcrumbItems?: Array<{ label: string; href?: string; icon?: any }>;
   bgColor?: string;
   breadcrumbColor?: string;
 }
@@ -15,11 +18,14 @@ export default function Header({
   bgColor = 'bg-white',
   breadcrumbColor,
 }: HeaderProps) {
+  const { udlData } = useUDLData();
+  const { t } = useLanguage();
+  const ui = useUI();
+
   return (
     <div
-      className={`${bgColor} border-b border-gray-200 sticky top-0 z-20 shadow-sm transition-colors duration-300`}
+      className={`${bgColor} border-b border-gray-200 sticky top-0 z-20 shadow-sm transition-colors duration-300 print:hidden app-header`}
     >
-      {/* Dynamic Background Overlay for Principle Colors */}
       {breadcrumbColor && (
         <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -27,117 +33,63 @@ export default function Header({
         />
       )}
 
-      <div className="container mx-auto px-4 py-2">
-        <div className="flex items-center justify-between gap-4">
-          {/* Left: Branding & Version (Stacked) */}
-          <div className="flex flex-col items-start leading-none gap-1 shrink-0">
-            <div className="flex items-center font-black tracking-tighter text-2xl logo-elegant-hover transition-all duration-300">
-              <span style={{ color: '#078743' }}>udl</span>
-              <span style={{ color: '#831682' }}>4</span>
-              <span style={{ color: '#295e86' }}>all</span>
-            </div>
-            <span className="px-1.5 py-0.5 border font-black text-xs rounded-sm uppercase tracking-widest flex items-center justify-center transition-all duration-300 version-badge-dynamic shadow-sm">  
-              v{pkg.version}
-            </span>
-            <span
-              className="px-1.5 py-0.5 border font-black text-3xl rounded-sm uppercase tracking-widest transition-colors duration-300"
-              style={{
-                backgroundColor: breadcrumbColor ? `${breadcrumbColor}15` : '#f3f4f6',
-                borderColor: breadcrumbColor ? `${breadcrumbColor}40` : '#e5e7eb',
-                color: breadcrumbColor ? breadcrumbColor : '#6b7280',
-              }}
+      <div className="container mx-auto px-4 py-3 print:py-0 print:px-2">
+        {/* Row 1: Back + Logo | Title + Version + CAST | Language */}
+        <div className="flex items-center justify-between gap-4 print:gap-2">
+          {/* Left: Back + Branding */}
+          <div className="flex items-center gap-3 shrink-0 print:gap-1">
+            <Link
+              to="/dashboard"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-50 border border-gray-200 text-gray-600 hover:bg-white hover:shadow-sm transition-all text-sm font-bold print:hidden"
             >
-            </span>  
-           
-          </div>
-
-          {/* Center: Navigation (Breadcrumbs) - Flexible space */}
-          <div className="flex-1 min-w-0">
-            <Breadcrumbs items={breadcrumbItems} color={breadcrumbColor} />
-          </div>
-
-          {/* Right: Metadata & Language Switcher */}
-          <div className="flex items-center gap-3 shrink-0">
-            <div className="flex flex-col items-end leading-none gap-1">
-              {/* Copyright info */}
-              <a
-                href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/130988/detalle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-black transition-colors text-base font-bold tracking-wider whitespace-nowrap hidden sm:inline-block"
+              <ArrowLeft className="w-4 h-4" />
+            </Link>
+            <div className="flex flex-col items-start leading-none">
+              <Link
+                to="/dashboard"
+                className="flex items-center font-black tracking-tighter text-xl text-gray-800 hover:opacity-80 transition-opacity print:text-xs leading-none"
               >
-                © 2026 Daniel Losada
-              </a>
-
-              <Tooltip.Provider>
-                <div className="flex items-center gap-2">
-                  {/* GitHub link */}
-                  <Tooltip.Root>
-                    <Tooltip.Trigger asChild>
-                      <a
-                        href="https://github.com/danloi2/udl"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-black transition-colors"
-                        aria-label="GitHub Repository"
-                      >
-                        <Github className="w-6 h-6" />
-                      </a>
-                    </Tooltip.Trigger>
-                    <Tooltip.Portal>
-                      <Tooltip.Content
-                        className="select-none rounded bg-gray-900 px-2 py-1 text-[10px] font-bold leading-none text-white shadow-lg animate-in fade-in zoom-in duration-200 z-50"
-                        sideOffset={5}
-                      >
-                        GitHub Repository
-                        <Tooltip.Arrow className="fill-gray-900" />
-                      </Tooltip.Content>
-                    </Tooltip.Portal>
-                  </Tooltip.Root>
-
-                  {/* License info */}
-                  <Tooltip.Root>
-                    <Tooltip.Trigger asChild>
-                      <a
-                        href="https://github.com/danloi2/udl/blob/main/LICENSE"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-black transition-colors"
-                        aria-label="MIT License"
-                      >
-                        <Scale className="w-6 h-6" />
-                      </a>
-                    </Tooltip.Trigger>
-                    <Tooltip.Portal>
-                      <Tooltip.Content
-                        className="select-none rounded bg-gray-900 px-2 py-1 text-[10px] font-bold leading-none text-white shadow-lg animate-in fade-in zoom-in duration-200 z-50"
-                        sideOffset={5}
-                      >
-                        MIT License
-                        <Tooltip.Arrow className="fill-gray-900" />
-                      </Tooltip.Content>
-                    </Tooltip.Portal>
-                  </Tooltip.Root>
-                </div>
-              </Tooltip.Provider>
+                <span style={{ color: '#078743' }}>udl</span>
+                <span style={{ color: '#831682' }}>4</span>
+                <span style={{ color: '#295e86' }}>all</span>
+              </Link>
+              <span className="px-1.5 py-0.5 bg-gray-100/50 text-gray-500 font-black rounded text-[9px] uppercase tracking-widest border border-gray-200 mt-0.5 print:text-[6px] print:mt-0">
+                v{pkg.version}
+              </span>
             </div>
+          </div>
 
-            <div className="h-8 w-px bg-gray-200" />
+          {/* Center: Title + Version + CAST */}
+          <div className="flex-1 flex items-center justify-center gap-3 min-w-0">
+            <h1 className="text-base md:text-lg font-black text-gray-900 tracking-tight truncate print:text-xs">
+              {t(udlData.terminology?.principle?.title) || ui.appTitle}
+            </h1>
+            <span className="hidden sm:inline-block px-2 py-0.5 bg-blue-50 text-blue-700 font-black rounded-full border border-blue-100 text-[10px] uppercase tracking-wide whitespace-nowrap print:text-[8px]">
+              {t(udlData.version)}
+            </span>
+            <a
+              href="https://udlguidelines.cast.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex px-2.5 py-1 bg-gray-900 text-white rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-gray-700 transition-colors whitespace-nowrap print:inline-flex print:bg-transparent print:text-black print:border print:border-gray-300 print:px-1 print:py-0"
+            >
+              CAST (2024)
+            </a>
+          </div>
 
+          {/* Right: Language */}
+          <div className="flex items-center shrink-0 print:hidden">
             <LanguageSwitcher />
           </div>
         </div>
-      </div>
 
-      <style>{`
-        .logo-elegant-hover {
-          cursor: default;
-        }
-        .logo-elegant-hover:hover {
-          filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
-          transform: scale(1.05);
-        }
-      `}</style>
+        {/* Row 2: Breadcrumbs (below the title row) */}
+        {breadcrumbItems && breadcrumbItems.length > 0 && (
+          <div className="mt-2 pt-2 border-t border-gray-100 print:hidden">
+            <Breadcrumbs items={breadcrumbItems} color={breadcrumbColor} />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

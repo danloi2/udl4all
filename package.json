@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "video:studio": "npm --prefix video run studio",
+    "video:render": "npm --prefix video run render:all",
+    "video:render:es": "npm --prefix video run render -- --type all --lang es",
+    "video:render:en": "npm --prefix video run render -- --type all --lang en",
+    "video:render:eu": "npm --prefix video run render -- --type all --lang eu",
+    "video:render:la": "npm --prefix video run render -- --type all --lang la"
   },
   "devDependencies": {
     "@types/babel__core": "^7.20.5",
@@ -29,8 +35,10 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@tailwindcss/vite": "^4.1.18",
+    "@xyflow/react": "^12.10.0",
     "framer-motion": "^10.18.0",
     "fuse.js": "^7.1.0",
+    "html-to-image": "^1.11.13",
     "lucide-react": "^0.312.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

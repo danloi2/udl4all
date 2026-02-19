@@ -9,7 +9,11 @@ import Home from './routes/Home';
 import Model from './routes/Model';
 import Explorer from './routes/Explorer';
 import Detail from './routes/Detail';
-import './app.css';
+import MapView from './routes/MapView';
+import Dashboard from './routes/Dashboard';
+import Activities from './routes/Activities';
+import Videos from './routes/Videos';
+import './css/base.css';
 
 function App() {
   return (
@@ -21,9 +25,13 @@ function App() {
               <Tooltip.Provider delayDuration={300}>
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/activities" element={<Activities />} />
                   <Route path="/model" element={<Model />} />
                   <Route path="/explore" element={<Explorer />} />
                   <Route path="/detail/:id" element={<Detail />} />
+                  <Route path="/map" element={<MapView />} />
+                  <Route path="/videos" element={<Videos />} />
                 </Routes>
               </Tooltip.Provider>
             </UIProvider>

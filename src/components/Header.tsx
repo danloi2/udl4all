@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import Breadcrumbs from './Breadcrumbs';
@@ -21,6 +21,9 @@ export default function Header({
   const { udlData } = useUDLData();
   const { t } = useLanguage();
   const ui = useUI();
+  const { pathname } = useLocation();
+
+  const backDestination = pathname === '/dashboard' ? '/' : '/dashboard';
 
   return (
     <div
@@ -39,14 +42,14 @@ export default function Header({
           {/* Left: Back + Branding */}
           <div className="flex items-center gap-3 shrink-0 print:gap-1">
             <Link
-              to="/dashboard"
+              to={backDestination}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-50 border border-gray-200 text-gray-600 hover:bg-white hover:shadow-sm transition-all text-sm font-bold print:hidden"
             >
               <ArrowLeft className="w-4 h-4" />
             </Link>
             <div className="flex flex-col items-start leading-none">
               <Link
-                to="/dashboard"
+                to={backDestination}
                 className="flex items-center font-black tracking-tighter text-xl text-gray-800 hover:opacity-80 transition-opacity print:text-xs leading-none"
               >
                 <span style={{ color: '#078743' }}>udl</span>

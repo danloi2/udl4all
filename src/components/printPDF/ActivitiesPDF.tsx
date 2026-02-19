@@ -80,9 +80,12 @@ export default function ActivitiesPDF({
     <div className="w-full bg-white text-black p-8">
       {/* Header */}
       <div className="mb-8 border-b-2 border-gray-200 pb-4">
-        <h1 className="text-3xl font-black text-gray-900 mb-2">
-          {ui.dashActivities || 'Actividades'}
-        </h1>
+        <div className="flex items-center gap-3 mb-2">
+          <img src="logo.png" alt="" className="w-10 h-10 object-contain" />
+          <h1 className="text-3xl font-black text-gray-900 leading-none pt-1">
+            {ui.dashActivities || 'Actividades'}
+          </h1>
+        </div>
         {selectedLevel && (
           <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
             <span style={{ color: levelColors[selectedLevel.id] }}>{t(selectedLevel.name)}</span>

@@ -11,11 +11,14 @@ export default function MapPDF() {
       <div className="w-full text-center border-b border-gray-300 pb-2 mb-4">
         <div className="flex justify-between items-baseline">
           <div className="flex items-baseline gap-2">
-            <span className="font-black tracking-tighter text-sm leading-none">
-              <span style={{ color: '#078743' }}>udl</span>
-              <span style={{ color: '#831682' }}>4</span>
-              <span style={{ color: '#295e86' }}>all</span>
-            </span>
+            <div className="flex items-center gap-1.5">
+              <img src="logo.png" alt="" className="w-5 h-5 object-contain" />
+              <span className="font-black tracking-tighter text-sm leading-none">
+                <span style={{ color: '#078743' }}>udl</span>
+                <span style={{ color: '#831682' }}>4</span>
+                <span style={{ color: '#295e86' }}>all</span>
+              </span>
+            </div>
             <span className="text-[8px] text-gray-500 font-bold uppercase tracking-widest border border-gray-300 px-1 rounded-sm">
               v{pkg.version}
             </span>

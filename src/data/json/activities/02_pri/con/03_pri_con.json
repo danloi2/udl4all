@@ -1,0 +1,338 @@
+{
+  "id": "03_PRI_CON",
+  "code": "03-PRI-CON",
+  "gradeLevel": "PRI",
+  "subject": "CON",
+  "title": {
+    "es": "Diseñar y realizar experimentos guiados utilizando instrumentos y dispositivos tecnológicos de forma segura para registrar observaciones y mediciones precisas.",
+    "eu": "Esperimentu gidatuak diseinatu eta egitea, tresna eta gailu teknologikoak modu seguruan erabiliz, behaketa eta neurketa zehatzak erregistratzeko.",
+    "en": "Design and carry out guided experiments using instruments and technological devices safely to record accurate observations and measurements.",
+    "la": "Experimenta ducta designare atque efficere instrumentis et machinis technologicis tuto utens ad observationes et mensuras accuratas consignandas."
+  },
+  "duaAdaptations": {
+    "7.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    }
+  }
+}

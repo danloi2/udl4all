@@ -1,0 +1,338 @@
+{
+  "id": "03_ESO_MAT",
+  "code": "03-ESO-MAT",
+  "gradeLevel": "ESO",
+  "subject": "MAT",
+  "title": {
+    "es": "Formular conjeturas o nuevos problemas de forma autónoma reconociendo el valor del razonamiento para generar nuevo conocimiento matemático.",
+    "eu": "Hipotesiak edo arazo berriak modu autonomoan sortzea, arrazoibidearen balioa aitortuz, ezagutza matematiko berria sortzeko.",
+    "en": "Formulate conjectures or new problems autonomously, recognizing the value of reasoning to generate new mathematical knowledge.",
+    "la": "Coniecturas vel problemata nova autonome formulare, rationis valorem agnoscens ad novam scientiam mathematicam creandam."
+  },
+  "duaAdaptations": {
+    "7.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    }
+  }
+}

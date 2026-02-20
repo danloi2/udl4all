@@ -1,0 +1,338 @@
+{
+  "id": "09_ESO_MAT",
+  "code": "09-ESO-MAT",
+  "gradeLevel": "ESO",
+  "subject": "MAT",
+  "title": {
+    "es": "Gestionar las emociones propias y la perseverancia ante retos matemáticos aceptando el error como parte del proceso de aprendizaje y mejora.",
+    "eu": "Emozioak eta matematika-arazoen aurrean iraunkortasuna kudeatzea, akatsa ikaskuntza eta hobekuntza prozesuaren parte dela onartuz.",
+    "en": "Manage one’s emotions and perseverance in facing mathematical challenges, accepting errors as part of the learning and improvement process.",
+    "la": "Affectus suos regere et perseverantiam in provocationibus mathematicis exhibere, errores ut partem processus discendi et meliorandi accipiendo."
+  },
+  "duaAdaptations": {
+    "7.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    }
+  }
+}

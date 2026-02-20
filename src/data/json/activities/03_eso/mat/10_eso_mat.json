@@ -1,0 +1,338 @@
+{
+  "id": "10_ESO_MAT",
+  "code": "10-ESO-MAT",
+  "gradeLevel": "ESO",
+  "subject": "MAT",
+  "title": {
+    "es": "Colaborar en equipos heterogéneos respetando las emociones y experiencias de los demás para construir una identidad positiva como estudiante de matemáticas.",
+    "eu": "Talde heterogeneoetan lankidetza egitea, besteen emozio eta esperientziak errespetatuz, matematikako ikasle identitate positiboa eraikitzeko.",
+    "en": "Collaborate in heterogeneous teams, respecting others’ emotions and experiences to build a positive identity as a mathematics student.",
+    "la": "In turmis heterogeneis cooperare, affectus et experientias aliorum observans ut identitatem positivam tanquam discipulus mathematicae aedifices."
+  },
+  "duaAdaptations": {
+    "7.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    }
+  }
+}

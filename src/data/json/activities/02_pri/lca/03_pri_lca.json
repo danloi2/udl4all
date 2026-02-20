@@ -1,0 +1,338 @@
+{
+  "id": "03_PRI_LCA",
+  "code": "03-PRI-LCA",
+  "gradeLevel": "PRI",
+  "subject": "LCA",
+  "title": {
+    "es": "Producir textos orales y multimodales con coherencia y registro adecuado utilizando recursos verbales y no verbales en interacciones comunicativas variadas.",
+    "eu": "Ahozko eta testu multimodal koherenteak sortzea, erregistro egokia erabiliz eta baliabide hitzezko zein ez-hitzezkoak txertatuz komunikazio-egoera askotan.",
+    "en": "Produce oral and multimodal texts coherently and with an appropriate register, using verbal and non-verbal resources in varied communicative interactions.",
+    "la": "Textus orales et multimodales cohaerentes et registro apto producere, opibus verbalibus et non verbalibus utens in variis interactionibus communicativis."
+  },
+  "duaAdaptations": {
+    "7.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "7.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "8.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "9.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "1.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "2.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "3.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "4.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "5.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.1": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.2": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.3": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.4": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    },
+    "6.5": {
+      "text": {
+        "es": "",
+        "eu": "",
+        "en": "",
+        "la": ""
+      },
+      "webTools": []
+    }
+  }
+}

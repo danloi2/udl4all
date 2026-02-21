@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Crear patrones numéricos o geométricos y explicar la regla que siguen.",
-    "eu": "Zenbakizko edo geometriazko ereduak sortzea eta jarraitzen duten araua azaltzea.",
-    "en": "Create numerical or geometric patterns and explain the rule they follow.",
-    "la": "Exempla numerica vel geometrica creare atque regulam quam sequuntur explicare."
+    "es": "Resolver problemas relacionados con horarios, duración de actividades y equivalencias entre horas y minutos.",
+    "eu": "Ordutegiekin, jardueren iraupenarekin eta orduen eta minutuaren arteko baliokidetasunekin lotutako arazoak ebaztea.",
+    "en": "Solve problems related to schedules, activity duration and equivalencies between hours and minutes.",
+    "la": "Problemata de horariis, actionum duratione et aequalitatibus inter horas et minuta solvere."
   },
   "duaAdaptations": {
     "7.1": {

@@ -2,83 +2,102 @@
 
 
 
-------
+1.
 
-**1.**
-**ES:** Resolver problemas de la vida cotidiana y propios de las matemáticas aplicando diferentes estrategias y formas de razonamiento para obtener soluciones posibles.
-**EN:** Solve everyday and mathematical problems by applying different strategies and forms of reasoning to obtain possible solutions.
-**EU:** Eguneroko eta matematikako arazoak ebaztea, estrategia eta arrazoibide desberdinak aplikatuz soluzio posibleak lortzeko.
-**LA:** Problemata cotidiana et mathematica solvere per diversas rationes et strategias ut solutiones possibilis obtineantur.
+ES: Simular un pequeño mercado calculando precios, cambios y comparando cantidades con euros y céntimos.
 
-------
+EN: Simulate a small market calculating prices, change and comparing amounts with euros and cents.
 
-**2.**
-**ES:** Analizar las soluciones de un problema evaluando las respuestas obtenidas para verificar su validez matemática y su repercusión global.
-**EN:** Analyze problem solutions by evaluating the obtained answers to verify their mathematical validity and overall impact.
-**EU:** Arazo baten soluzioak aztertzea, lortutako erantzunak ebaluatuz, balio matematikala eta eragina orokorra egiaztatzeko.
-**LA:** Solutiones problematis analysare, responsa obtenta aestimans ad validitatem mathematicam et effectum universale comprobandum.
+EU: Merkatu txiki bat simulatzea prezioak eta kanbioak kalkulatuz eta kopuruak alderatuz euro eta zentimoekin.
 
-------
+LA: Parvum forum simulare pretia et nummos reddendos computando atque copias comparare euronibus centesimisque utentes.
 
-**3.**
-**ES:** Formular conjeturas o nuevos problemas de forma autónoma reconociendo el valor del razonamiento para generar nuevo conocimiento matemático.
-**EN:** Formulate conjectures or new problems autonomously, recognizing the value of reasoning to generate new mathematical knowledge.
-**EU:** Hipotesiak edo arazo berriak modu autonomoan sortzea, arrazoibidearen balioa aitortuz, ezagutza matematiko berria sortzeko.
-**LA:** Coniecturas vel problemata nova autonome formulare, rationis valorem agnoscens ad novam scientiam mathematicam creandam.
+2.
 
-------
+ES: Planificar una salida escolar calculando distancias, tiempos, reparto de grupos y estimaciones de gasto.
 
-**4.**
-**ES:** Modelizar situaciones mediante el pensamiento computacional organizando datos y descomponiendo problemas en partes más simples para facilitar su resolución.
-**EN:** Model situations using computational thinking by organizing data and breaking problems into simpler parts to facilitate resolution.
-**EU:** Egoerak modelizatzea pentsamendu konputazionala erabiliz, datuak antolatuz eta arazoak zatitan banatuz, ebazpena errazteko.
-**LA:** Situationes per cogitationem computationalem modelare, data ordinans et problemata in partes simpliciores dividens ad solutionem facilitatem.
+EN: Plan a school field trip by calculating distances, times, group distribution and expense estimates.
 
-------
+EU: Eskola-irteera bat planifikatzea distantziak, denborak, taldeen banaketa eta gastuen estimazioak kalkulatuz.
 
-**5.**
-**ES:** Conectar los diferentes elementos matemáticos interrelacionando conceptos y procedimientos para desarrollar una visión de la materia como un todo integrado.
-**EN:** Connect different mathematical elements by interrelating concepts and procedures to develop a vision of the subject as an integrated whole.
-**EU:** Elementu matematiko desberdinak lotzea kontzeptuak eta prozedurak elkarlotuz, gaiaren ikuspegi integratua garatzeko.
-**LA:** Elementa mathematica diversa coniungere per conceptus et proceduras inter se nectens ad visionem materiae tamquam totum integratum evolvendam.
+LA: Excursum scholasticum parare spatia, tempora, gregum partitionem et impensarum aestimationes computando.
 
-------
+3.
 
-**6.**
-**ES:** Identificar las matemáticas implicadas en otras materias y situaciones reales para aplicarlas de forma funcional en contextos diversos y significativos.
-**EN:** Identify mathematics involved in other subjects and real situations to apply them functionally in diverse and meaningful contexts.
-**EU:** Beste gaietan eta benetako egoeretan parte hartzen duten matematikak identifikatzea, hainbat testuinguru desberdinetan modu funtzionalean aplikatzeko.
-**LA:** Mathematicam in aliis rebus et condicionibus realibus implicatam agnoscere, ut eam in diversis contextibus et significativis applicetur.
+ES: Crear y clasificar figuras geométricas según sus lados, vértices y ángulos explicando sus características.
 
-------
+EN: Create and classify geometric shapes according to their sides, vertices and angles explaining their characteristics.
 
-**7.**
-**ES:** Representar conceptos y resultados matemáticos utilizando diferentes tecnologías para visualizar ideas y estructurar procesos de forma individual y colectiva.
-**EN:** Represent mathematical concepts and results using different technologies to visualize ideas and structure processes individually and collectively.
-**EU:** Kontzeptu eta emaitza matematikoak adieraztea teknologia desberdinak erabiliz, ideiak bistaratuz eta prozesuak banaka eta kolektiboki egituratuz.
-**LA:** Conceptus et resultata mathematica repraesentare per diversas technologias, ideas visualiter ostendens et processus individualiter et collective structurans.
+EU: Irudi geometrikoak sortzea eta sailkatzea aldeen, erpinen eta kuluen arabera, haien ezaugarriak azalduz.
 
-------
+LA: Figuras geometricas creare et secundum latera, vertices et angulos classificare earum proprietates explicando.
 
-**8.**
-**ES:** Comunicar argumentos y procedimientos matemáticos empleando el lenguaje oral, escrito o gráfico y la terminología apropiada para dar significado a las ideas.
-**EN:** Communicate mathematical arguments and procedures using oral, written, or graphic language and appropriate terminology to give meaning to ideas.
-**EU:** Arrazoiak eta prozedura matematikoak komunikatzea ahozko, idatzizko edo grafiko hizkuntza erabiliz, terminologia egokiaz ideiei zentzua emateko.
-**LA:** Argumenta et proceduras mathematicae communicare per linguam oralem, scriptam vel graphicam et terminologiam aptam, ut sensum ideis tribuas.
+4.
 
-------
+ES: Medir objetos del aula o patio usando diferentes unidades, registrar datos y comparar resultados.
 
-**9.**
-**ES:** Gestionar las emociones propias y la perseverancia ante retos matemáticos aceptando el error como parte del proceso de aprendizaje y mejora.
-**EN:** Manage one’s emotions and perseverance in facing mathematical challenges, accepting errors as part of the learning and improvement process.
-**EU:** Emozioak eta matematika-arazoen aurrean iraunkortasuna kudeatzea, akatsa ikaskuntza eta hobekuntza prozesuaren parte dela onartuz.
-**LA:** Affectus suos regere et perseverantiam in provocationibus mathematicis exhibere, errores ut partem processus discendi et meliorandi accipiendo.
+EN: Measure classroom or playground objects using different units, record data and compare results.
 
-------
+EU: Gelako edo jolastokiko objektuak neurtzea unitate ezberdinak erabiliz, datuak erregistratzea eta emaitzak alderatzea.
 
-**10.**
-**ES:** Colaborar en equipos heterogéneos respetando las emociones y experiencias de los demás para construir una identidad positiva como estudiante de matemáticas.
-**EN:** Collaborate in heterogeneous teams, respecting others’ emotions and experiences to build a positive identity as a mathematics student.
-**EU:** Talde heterogeneoetan lankidetza egitea, besteen emozio eta esperientziak errespetatuz, matematikako ikasle identitate positiboa eraikitzeko.
-**LA:** In turmis heterogeneis cooperare, affectus et experientias aliorum observans ut identitatem positivam tanquam discipulus mathematicae aedifices.
+LA: Res scholae vel areae metiri variis unitatibus utentes, data consignare et eventus comparare.
 
+5.
+
+ES: Resolver problemas de fechas, duración de eventos y organización del tiempo usando el calendario.
+
+EN: Solve problems regarding dates, event duration and time organization using the calendar.
+
+EU: Datuei, gertaeren iraupenari eta denboraren antolaketari buruzko arazoak ebaztea egutegia erabiliz.
+
+LA: Problemata de diebus, eventuum duratione et temporis ordinatione solvere calendarium utentes.
+
+6.
+
+ES: Recoger datos de la clase para elaborar gráficos sencillos y extraer conclusiones básicas.
+
+EN: Collect class data to create simple graphs and draw basic conclusions.
+
+EU: Gelako datuak biltzea grafiko sinpleak egiteko eta oinarrizko ondorioak ateratzeko.
+
+LA: Data classis colligere ad grapha simplicia conficienda et conclusiones fundamentales deducendas.
+
+7.
+
+ES: Adaptar recetas para diferentes cantidades de personas trabajando fracciones y proporcionalidad básica.
+
+EN: Adapt recipes for different numbers of people working with fractions and basic proportionality.
+
+EU: Errezetak pertsona kopuru ezberdinetarako egokitzea frakzioak eta oinarrizko proportzionaltasuna landuz.
+
+LA: Praecepta culinaria pro vario hominum numero aptare partibus et proportionalitate fundamentali utentes.
+
+8.
+
+ES: Interpretar y diseñar planos sencillos del centro utilizando coordenadas y orientación espacial.
+
+EN: Interpret and design simple school blueprints using coordinates and spatial orientation.
+
+EU: Ikastetxeko plano sinpleak interpretatzea eta diseinatzea koordenatuak eta orientazio espaziala erabiliz.
+
+LA: Formas scholae simplices interpretari et describere coordinatis et orientatione spatiali utentes.
+
+9.
+
+ES: Realizar experimentos con dados o monedas para explorar la probabilidad simple y registrar resultados.
+
+EN: Conduct experiments with dice or coins to explore simple probability and record results.
+
+EU: Dadoekin edo txanponekin esperimentuak egitea probabilitate sinplea esploratzeko eta emaitzak erregistratzeko.
+
+LA: Experimenta tesseris aut nummis facere ad probabilitatem simplicem explorandam et eventus consignare.
+
+10.
+
+ES: Identificar y explicar patrones numéricos o geométricos formulando la regla que los genera.
+
+EN: Identify and explain numerical or geometric patterns formulating the rule that generates them.
+
+EU: Zenbakizko edo geometriazko ereduak identifikatu eta azaltzea, horiek sortzen dituen araua formulatuz.
+
+LA: Exempla numerica vel geometrica agnoscere et explicare regulam eorum generatricem formulando.

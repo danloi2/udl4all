@@ -1,81 +1,103 @@
 # Matemáticas
 
-**1.**
-**ES:** Resolver problemas cotidianos usando sumas, restas, multiplicaciones o divisiones.
-**EN:** Solve everyday problems using addition, subtraction, multiplication, or division.
-**EU:** Eguneroko arazoak ebaztea batuketak, kenketak, biderketak edo zatiketak erabiliz.
-**LA:** Problemata cotidiana solvere additionibus, subtractionibus, multiplicationibus aut divisionibus utens.
+1.
 
----
+ES: Planificar un huerto escolar calculando superficies, repartiendo espacios de forma proporcional y estimando semillas. 
 
-**2.**
-**ES:** Contar, agrupar y descomponer números utilizando objetos manipulativos.
-**EN:** Count, group, and break down numbers using manipulable objects.
-**EU:** Zenbakiak zenbatzea, multzokatzea eta deskonposatzea objektu manipulatiboak erabiliz.
-**LA:** Numeros numerare, congregare atque decomponere rebus manipulabilibus utens.
+EN: Plan a school garden by calculating surface areas, distributing spaces proportionally and estimating seeds. 
 
----
+EU: Eskola-baratze bat planifikatzea azalerak kalkulatuz, espazioak modu proportzionalean banatuz eta hazien kopurua estimatuz. 
 
-**3.**
-**ES:** Explicar con sus propias palabras cómo ha resuelto un problema.
-**EN:** Explain in one’s own words how a problem has been solved.
-**EU:** Arazo bat nola ebatzi duen bere hitzekin azaltzea.
-**LA:** Suis verbis explicare quomodo problema solutum sit.
+LA: Hortum scholasticum parare areas computando, spatia pro rata parte distribuendo et semina aestimando.
 
----
+2.
 
-**4.**
-**ES:** Comparar y ordenar números usando rectas numéricas o representaciones visuales.
-**EN:** Compare and order numbers using number lines or visual representations.
-**EU:** Zenbakiak alderatzea eta ordenatzea zenbaki-lerroak edo irudikapen bisualak erabiliz.
-**LA:** Numeros comparare atque ordinare lineis numericis vel repraesentationibus visualibus utens.
+ES: Simular un plan de ahorro mensual registrando cantidades en tablas para comparar progresos hacia un objetivo. 
 
----
+EN: Simulate a monthly savings plan by recording amounts in tables to compare progress toward a goal. 
 
-**5.**
-**ES:** Medir objetos del entorno y registrar los resultados.
-**EN:** Measure objects in the environment and record the results.
-**EU:** Inguruneko objektuak neurtzea eta emaitzak erregistratzea.
-**LA:** Res ambitus metiri et eventus consignare.
+EU: Hilero aurrezteko plan bat simulatzea kopuruak tauletan erregistratuz, helburu baterantz egindako aurrerapenak alderatzeko. 
 
----
+LA: Rationem parsimoniae menstruae simulare summas in tabulis consignantem ad progressus ad metam comparandos.
 
-**6.**
-**ES:** Reconocer, construir y clasificar figuras geométricas según sus características.
-**EN:** Recognize, build, and classify geometric shapes according to their characteristics.
-**EU:** Irudi geometrikoak ezagutzea, eraikitzea eta sailkatzea haien ezaugarrien arabera.
-**LA:** Figuras geometricas agnoscere, construere atque secundum proprietates classificare.
+3.
 
----
+ES: Diseñar cenefas y mosaicos utilizando patrones geométricos y simetrías explicando la regla de repetición. 
 
-**7.**
-**ES:** Interpretar información en gráficos sencillos y sacar conclusiones básicas.
-**EN:** Interpret information in simple graphs and draw basic conclusions.
-**EU:** Grafiko sinpleetan dagoen informazioa interpretatzea eta oinarrizko ondorioak ateratzea.
-**LA:** Informationem in graphis simplicibus interpretari atque conclusiones fundamentales deducere.
+EN: Design borders and mosaics using geometric patterns and symmetries explaining the repetition rule. 
 
----
+EU: Sanefa eta mosaikoak diseinatzea eredu geometrikoak eta simetriak erabiliz, errepikapen-araua azalduz. 
 
-**8.**
-**ES:** Crear patrones numéricos o geométricos y explicar la regla que siguen.
-**EN:** Create numerical or geometric patterns and explain the rule they follow.
-**EU:** Zenbakizko edo geometriazko ereduak sortzea eta jarraitzen duten araua azaltzea.
-**LA:** Exempla numerica vel geometrica creare atque regulam quam sequuntur explicare.
+LA: Coronamenta et musiva describere exemplis geometricis et symmetriis utentes regulam repetitionis explicando.
 
----
+4.
 
-**9.**
-**ES:** Estimar resultados antes de calcular y comprobar si la respuesta tiene sentido.
-**EN:** Estimate results before calculating and check whether the answer makes sense.
-**EU:** Kalkulatu aurretik emaitzak estimatzea eta erantzunak zentzua duen egiaztatzea.
-**LA:** Eventus ante calculationem aestimare atque explorare num responsio rationem habeat.
+ES: Recoger datos de temperatura para organizarlos en gráficos y analizar los valores máximos y mínimos. 
 
----
+EN: Collect temperature data to organize them in graphs and analyze maximum and minimum values. 
 
-**10.**
-**ES:** Resolver retos matemáticos en equipo compartiendo estrategias.
-**EN:** Solve mathematical challenges as a team by sharing strategies.
-**EU:** Erronka matematikoak taldean ebaztea estrategiak partekatuz.
-**LA:** Provocationes mathematicas in grege solvere, rationes inter se communicantes.
+EU: Tenperatura-datuak biltzea grafikoetan antolatzeko eta balio maximoak eta minimoak aztertzeko. 
+
+LA: Data temperaturae colligere ad ea in graphis ordinanda et summos imosque gradus analysi perpendere.
+
+5.
+
+ES: Crear cuerpos geométricos con material reciclado identificando caras, aristas y vértices para comparar características. 
+
+EN: Create geometric solids with recycled material identifying faces, edges and vertices to compare characteristics. 
+
+EU: Material birziklatuarekin gorputz geometrikoak sortzea aldeak, ertzak eta erpinak identifikatuz, ezaugarriak alderatzeko. 
+
+LA: Corpora geometrica e rebus reciclatis creare facies, acies et vertices agnoscendo ad proprietates comparandas.
+
+6.
+
+ES: Calcular distancias recorridas por equipos sumando resultados parciales y comparando marcas con unidades de medida. 
+
+EN: Calculate distances traveled by teams adding partial results and comparing marks with measurement units. 
+
+EU: Taldeek egindako distantziak kalkulatzea emaitza partzialak gehituz eta markak neurri-unitateekin alderatuz. 
+
+LA: Spatia a gregibus percursa computare eventus partialium addendo et notas unitatibus mensurae comparando.
+
+7.
+
+ES: Elaborar un menú ficticio asignando precios para calcular costes totales y cambios en situaciones de compra. 
+
+EN: Create a fictional menu assigning prices to calculate total costs and change in shopping situations. 
+
+EU: Fikziozko menu bat egitea prezioak esleituz, kostu osoak eta kanbioak kalkulatzeko erosketetan. 
+
+LA: Indicem ciborum fictum parare pretiis positis ad summas impensas et nummos reddendos in emptionibus computandos.
+
+8.
+
+ES: Resolver problemas relacionados con horarios, duración de actividades y equivalencias entre horas y minutos. 
+
+EN: Solve problems related to schedules, activity duration and equivalencies between hours and minutes. 
+
+EU: Ordutegiekin, jardueren iraupenarekin eta orduen eta minutuaren arteko baliokidetasunekin lotutako arazoak ebaztea. 
+
+LA: Problemata de horariis, actionum duratione et aequalitatibus inter horas et minuta solvere.
+
+9.
+
+ES: Comparar capacidades de recipientes estimando y midiendo en litros y mililitros para comprobar hipótesis. 
+
+EN: Compare container capacities by estimating and measuring in liters and milliliters to test hypotheses. 
+
+EU: Ontzien edukierak alderatzea litro eta mililitrotan estimatuz eta neurtuz, hipotesiak egiaztatzeko. 
+
+LA: Capacitates vasorum comparare aestimando et metiendo litris mililitrisque ad hypotheses probandas.
+
+10.
+
+ES: Registrar puntuaciones en tablas para calcular totales y medias sencillas justificando los resultados finales. 
+
+EN: Record scores in tables to calculate totals and simple averages justifying the final results. 
+
+EU: Puntuazioak tauletan erregistratzea guztizkoak eta batez besteko sinpleak kalkulatzeko, amaierako emaitzak justifikatuz. 
+
+LA: Punctorum summas in tabulis consignare ad totas summas et medias simplices computandas eventus finales iustificando.
 
 ---

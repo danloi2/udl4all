@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Estimar resultados antes de calcular y comprobar si la respuesta tiene sentido.",
-    "eu": "Kalkulatu aurretik emaitzak estimatzea eta erantzunak zentzua duen egiaztatzea.",
-    "en": "Estimate results before calculating and check whether the answer makes sense.",
-    "la": "Eventus ante calculationem aestimare atque explorare num responsio rationem habeat."
+    "es": "Comparar capacidades de recipientes estimando y midiendo en litros y mililitros para comprobar hipótesis.",
+    "eu": "Ontzien edukierak alderatzea litro eta mililitrotan estimatuz eta neurtuz, hipotesiak egiaztatzeko.",
+    "en": "Compare container capacities by estimating and measuring in liters and milliliters to test hypotheses.",
+    "la": "Capacitates vasorum comparare aestimando et metiendo litris mililitrisque ad hypotheses probandas."
   },
   "duaAdaptations": {
     "7.1": {

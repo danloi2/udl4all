@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Modelizar situaciones mediante el pensamiento computacional organizando datos y descomponiendo problemas en partes más simples para facilitar su resolución.",
-    "eu": "Egoerak modelizatzea pentsamendu konputazionala erabiliz, datuak antolatuz eta arazoak zatitan banatuz, ebazpena errazteko.",
-    "en": "Model situations using computational thinking by organizing data and breaking problems into simpler parts to facilitate resolution.",
-    "la": "Situationes per cogitationem computationalem modelare, data ordinans et problemata in partes simpliciores dividens ad solutionem facilitatem."
+    "es": "Medir objetos del aula o patio usando diferentes unidades, registrar datos y comparar resultados.",
+    "eu": "Gelako edo jolastokiko objektuak neurtzea unitate ezberdinak erabiliz, datuak erregistratzea eta emaitzak alderatzea.",
+    "en": "Measure classroom or playground objects using different units, record data and compare results.",
+    "la": "Res scholae vel areae metiri variis unitatibus utentes, data consignare et eventus comparare."
   },
   "duaAdaptations": {
     "7.1": {

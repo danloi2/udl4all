@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Medir objetos del entorno y registrar los resultados.",
-    "eu": "Inguruneko objektuak neurtzea eta emaitzak erregistratzea.",
-    "en": "Measure objects in the environment and record the results.",
-    "la": "Res ambitus metiri et eventus consignare."
+    "es": "Crear cuerpos geométricos con material reciclado identificando caras, aristas y vértices para comparar características.",
+    "eu": "Material birziklatuarekin gorputz geometrikoak sortzea aldeak, ertzak eta erpinak identifikatuz, ezaugarriak alderatzeko.",
+    "en": "Create geometric solids with recycled material identifying faces, edges and vertices to compare characteristics.",
+    "la": "Corpora geometrica e rebus reciclatis creare facies, acies et vertices agnoscendo ad proprietates comparandas."
   },
   "duaAdaptations": {
     "7.1": {

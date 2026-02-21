@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Explicar con sus propias palabras cómo ha resuelto un problema.",
-    "eu": "Arazo bat nola ebatzi duen bere hitzekin azaltzea.",
-    "en": "Explain in one’s own words how a problem has been solved.",
-    "la": "Suis verbis explicare quomodo problema solutum sit."
+    "es": "Diseñar cenefas y mosaicos utilizando patrones geométricos y simetrías explicando la regla de repetición.",
+    "eu": "Sanefa eta mosaikoak diseinatzea eredu geometrikoak eta simetriak erabiliz, errepikapen-araua azalduz.",
+    "en": "Design borders and mosaics using geometric patterns and symmetries explaining the repetition rule.",
+    "la": "Coronamenta et musiva describere exemplis geometricis et symmetriis utentes regulam repetitionis explicando."
   },
   "duaAdaptations": {
     "7.1": {

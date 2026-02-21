@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Analizar las soluciones de un problema evaluando las respuestas obtenidas para verificar su validez matemática y su repercusión global.",
-    "eu": "Arazo baten soluzioak aztertzea, lortutako erantzunak ebaluatuz, balio matematikala eta eragina orokorra egiaztatzeko.",
-    "en": "Analyze problem solutions by evaluating the obtained answers to verify their mathematical validity and overall impact.",
-    "la": "Solutiones problematis analysare, responsa obtenta aestimans ad validitatem mathematicam et effectum universale comprobandum."
+    "es": "Planificar una salida escolar calculando distancias, tiempos, reparto de grupos y estimaciones de gasto.",
+    "eu": "Eskola-irteera bat planifikatzea distantziak, denborak, taldeen banaketa eta gastuen estimazioak kalkulatuz.",
+    "en": "Plan a school field trip by calculating distances, times, group distribution and expense estimates.",
+    "la": "Excursum scholasticum parare spatia, tempora, gregum partitionem et impensarum aestimationes computando."
   },
   "duaAdaptations": {
     "7.1": {

@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Colaborar en equipos heterogéneos respetando las emociones y experiencias de los demás para construir una identidad positiva como estudiante de matemáticas.",
-    "eu": "Talde heterogeneoetan lankidetza egitea, besteen emozio eta esperientziak errespetatuz, matematikako ikasle identitate positiboa eraikitzeko.",
-    "en": "Collaborate in heterogeneous teams, respecting others’ emotions and experiences to build a positive identity as a mathematics student.",
-    "la": "In turmis heterogeneis cooperare, affectus et experientias aliorum observans ut identitatem positivam tanquam discipulus mathematicae aedifices."
+    "es": "Identificar y explicar patrones numéricos o geométricos formulando la regla que los genera.",
+    "eu": "Zenbakizko edo geometriazko ereduak identifikatu eta azaltzea, horiek sortzen dituen araua formulatuz.",
+    "en": "Identify and explain numerical or geometric patterns formulating the rule that generates them.",
+    "la": "Exempla numerica vel geometrica agnoscere et explicare regulam eorum generatricem formulando."
   },
   "duaAdaptations": {
     "7.1": {

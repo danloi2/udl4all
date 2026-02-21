@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Gestionar las emociones propias y la perseverancia ante retos matemáticos aceptando el error como parte del proceso de aprendizaje y mejora.",
-    "eu": "Emozioak eta matematika-arazoen aurrean iraunkortasuna kudeatzea, akatsa ikaskuntza eta hobekuntza prozesuaren parte dela onartuz.",
-    "en": "Manage one’s emotions and perseverance in facing mathematical challenges, accepting errors as part of the learning and improvement process.",
-    "la": "Affectus suos regere et perseverantiam in provocationibus mathematicis exhibere, errores ut partem processus discendi et meliorandi accipiendo."
+    "es": "Realizar experimentos con dados o monedas para explorar la probabilidad simple y registrar resultados.",
+    "eu": "Dadoekin edo txanponekin esperimentuak egitea probabilitate sinplea esploratzeko eta emaitzak erregistratzeko.",
+    "en": "Conduct experiments with dice or coins to explore simple probability and record results.",
+    "la": "Experimenta tesseris aut nummis facere ad probabilitatem simplicem explorandam et eventus consignare."
   },
   "duaAdaptations": {
     "7.1": {

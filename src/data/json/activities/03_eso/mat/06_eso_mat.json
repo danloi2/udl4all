@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Identificar las matemáticas implicadas en otras materias y situaciones reales para aplicarlas de forma funcional en contextos diversos y significativos.",
-    "eu": "Beste gaietan eta benetako egoeretan parte hartzen duten matematikak identifikatzea, hainbat testuinguru desberdinetan modu funtzionalean aplikatzeko.",
-    "en": "Identify mathematics involved in other subjects and real situations to apply them functionally in diverse and meaningful contexts.",
-    "la": "Mathematicam in aliis rebus et condicionibus realibus implicatam agnoscere, ut eam in diversis contextibus et significativis applicetur."
+    "es": "Recoger datos de la clase para elaborar gráficos sencillos y extraer conclusiones básicas.",
+    "eu": "Gelako datuak biltzea grafiko sinpleak egiteko eta oinarrizko ondorioak ateratzeko.",
+    "en": "Collect class data to create simple graphs and draw basic conclusions.",
+    "la": "Data classis colligere ad grapha simplicia conficienda et conclusiones fundamentales deducendas."
   },
   "duaAdaptations": {
     "7.1": {

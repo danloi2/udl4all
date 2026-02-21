@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Reconocer, construir y clasificar figuras geométricas según sus características.",
-    "eu": "Irudi geometrikoak ezagutzea, eraikitzea eta sailkatzea haien ezaugarrien arabera.",
-    "en": "Recognize, build, and classify geometric shapes according to their characteristics.",
-    "la": "Figuras geometricas agnoscere, construere atque secundum proprietates classificare."
+    "es": "Calcular distancias recorridas por equipos sumando resultados parciales y comparando marcas con unidades de medida.",
+    "eu": "Taldeek egindako distantziak kalkulatzea emaitza partzialak gehituz eta markak neurri-unitateekin alderatuz.",
+    "en": "Calculate distances traveled by teams adding partial results and comparing marks with measurement units.",
+    "la": "Spatia a gregibus percursa computare eventus partialium addendo et notas unitatibus mensurae comparando."
   },
   "duaAdaptations": {
     "7.1": {

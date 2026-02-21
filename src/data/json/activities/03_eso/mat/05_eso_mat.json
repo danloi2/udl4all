@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Conectar los diferentes elementos matemáticos interrelacionando conceptos y procedimientos para desarrollar una visión de la materia como un todo integrado.",
-    "eu": "Elementu matematiko desberdinak lotzea kontzeptuak eta prozedurak elkarlotuz, gaiaren ikuspegi integratua garatzeko.",
-    "en": "Connect different mathematical elements by interrelating concepts and procedures to develop a vision of the subject as an integrated whole.",
-    "la": "Elementa mathematica diversa coniungere per conceptus et proceduras inter se nectens ad visionem materiae tamquam totum integratum evolvendam."
+    "es": "Resolver problemas de fechas, duración de eventos y organización del tiempo usando el calendario.",
+    "eu": "Datuei, gertaeren iraupenari eta denboraren antolaketari buruzko arazoak ebaztea egutegia erabiliz.",
+    "en": "Solve problems regarding dates, event duration and time organization using the calendar.",
+    "la": "Problemata de diebus, eventuum duratione et temporis ordinatione solvere calendarium utentes."
   },
   "duaAdaptations": {
     "7.1": {

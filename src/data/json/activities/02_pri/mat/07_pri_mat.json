@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Interpretar información en gráficos sencillos y sacar conclusiones básicas.",
-    "eu": "Grafiko sinpleetan dagoen informazioa interpretatzea eta oinarrizko ondorioak ateratzea.",
-    "en": "Interpret information in simple graphs and draw basic conclusions.",
-    "la": "Informationem in graphis simplicibus interpretari atque conclusiones fundamentales deducere."
+    "es": "Elaborar un menú ficticio asignando precios para calcular costes totales y cambios en situaciones de compra.",
+    "eu": "Fikziozko menu bat egitea prezioak esleituz, kostu osoak eta kanbioak kalkulatzeko erosketetan.",
+    "en": "Create a fictional menu assigning prices to calculate total costs and change in shopping situations.",
+    "la": "Indicem ciborum fictum parare pretiis positis ad summas impensas et nummos reddendos in emptionibus computandos."
   },
   "duaAdaptations": {
     "7.1": {

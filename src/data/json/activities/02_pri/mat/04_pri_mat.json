@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Comparar y ordenar números usando rectas numéricas o representaciones visuales.",
-    "eu": "Zenbakiak alderatzea eta ordenatzea zenbaki-lerroak edo irudikapen bisualak erabiliz.",
-    "en": "Compare and order numbers using number lines or visual representations.",
-    "la": "Numeros comparare atque ordinare lineis numericis vel repraesentationibus visualibus utens."
+    "es": "Recoger datos de temperatura para organizarlos en gráficos y analizar los valores máximos y mínimos.",
+    "eu": "Tenperatura-datuak biltzea grafikoetan antolatzeko eta balio maximoak eta minimoak aztertzeko.",
+    "en": "Collect temperature data to organize them in graphs and analyze maximum and minimum values.",
+    "la": "Data temperaturae colligere ad ea in graphis ordinanda et summos imosque gradus analysi perpendere."
   },
   "duaAdaptations": {
     "7.1": {

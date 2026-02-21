@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Resolver retos matemáticos en equipo compartiendo estrategias.",
-    "eu": "Erronka matematikoak taldean ebaztea estrategiak partekatuz.",
-    "en": "Solve mathematical challenges as a team by sharing strategies.",
-    "la": "Provocationes mathematicas in grege solvere, rationes inter se communicantes."
+    "es": "Registrar puntuaciones en tablas para calcular totales y medias sencillas justificando los resultados finales.",
+    "eu": "Puntuazioak tauletan erregistratzea guztizkoak eta batez besteko sinpleak kalkulatzeko, amaierako emaitzak justifikatuz.",
+    "en": "Record scores in tables to calculate totals and simple averages justifying the final results.",
+    "la": "Punctorum summas in tabulis consignare ad totas summas et medias simplices computandas eventus finales iustificando."
   },
   "duaAdaptations": {
     "7.1": {

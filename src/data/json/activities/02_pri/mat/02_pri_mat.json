@@ -4,10 +4,10 @@
   "gradeLevel": "PRI",
   "subject": "MAT",
   "title": {
-    "es": "Contar, agrupar y descomponer números utilizando objetos manipulativos.",
-    "eu": "Zenbakiak zenbatzea, multzokatzea eta deskonposatzea objektu manipulatiboak erabiliz.",
-    "en": "Count, group, and break down numbers using manipulable objects.",
-    "la": "Numeros numerare, congregare atque decomponere rebus manipulabilibus utens."
+    "es": "Simular un plan de ahorro mensual registrando cantidades en tablas para comparar progresos hacia un objetivo.",
+    "eu": "Hilero aurrezteko plan bat simulatzea kopuruak tauletan erregistratuz, helburu baterantz egindako aurrerapenak alderatzeko.",
+    "en": "Simulate a monthly savings plan by recording amounts in tables to compare progress toward a goal.",
+    "la": "Rationem parsimoniae menstruae simulare summas in tabulis consignantem ad progressus ad metam comparandos."
   },
   "duaAdaptations": {
     "7.1": {

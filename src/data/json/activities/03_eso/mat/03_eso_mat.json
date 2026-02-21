@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Formular conjeturas o nuevos problemas de forma autónoma reconociendo el valor del razonamiento para generar nuevo conocimiento matemático.",
-    "eu": "Hipotesiak edo arazo berriak modu autonomoan sortzea, arrazoibidearen balioa aitortuz, ezagutza matematiko berria sortzeko.",
-    "en": "Formulate conjectures or new problems autonomously, recognizing the value of reasoning to generate new mathematical knowledge.",
-    "la": "Coniecturas vel problemata nova autonome formulare, rationis valorem agnoscens ad novam scientiam mathematicam creandam."
+    "es": "Crear y clasificar figuras geométricas según sus lados, vértices y ángulos explicando sus características.",
+    "eu": "Irudi geometrikoak sortzea eta sailkatzea aldeen, erpinen eta kuluen arabera, haien ezaugarriak azalduz.",
+    "en": "Create and classify geometric shapes according to their sides, vertices and angles explaining their characteristics.",
+    "la": "Figuras geometricas creare et secundum latera, vertices et angulos classificare earum proprietates explicando."
   },
   "duaAdaptations": {
     "7.1": {

@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Resolver problemas de la vida cotidiana y propios de las matemáticas aplicando diferentes estrategias y formas de razonamiento para obtener soluciones posibles.",
-    "eu": "Eguneroko eta matematikako arazoak ebaztea, estrategia eta arrazoibide desberdinak aplikatuz soluzio posibleak lortzeko.",
-    "en": "Solve everyday and mathematical problems by applying different strategies and forms of reasoning to obtain possible solutions.",
-    "la": "Problemata cotidiana et mathematica solvere per diversas rationes et strategias ut solutiones possibilis obtineantur."
+    "es": "Simular un pequeño mercado calculando precios, cambios y comparando cantidades con euros y céntimos.",
+    "eu": "Merkatu txiki bat simulatzea prezioak eta kanbioak kalkulatuz eta kopuruak alderatuz euro eta zentimoekin.",
+    "en": "Simulate a small market calculating prices, change and comparing amounts with euros and cents.",
+    "la": "Parvum forum simulare pretia et nummos reddendos computando atque copias comparare euronibus centesimisque utentes."
   },
   "duaAdaptations": {
     "7.1": {

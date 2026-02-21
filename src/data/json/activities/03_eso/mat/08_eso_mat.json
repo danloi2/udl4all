@@ -4,10 +4,10 @@
   "gradeLevel": "ESO",
   "subject": "MAT",
   "title": {
-    "es": "Comunicar argumentos y procedimientos matemáticos empleando el lenguaje oral, escrito o gráfico y la terminología apropiada para dar significado a las ideas.",
-    "eu": "Arrazoiak eta prozedura matematikoak komunikatzea ahozko, idatzizko edo grafiko hizkuntza erabiliz, terminologia egokiaz ideiei zentzua emateko.",
-    "en": "Communicate mathematical arguments and procedures using oral, written, or graphic language and appropriate terminology to give meaning to ideas.",
-    "la": "Argumenta et proceduras mathematicae communicare per linguam oralem, scriptam vel graphicam et terminologiam aptam, ut sensum ideis tribuas."
+    "es": "Interpretar y diseñar planos sencillos del centro utilizando coordenadas y orientación espacial.",
+    "eu": "Ikastetxeko plano sinpleak interpretatzea eta diseinatzea koordenatuak eta orientazio espaziala erabiliz.",
+    "en": "Interpret and design simple school blueprints using coordinates and spatial orientation.",
+    "la": "Formas scholae simplices interpretari et describere coordinatis et orientatione spatiali utentes."
   },
   "duaAdaptations": {
     "7.1": {

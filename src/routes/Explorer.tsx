@@ -55,6 +55,12 @@ export default function Explorer() {
     }
   }, [selectedGuideline]);
 
+  useEffect(() => {
+    if (selectedEducationalLevel !== 'all') {
+      setSelectedCurricularArea('all');
+    }
+  }, [selectedEducationalLevel]);
+
   const breadcrumbItems = useMemo(
     () => [
       { label: '', href: '/', icon: undefined },

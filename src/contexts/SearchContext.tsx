@@ -203,12 +203,16 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     const areas = new Map();
     searchableItems
       .filter((item) => item.type === 'example' || item.type === 'activity')
+      .filter((item) => {
+        if (selectedEducationalLevel === 'all') return true;
+        return item.educationalLevel?.es === selectedEducationalLevel;
+      })
       .forEach((item: any) => {
         const areaName = item.curricularArea?.es || 'Unknown';
         areas.set(areaName, item.curricularArea);
       });
     return Array.from(areas.values());
-  }, [searchableItems]);
+  }, [searchableItems, selectedEducationalLevel]);
 
   // Search results
   const searchResults = useMemo(() => {

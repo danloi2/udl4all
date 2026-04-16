@@ -60,7 +60,7 @@ export default function GuidelineCard({ guideline, principleColor = '#ccc', isPr
         </div>
       </Link>
 
-      {(isPrint || showConsiderations) && (
+      {showConsiderations && (
         <div className="p-3 space-y-1">
           {guideline.considerations.map((consideration) => (
             <ConsiderationItem

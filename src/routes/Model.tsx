@@ -134,7 +134,7 @@ export default function Model() {
         </div>
       </div>
 
-      <FloatingNavigation currentPage="model" printOrientation="landscape" printScale={0.8} />
+      <FloatingNavigation currentPage="model" printOrientation="landscape" printScale={0.9} />
 
       <div className="print:hidden">
         <Footer />

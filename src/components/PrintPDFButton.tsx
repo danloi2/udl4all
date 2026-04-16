@@ -41,7 +41,7 @@ export default function PrintPDFButton({
     styleEl.innerHTML = `
       @page {
         size: A4 ${orientation};
-        margin: 8mm 10mm;
+        margin: 6mm 10mm;
       }
       @media print {
         ${scaleRule}

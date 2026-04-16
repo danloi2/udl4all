@@ -551,3 +551,51 @@ export const AMBITOS_UNIVERSIDAD = {
     },
   },
 } as const;
+
+export const AREAS_EPA = {
+  COMUNICACION: {
+    id: 'COM',
+    name: {
+      es: 'Ámbito de Comunicación',
+      en: 'Communication',
+      eu: 'Komunikazio Esparrua',
+      la: 'Ambitus Communicationis',
+    },
+  },
+  CIENTIFICO_TECNOLOGICO: {
+    id: 'CTE',
+    name: {
+      es: 'Ámbito Científico-Tecnológico',
+      en: 'Scientific-Technological',
+      eu: 'Esparru Zientifiko-Teknologikoa',
+      la: 'Ambitus Scientifico-Technologicus',
+    },
+  },
+  SOCIAL: {
+    id: 'SOC',
+    name: {
+      es: 'Ámbito Social',
+      en: 'Social',
+      eu: 'Esparru Soziala',
+      la: 'Ambitus Socialis',
+    },
+  },
+  MATEMATICAS: {
+    id: 'MAT',
+    name: {
+      es: 'Matemáticas (Ámbito Científico)',
+      en: 'Mathematics',
+      eu: 'Matematika',
+      la: 'Mathematica',
+    },
+  },
+  METODOLOGIA_ORIENTACION: {
+    id: 'MET',
+    name: {
+      es: 'Metodología y Orientación',
+      en: 'Methodology and Guidance',
+      eu: 'Metodologia eta Orientazioa',
+      la: 'Methodologia et Orientatio',
+    },
+  },
+} as const;

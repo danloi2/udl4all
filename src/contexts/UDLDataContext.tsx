@@ -159,6 +159,13 @@ export function UDLDataProvider({ children }: { children: ReactNode }) {
       }
 
       Object.entries(activity.duaAdaptations).forEach(([code, adaptation]) => {
+        // Only index this adaptation as an 'Example' if it actually contains text.
+        // This prevents the search results from being flooded by empty empty placeholder adaptations.
+        const hasText = Object.values(adaptation.text || {}).some(
+          (t) => typeof t === 'string' && t.trim() !== ''
+        );
+        if (!hasText) return;
+
         let considerationId = null;
         let considerationColor = '#666';
         for (const [id, cons] of index.considerations) {

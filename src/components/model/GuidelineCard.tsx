@@ -55,7 +55,7 @@ export default function GuidelineCard({ guideline, principleColor = '#ccc', isPr
             </h3>
           </div>
         </div>
-        <div className={`mt-2 md:mt-4 flex justify-end ${isPrint ? '' : 'print:hidden'}`}>
+        <div className={`mt-2 md:mt-4 flex justify-end ${isPrint ? 'print:!mt-0 print:!-mb-2 print:transform print:scale-[0.6] print:origin-right' : 'print:hidden'}`}>
           <LevelBadge row={guideline.row} />
         </div>
       </Link>

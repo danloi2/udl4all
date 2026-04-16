@@ -28,7 +28,7 @@ export default function ConsiderationItem({ consideration, guideline }: Consider
   return (
     <Link
       to={`/detail/${consideration.id}`}
-      className="block px-3 py-2 rounded-md transition-colors border-l-2"
+      className="block px-3 py-2 rounded-md transition-colors border-l-2 print:py-0 print:px-1"
       style={{
         borderColor: guideline.color || '#ccc',
         backgroundColor: isHovered ? hoverBg : 'transparent',
@@ -40,7 +40,7 @@ export default function ConsiderationItem({ consideration, guideline }: Consider
         <span className="font-mono text-sm font-semibold shrink-0" style={{ color: styles.hex }}>
           {consideration.code}
         </span>
-        <span className="text-sm text-gray-700">{t(consideration.description)}</span>
+        <span className="text-sm text-gray-700 print:text-[8pt] print:leading-tight">{t(consideration.description)}</span>
       </div>
     </Link>
   );

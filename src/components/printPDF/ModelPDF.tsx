@@ -47,7 +47,7 @@ export default function ModelPDF() {
       </div>
 
       {/* Grid Layout (Optimized for Print Density and Row Alignment) */}
-      <div className="grid grid-cols-3 gap-x-2 gap-y-2 items-stretch print-content">
+      <div className="grid grid-cols-3 gap-x-2 gap-y-2 print:gap-y-0.5 items-stretch print-content">
         {/* Headers Row */}
         {udlData.networks.map((network) => (
           <div
@@ -76,7 +76,7 @@ export default function ModelPDF() {
       </div>
 
       {/* Inline Minimal Footer */}
-      <div className="flex justify-between items-center border-t border-gray-300 pt-[2mm] mt-[2mm] text-[9pt] text-gray-600">
+      <div className="flex justify-between items-center border-t border-gray-300 pt-[2mm] mt-[2mm] print:mt-0 print:pt-0.5 text-[9pt] text-gray-600">
         <span>© 2026 Daniel Losada</span>
         <span>Generado por UDL4All</span>
       </div>

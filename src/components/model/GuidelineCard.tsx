@@ -61,7 +61,7 @@ export default function GuidelineCard({ guideline, principleColor = '#ccc', isPr
       </Link>
 
       {showConsiderations && (
-        <div className="p-3 space-y-1">
+        <div className="p-3 space-y-1 print:p-0.5 print:space-y-0.5">
           {guideline.considerations.map((consideration) => (
             <ConsiderationItem
               key={consideration.id}

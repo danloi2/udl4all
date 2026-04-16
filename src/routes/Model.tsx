@@ -1,4 +1,4 @@
-import { useMemo, useEffect } from 'react';
+import { useMemo } from 'react';
 import { useUDLData } from '../contexts/UDLDataContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useUI } from '../contexts/UIContext';
@@ -18,9 +18,7 @@ export default function Model() {
   const ui = useUI();
   const { showConsiderations, setShowConsiderations } = useSettings();
 
-  useEffect(() => {
-    setShowConsiderations(true);
-  }, [setShowConsiderations]);
+
 
   // Breadcrumbs
   const breadcrumbItems = useMemo(

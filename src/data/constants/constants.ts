@@ -583,7 +583,7 @@ export const AREAS_EPA = {
   MATEMATICAS: {
     id: 'MAT',
     name: {
-      es: 'Matemáticas (Ámbito Científico)',
+      es: 'Matemáticas',
       en: 'Mathematics',
       eu: 'Matematika',
       la: 'Mathematica',

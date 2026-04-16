@@ -21,6 +21,7 @@ import {
   BACHILLERATO_COMUNES,
   BACHILLERATO_MODALIDADES,
   AMBITOS_UNIVERSIDAD,
+  AREAS_EPA,
 } from '../data/constants/constants';
 
 // Load and parse UDL data
@@ -57,6 +58,8 @@ function resolveMetadata(levelCode: string, areaCode: string) {
     levelCode === 'COM'
   ) {
     area = Object.values(AREAS_INFANTIL).find((a) => a.id === areaCode);
+  } else if (levelCode === 'EPA') {
+    area = Object.values(AREAS_EPA).find((a) => a.id === areaCode);
   }
 
   if (!area) {
@@ -66,6 +69,7 @@ function resolveMetadata(levelCode: string, areaCode: string) {
       ...Object.values(AREAS_ESO),
       ...Object.values(BACHILLERATO_COMUNES),
       ...Object.values(AMBITOS_UNIVERSIDAD),
+      ...Object.values(AREAS_EPA),
     ];
     area = allAreas.find((a) => a.id === areaCode);
   }

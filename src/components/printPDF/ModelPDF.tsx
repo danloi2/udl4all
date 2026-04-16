@@ -46,25 +46,33 @@ export default function ModelPDF() {
         <p className="text-xs font-medium text-gray-700 leading-tight">{t(udlData.goal)}</p>
       </div>
 
-      {/* Grid Layout (Optimized for Print Density) */}
-      <div className="grid grid-cols-3 gap-2 items-start print-content">
+      {/* Grid Layout (Optimized for Print Density and Row Alignment) */}
+      <div className="grid grid-cols-3 gap-x-2 gap-y-2 items-stretch print-content">
+        {/* Headers Row */}
         {udlData.networks.map((network) => (
-          <div key={network.id} className="flex flex-col gap-2">
-            {/* Header */}
-            <div
-              className="rounded-lg overflow-hidden border-b-2"
-              style={{ borderColor: network.principle.color }}
-            >
-              <PrincipleHeader network={network} />
-            </div>
-            {/* Guidelines Stack */}
-            {network.principle.guidelines.map((guideline) => (
-              <div key={guideline.id} style={{ pageBreakInside: 'avoid' }}>
-                <GuidelineCard guideline={guideline} principleColor={network.principle.color} isPrint={true} />
-              </div>
-            ))}
+          <div
+            key={network.id}
+            className="rounded-lg overflow-hidden border-b-2 h-full"
+            style={{ borderColor: network.principle.color }}
+          >
+            <PrincipleHeader network={network} />
           </div>
         ))}
+
+        {/* Guideline Rows (Loop over 3 UDL Levels) */}
+        {[0, 1, 2].map((rowIndex) =>
+          udlData.networks.map((network) => (
+            <div key={`${network.id}-${rowIndex}`} className="h-full flex flex-col" style={{ pageBreakInside: 'avoid' }}>
+              {network.principle.guidelines[rowIndex] && (
+                <GuidelineCard
+                  guideline={network.principle.guidelines[rowIndex]}
+                  principleColor={network.principle.color}
+                  isPrint={true}
+                />
+              )}
+            </div>
+          ))
+        )}
       </div>
 
       {/* Inline Minimal Footer */}

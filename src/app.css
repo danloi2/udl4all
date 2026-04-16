@@ -255,11 +255,6 @@ body {
     padding-right: 1.5rem !important;
   }
 
-  /* Hide LevelBadge in print to save space */
-  .mt-4.flex.justify-end,
-  .mt-2.flex.justify-end {
-    display: none !important;
-  }
 
   /* Remove all shadows for cleaner PDF */
   .shadow-sm,

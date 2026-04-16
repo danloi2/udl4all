@@ -60,7 +60,7 @@ export default function ModelPDF() {
             {/* Guidelines Stack */}
             {network.principle.guidelines.map((guideline) => (
               <div key={guideline.id} style={{ pageBreakInside: 'avoid' }}>
-                <GuidelineCard guideline={guideline} principleColor={network.principle.color} />
+                <GuidelineCard guideline={guideline} principleColor={network.principle.color} isPrint={true} />
               </div>
             ))}
           </div>

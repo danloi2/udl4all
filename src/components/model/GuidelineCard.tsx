@@ -9,9 +9,10 @@ import { Link } from 'react-router-dom';
 interface GuidelineCardProps {
   guideline: Guideline;
   principleColor?: string;
+  isPrint?: boolean;
 }
 
-export default function GuidelineCard({ guideline, principleColor = '#ccc' }: GuidelineCardProps) {
+export default function GuidelineCard({ guideline, principleColor = '#ccc', isPrint = false }: GuidelineCardProps) {
   const { t } = useLanguage();
   const { showConsiderations } = useSettings();
 
@@ -54,12 +55,12 @@ export default function GuidelineCard({ guideline, principleColor = '#ccc' }: Gu
             </h3>
           </div>
         </div>
-        <div className="mt-2 md:mt-4 flex justify-end print:hidden">
+        <div className={`mt-2 md:mt-4 flex justify-end ${isPrint ? '' : 'print:hidden'}`}>
           <LevelBadge row={guideline.row} />
         </div>
       </Link>
 
-      {showConsiderations && (
+      {(isPrint || showConsiderations) && (
         <div className="p-3 space-y-1">
           {guideline.considerations.map((consideration) => (
             <ConsiderationItem

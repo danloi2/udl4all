@@ -21,9 +21,9 @@
     "author": "CAST",
     "year": 2024,
     "goal": {
-      "es": "Empoderar al aprendiz para que sea intencional y reflexivo, ingenioso y auténtico, estratégico y orientado a la acción.",
-      "en": "Empower the learner to be purposeful and reflective, resourceful and authentic, strategic and action-oriented.",
-      "eu": "Ikaslea ahalduntzea, nahita eta hausnartzaile, baliabidetsu eta benetako, estrategiko eta ekintzara bideratua izan dadin.",
+      "es": "La meta del DUA es desarrollar la agencia del aprendiz: que sea intencional y reflexivo, ingenioso y auténtico, estratégico y orientado a la acción",
+      "en": "The goal of UDL is learner agency that is purposeful and reflective, resourceful and authentic, strategic and action-oriented.",
+      "eu": "IDUren helburua da ikasleek agentzia izatea, hau da, helburu jakin batekin eta gogoetatsu jokatzea, baliabideak eraginkortasunez erabiltzea eta benetakotasunez aritzea, estrategikoki eta ekintzara bideratuta jokatzea.",
       "la": "Discipulum potestate praebe ut sit propositus et reflexivus, sollers et authenticus, strategicus et ad actionem directus."
     },
     "terminology": {
@@ -171,7 +171,7 @@
                 "la": "Accessus"
               },
               "name": {
-                "es": "Aceptación de intereses e identidades",
+                "es": "Acoger intereses e identidades",
                 "en": "Welcoming Interests & Identities",
                 "eu": "Interesak eta identitateak aitortzea",
                 "la": "Susceptio Interestium et Identitatum"
@@ -240,7 +240,7 @@
                 "la": "Subsidium"
               },
               "name": {
-                "es": "Mantener el esfuerzo y la constancia",
+                "es": "Mantener el esfuerzo y la persistencia",
                 "en": "Sustaining Effort & Persistence",
                 "eu": "Ahalegina eta iraunkortasuna mantentzea",
                 "la": "Effortum et Constantiam Sustinere"
@@ -567,7 +567,7 @@
                 "la": "Functio Executiva"
               },
               "name": {
-                "es": "Desarrollo de conocimientos",
+                "es": "Construcción del conocimiento",
                 "en": "Building Knowledge",
                 "eu": "Ezagutza garatzea",
                 "la": "Aedificatio Scientiae"
@@ -756,7 +756,7 @@
                   "code": "5.3",
                   "color": "#037DB8",
                   "description": {
-                    "es": "Desarrollar habilidades con apoyos graduados para la práctica y el desempeño",
+                    "es": "Desarrollar fluidez con apoyos graduados para la práctica y el desempeño",
                     "en": "Build fluencies with graduated support for practice and performance",
                     "eu": "Gaitasunak pixkanakako laguntzarekin garatzea",
                     "la": "Aedificare facultates cum graduato auxilio pro exercitatione et perficiendo"
